@@ -6,9 +6,10 @@ title: News
 <section class="news-feed flex-wo">
 	<!-- This loops through the paginated posts -->
 	{% for post in paginator.posts %}
-		<p class="date">{{ post.date }}</p>
+	<article class="col-1-to-12">
+		<p>{{ post.date }}</p>
 		<!-- loop through post categories -->
-		<div class="col-1-to-6">
+		<div>
 			{% for category in post.categories %}
 				<a href="">
 					{{ category }}
@@ -17,6 +18,7 @@ title: News
 		</div>
 		<h2>{{ post.title }}</h2>
 		<a href="{{ post.url }}">read article</a>
+	</article>
 	{% endfor %}
 </section>
 
