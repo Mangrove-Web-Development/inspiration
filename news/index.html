@@ -1,0 +1,28 @@
+---
+layout: archive
+title: News
+---
+
+<section class="news-feed flex-wo">
+	<!-- This loops through the paginated posts -->
+	{% for post in paginator.posts %}
+		{% include blog-loop-inner.html %}
+	{% endfor %}
+</section>
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div class="wo pagination">
+	{% if paginator.previous_page %}
+	<div class="col-1-to-6 m-col-1-to-5 s-col-1-to-3">
+		<a href="{{ paginator.previous_page_path }}" class="button button--light">Previous</a>
+	</div>
+	{% endif %}
+
+	{% if paginator.next_page %}
+	<div class="col-6-to-13 m-col-5-to-11 s-col-3-to-5 right">
+		<a href="{{ paginator.next_page_path }}" class="button">Next</a>
+	</div>
+	{% endif %}
+</div>
+{% endif %}

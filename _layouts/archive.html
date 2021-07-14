@@ -8,15 +8,7 @@
 		</h1>
 	</div>
 
-	<div class="archive">
-	{% for post in page.posts limit: 10 %}
-		<a href="{{ post.url }}" class="archive__post wo-full">
-			<p class="archive__post__date col-1-to-3">{{ post.date | date: "%B %d, %Y" }}</p>
-			<h2 class="col-3-to-10">{{ post.title }}</h2>
-			<p aria-hidden="true" class="link right col-10-to-13">Read</p>
-		</a>
-	{% endfor %}
-	</div>
+	{{ content }}
 </main>
 
 {% include footer.html %}

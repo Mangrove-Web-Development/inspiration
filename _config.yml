@@ -31,10 +31,17 @@ markdown: kramdown
 theme: manoverboard-alpha
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 sass:
-  sass_dir: _sass #compressed
-  style: expanded
+  sass_dir: _sass
+  style: compressed
 collections_dir: collections
+
+# pagination
+# https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: "/news/page-:num/"
+
 
 # CloudCannon Options
 _options:
@@ -53,10 +60,15 @@ _comments:
 # Collections (Custom Post Types)
 # https://jekyllrb.com/docs/collections/
 collections:
-  general_pages:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+  pages:
     output: true
     _hide_content: true
-    permalink: /:name
+  top-level-pages:
+    output: true
+    _hide_content: true
 
 defaults:
   - scope:
@@ -64,6 +76,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "top-level-pages"
+    values:
+      layout: "top-level-page"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
