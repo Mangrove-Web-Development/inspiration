@@ -331,7 +331,14 @@ p.small {
 }
 
 .h5 {
-    font-size: 200%;
+    font-family: $fraktionSans;
+    color: $offWhite;
+    font-size: 320%;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .h6 {
@@ -341,6 +348,11 @@ p.small {
 
 .eyebrow {
     font-family: $fraktionSans;
+    color: $offWhite;
+    text-transform: uppercase;
+    font-size: 200%;
+    line-height: 100%;
+    letter-spacing: 0.07em;
 }
 
 // ————————————————————————————— lists
@@ -432,6 +444,16 @@ iframe {
     .button {
         margin-top: -60px;
     }
+
+    article {
+        background-color: $navyLight;
+        border-radius: 50px;
+        padding: 40px;
+
+        .h5 {
+            padding-bottom: 60px;
+        }
+    }
 }
 
 // ————————————————————————————————————————— 
@@ -439,13 +461,16 @@ iframe {
 // —————————————————————————————————————————
 
 .button {
-    @include background-image('/../assets/images/home-buttong-bg.svg');
-    margin-top: 75px;
-    font-family: $fraktionMono;
+    font-family: $fraktionSans;
     font-size: 230%;
     line-height: 100%;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.button--round {
+    @include background-image('/../assets/images/home-buttong-bg.svg');
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
