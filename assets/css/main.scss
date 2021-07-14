@@ -251,9 +251,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+li {
     margin: 0;
     padding: 0;
+    color: $offWhite;
+    font-family: $fraktionSans;
 }
 
 p,
@@ -293,7 +297,6 @@ h3 {
 
 .large,
 h4 {
-    font-family: $fraktionSans;
     font-size: 270%;
     line-height: 150%;
     /* or 40px */
