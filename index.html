@@ -40,6 +40,49 @@ layout: null
         </div>
 
         <a class="button editable col-2-to-7" href="/">Check under our hood</a>
+
+        <div class="home-intro__stat col-2-to-6">
+            <h3 class="editable">3, 192</h3>
+            <p class="editable">Lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="home-intro__stat col-6-to-10">
+            <h3 class="editable">89%</h3>
+            <p class="editable">Lorem ipsum dolor sit amet</p>
+        </div>
+    </section>
+
+    <section class="home-testimonials wo-full pv200 white">
+        <div class="col-1-to-13">
+            <h2 class="h2 editable">
+                Hear what others are saying. 
+            </h2>
+        </div>
+    </section>
+
+    <section class="home-latest-news wo pv200 white">
+        <h2 class="h2 editable col-1-to-9">
+            Get up to speed on our latest news.
+        </h2>
+        <a class="button col-9-to-13" href="/news/">All news</a>
+        <article class="col-1-to-5">
+            <p>{{ post.date }}</p>
+            <!-- loop through post categories -->
+            <h3>{{ post.title }}</h3>
+            <a href="{{ post.url }}">Read article</a>
+        </article>
+        <article class="col-5-to-9">
+            <p>{{ post.date }}</p>
+            <!-- loop through post categories -->
+            <h3>{{ post.title }}</h3>
+            <a href="{{ post.url }}">Read article</a>
+        </article>
+        <article class="col-9-to-13">
+            <p>{{ post.date }}</p>
+            <!-- loop through post categories -->
+            <h3>{{ post.title }}</h3>
+            <a href="{{ post.url }}">Read article</a>
+        </article>
     </section>
 </main>
 

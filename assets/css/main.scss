@@ -252,6 +252,16 @@ main {
 // ————————————————————————————————————————— 
 // typography
 // —————————————————————————————————————————
+.white {
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        color: $offWhite;
+    }
+}
 
 .h1,
 .h2,
@@ -327,6 +337,10 @@ p.small {
 .h6 {
     font-size: 300%;
     margin-bottom: 32px;
+}
+
+.eyebrow {
+    font-family: $fraktionSans;
 }
 
 // ————————————————————————————— lists
@@ -409,6 +423,14 @@ iframe {
             object-fit: cover;
             height: 100%;
         }
+    }
+}
+
+.home-latest-news {
+    overflow: visible;
+
+    .button {
+        margin-top: -60px;
     }
 }
 
