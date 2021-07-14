@@ -66,6 +66,9 @@ $darkGrey: #ADB3BE;
 // easings
 $easing: cubic-bezier(0.83, 0, 0.17, 1);
 
+// fonts
+$fraktionMono: 'Fraktion Mono', 'Courier New', Courier, monospace;
+
 
 // ————————————————————————————————————————— 
 // M I X I N S
@@ -176,11 +179,44 @@ p .button {
 // ————————————————————————————————————————— 
 // header
 // —————————————————————————————————————————
+.main-header {
+    margin: 0 !important;
 
-#header {}
+    .main-header__logo-area {
+        margin: 0 50px;
+
+        img {
+            max-width: 13vw;
+        }
+    }
+
+    .main-header__nav {
+        background-color: $navyLight;
+        margin: 0 !important;
+        border-bottom: 1px solid $offWhite;
+        padding: 17px 25px;
+
+        a {
+            font-family: $fraktionMono;
+            font-size: 170%;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            color: $offWhite;
+            text-transform: uppercase;
+            margin: 0 25px;
+        }
+    }
+
+    .main-header__nav--utility-nav {
+        position: absolute;
+        right: 25px;
+        top: 17px;
+    }
+}
 
 // ————————————————————————————————————————— 
-// ST Typography
+// typography
 // —————————————————————————————————————————
 
 .st {
@@ -290,8 +326,11 @@ p .button {
 
 
 // ————————————————————————————————————————— 
-// Special Typography
+// home page
 // —————————————————————————————————————————
+.page- {
+    background-color: $navy;
+}
 
 // ————————————————————————————————————————— 
 // buttons

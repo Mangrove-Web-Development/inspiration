@@ -42,16 +42,20 @@
     <!-- end wp head -->
 </head>
 
-<body id="bodyID" data-barba="wrapper">
+{% assign pageURLsplit = page.url | split: '/' %}
+{% capture pagePermalink %}/{{ pageURLsplit[1] }}/{% endcapture %}
+
+<body id="bodyID" data-barba="wrapper" class="page-{{ pageURLsplit }}">
     <a id="skipLink" href="#skipNavigation">Skip Navigation</a>
     <header id="mainHeader" class="main-header wo">
-        <nav id="mainNav" class="main-header__nav col-4-to-8">
-            {% assign pageURLsplit = page.url | split: '/' %}
-            {% capture pagePermalink %}/{{ pageURLsplit[1] }}/{% endcapture %}
-    
+        <nav id="mainNav" class="main-header__nav col-1-to-13">    
             {% for navItem in site.data.navigation %}
                 <a data-barba-update class="main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="{{ navItem.url }}">{{ navItem.title }}</a>
             {% endfor %}
+            <div class="main-header__nav--utility-nav">
+                <a class="main-header__nav__link--careers main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/careers/">Careers</a>
+                <a class="main-header__nav__link--login main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/">Login</a>
+            </div>
         </nav>
         <div class="main-header__logo-area col-1-to-7">
             <a href="/">
