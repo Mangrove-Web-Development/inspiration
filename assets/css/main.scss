@@ -66,7 +66,7 @@ $easing: cubic-bezier(0.83, 0, 0.17, 1);
 // fonts
 $fraktionMono: 'Fraktion Mono', 'Courier New', Courier, monospace;
 $fraktionSans: 'Fraktion Sans', sans-serif;
-$neueWorld: 'Neue World Semi Extended Ultralight', serif;
+$neueWorld: 'Neue World - Semi Extended Ultralight', 'Neue World', serif;
 
 
 // ————————————————————————————————————————— 
@@ -248,12 +248,12 @@ main {
 // typography
 // —————————————————————————————————————————
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     margin: 0;
     padding: 0;
     color: $blue;
@@ -293,33 +293,33 @@ p.small {
 
 // ————————————————————————————— headings
 
-h1,
-h2 {
-    font-size: 360%;
-    font-weight: 400;
-    margin-top: 40px;
-    margin-bottom: 10px;
+.h2 {
+    font-size: 600%;
+    line-height: 110%;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-h3 {
-    font-size: 270%;
-    margin-bottom: 10px;
+.h3 {
+    font-size: 450%;
+    line-height: 150%;
+    margin-bottom: 20px;
     margin-top: 40px;
 }
 
 .large,
-h4 {
+.h4 {
     font-size: 270%;
     line-height: 150%;
     /* or 40px */
     letter-spacing: 0.01em;
 }
 
-h5 {
+.h5 {
     font-size: 200%;
 }
 
-h6 {
+.h6 {
     font-size: 300%;
     margin-bottom: 32px;
 }
@@ -388,6 +388,7 @@ iframe {
             font-size: 800%;
             line-height: 110%;
             margin-bottom: 50px;
+            color: $blue;
         }
     }
 
@@ -534,7 +535,47 @@ iframe {
 // footer
 // —————————————————————————————————————————
 
-#footer {}
+.main-footer {
+    background-color: $navyLight;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .main-footer__logo {
+        img {
+            width: 13vw;
+        }
+    }
+
+    .main-footer__nav {
+        margin-bottom: 100px;
+        
+        h2 a {
+            color: $offWhite;
+            font-weight: bold;
+        }
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+
+    .main-footer__nav a,
+    .main-footer__small {
+        font-family: $fraktionSans;
+        font-size: 170%;
+        line-height: 200%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $grey;
+        text-decoration: none;
+
+        * {
+            text-decoration: none;
+        }
+    }
+}
 
 
 // —————————————————————————————————————————
