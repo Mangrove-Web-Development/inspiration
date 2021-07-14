@@ -269,6 +269,15 @@ a {
     font-family: $fraktionSans;
 }
 
+p, 
+li {
+    font-size: 200%;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 b,
 strong {
     font-weight: 600;
@@ -402,12 +411,20 @@ iframe {
 // —————————————————————————————————————————
 
 .button {
-    margin-top: 10px;
-    display: inline-block;
-    padding: 15px 30px;
-    text-decoration: none !important;
-    line-height: 1;
-    &:hover {}
+    @include background-image('/../assets/images/home-buttong-bg.svg');
+    margin-top: 75px;
+    font-family: $fraktionMono;
+    font-size: 230%;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    padding: 20px;
+    text-align: center;
 }
 
 .home-hero__content__button {
