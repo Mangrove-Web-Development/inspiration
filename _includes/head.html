@@ -50,8 +50,13 @@
                 <img src="/images/image.jpg" alt="Logo" />
             </a>
         </div>
-        <nav id="mainNav" class="main-header__nav">
-            <a class="{% if page.url == "/" %}active{% endif %} main-header__nav__link" href="/">Page</a>
+        <nav id="mainNav" class="main-header__nav col-4-to-8">
+            {% assign pageURLsplit = page.url | split: '/' %}
+            {% capture pagePermalink %}/{{ pageURLsplit[1] }}/{% endcapture %}
+    
+            {% for navItem in site.data.navigation %}
+                <a data-barba-update class="main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="{{ navItem.url }}">{{ navItem.title }}</a>
+            {% endfor %}
         </nav>
     </header>
     <div id="skipNavigation"></div>
