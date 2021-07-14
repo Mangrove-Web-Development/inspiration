@@ -68,6 +68,7 @@ $easing: cubic-bezier(0.83, 0, 0.17, 1);
 
 // fonts
 $fraktionMono: 'Fraktion Mono', 'Courier New', Courier, monospace;
+$fraktionSans: 'Fraktion Sans', sans-serif;
 
 
 // ————————————————————————————————————————— 
@@ -245,110 +246,113 @@ p .button {
 // typography
 // —————————————————————————————————————————
 
-.st {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin: 0;
-        padding: 0;
-    }
-
-    p,
-    li {
-        margin: 0;
-        padding: 0;
-    }
-
-    b,
-    strong {
-        font-weight: 600;
-    }
-
-    a {
-        text-decoration: underline;
-    }
-
-    p.small {
-        font-size: 140%;
-    }
-
-    // ————————————————————————————— headings
-
-    h1,
-    h2 {
-        font-size: 360%;
-        font-weight: 400;
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
-
-    h3 {
-        font-size: 270%;
-        margin-bottom: 10px;
-        margin-top: 40px;
-    }
-
-    h4 {
-        font-size: 200%;
-        margin-top: 20px;
-        margin-bottom: 2px;
-    }
-
-    h5 {
-        font-size: 200%;
-    }
-
-    h6 {
-        font-size: 300%;
-        margin-bottom: 32px;
-    }
-
-    // ————————————————————————————— lists
-
-    ul {
-        list-style-type: disc;
-    }
-
-    ul ul {
-        margin-top: 10px;
-        margin-bottom: 20px;
-        list-style-type: circle;
-    }
-
-    ul ul ul {
-        list-style-type: square;
-    }
-
-    ol {
-        list-style-type: decimal;
-    }
-
-    ol ol {
-        margin-top: 10px;
-        margin-bottom: 20px;
-        list-style-type: lower-alpha;
-    }
-
-    ol ol ol {
-        list-style-type: lower-roman;
-    }
-
-    ol ol,
-    ul ol {
-        list-style-type: lower-roman;
-    }
-
-    li li {
-        font-size: 100%;
-    }
-
-    iframe {
-        width: 100%;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
+
+p,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: underline;
+}
+
+p.small {
+    font-size: 140%;
+}
+
+// ————————————————————————————— headings
+
+h1,
+h2 {
+    font-size: 360%;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 270%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.large,
+h4 {
+    font-family: $fraktionSans;
+    font-size: 270%;
+    line-height: 150%;
+    /* or 40px */
+    letter-spacing: 0.01em;
+}
+
+h5 {
+    font-size: 200%;
+}
+
+h6 {
+    font-size: 300%;
+    margin-bottom: 32px;
+}
+
+// ————————————————————————————— lists
+
+ul {
+    list-style-type: disc;
+}
+
+ul ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: circle;
+}
+
+ul ul ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ol {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ol ol,
+ul ol {
+    list-style-type: lower-roman;
+}
+
+li li {
+    font-size: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+
 
 
 // ————————————————————————————————————————— 
