@@ -22,7 +22,7 @@ _array_structures:
     - label: Large Intro Paragraph
       icon: notes
       value:
-        _id: large_intro_paragraph # use file name w/ underscores
+        _id: lg_intro_paragraph # use file name w/ underscores
         large_intro_paragraph:
             # ———
     # Full Width Image

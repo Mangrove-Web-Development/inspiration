@@ -1,35 +1,16 @@
 <section class="team-section wo">
-    {% if include.block.add_intro %}
-    <div class="team-section__intro section-intro col-2-to-6">
-        <h2>{{ include.block.intro_heading}}</h2>
-        <p>{{ include.block.intro_text }}</p>
-    </div>
-    {% endif %}
-
-    <div class="team-section__accordion wo col-1-to-12">
-        <div class="team-section__accordion__header pv-small col-2-to-11">
-            <h3>{{ include.block.team_section_title }}</h3>
-            <!-- needs A11Y aria tags in a later phase -->
-            <button type="button" class="arrow-link arrow-link--down">View all</button>
-            <button type="button" class="arrow-link arrow-link--up">Close</button>
+    <h2 class="team-section__header col-1-to-12 pv-small">
+        {{ include.block.intro_heading }}
+    </h2>
+    <div class="team-section__container col-1-to-12 flex-wo">
+    {% for teamMember in include.block.team_member %}
+        <div class="team-section__container__team__member">
+            {% teamMember.image %}
+            <img aria-hidden="true" src="{{ teamMember.image }}" alt="">
+            {% endif %}
+            <h3>{{ teamMember.name }}</h3>
+            <h4>{{ teamMember.job_title }}</h4>
         </div>
-        <div class="team-section__accordion__team col-2-to-11 flex-wo">
-        {% for teamMember in include.block.team_member %}
-            <div class="team-section__accordion__team__member">
-                {% if teamMember.image %}
-                <img aria-hidden="true" src="{{ teamMember.image }}" alt="">
-                {% endif %}
-                <h4>{{ teamMember.name }}</h4>
-                <h5>{{ teamMember.job_title }}</h5>
-                {% if teamMember.bio_html %}
-                <button type="button" class="arrow-link arrow-link--plus">Read Bio</button>
-                <div class="team-section__accordion__team__member__bio" role="article">
-                    <button type="button" class="arrow-link arrow-link--close">Close Bio</button>
-                    {{ teamMember.bio_html }}
-                </div>
-                {% endif %}
-            </div>
-        {% endfor %}
-        </div>
+    {% endfor %}
     </div>
 </section>
