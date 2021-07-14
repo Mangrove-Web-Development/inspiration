@@ -32,8 +32,36 @@ $headerheight: 80px;
 $fullbrowserheight: calc(100vh - 80px);
 
 // color
-$black: #000;
-$white: #FBF9F2;
+$navyDarker: #030B16;
+$navy: #181D28;
+$navyLighter: #252F40;
+$navyLight: #40485B;
+$navyGrey: #65748C;
+//
+$blueDark: #003784;
+$blueDarker: #0053B6;
+$blue: #057ADC;
+$blueLighter:#00A7F1;
+$blueLight: #62CDFC;
+$bluePastel: #B3EBFF;
+//
+$greenDark: #00660C;
+$greenDarker: #009516;
+$green: #13C14A;
+$greenLighter:#00DB5D;
+$greenLight: #52E790;
+$greenPastel: #A2F3BE;
+// 
+$redDark: #870020;
+$redDarker: #BB0022;
+$red: #DF002E;
+$redLighter:#FC4254;
+$redLight: #FF738E;
+$redPastel: #FFB6CB;
+// 
+$offWhite: #EEEEF0;
+$grey: #CED0D7;
+$darkGrey: #ADB3BE;
 
 // easings
 $easing: cubic-bezier(0.83, 0, 0.17, 1);
