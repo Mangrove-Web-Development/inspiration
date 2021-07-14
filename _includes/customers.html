@@ -1,0 +1,15 @@
+<section class="customers-section wo pv-large">
+    <h2 class="customers-section__intro section-intro col-2-to-10">
+        {{ include.block.intro_heading}}
+    </h2>
+
+    <ul class="customers-section__logos-sect col-2-to-11 pv-medium">
+    {% for customer in include.block.customer_sections %}
+
+        <li>
+            <a href="{{ include.block.case_study_url }}">{{ include.block.customer_name }}</a>
+        </li>
+
+    {% endfor %}
+    </ul>
+</section>
