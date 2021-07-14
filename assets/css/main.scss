@@ -75,7 +75,7 @@ $fraktionMono: 'Fraktion Mono', 'Courier New', Courier, monospace;
 // ————————————————————————————————————————— 
 // @include background-image("image.jpg");
 @mixin background-image($url) {
-    background: $grey url($url) no-repeat center;
+    background: url($url) no-repeat center;
     background-size: cover;
 }
 
@@ -212,6 +212,32 @@ p .button {
         position: absolute;
         right: 25px;
         top: 17px;
+
+        a {
+            display: inline-block;
+            position: relative;
+
+            &:before {
+                content: '';
+                @include background-image('/../assets/images/careers-icon.svg');
+                position: absolute;
+            }
+        }
+
+        .main-header__nav__link--careers:before {
+            @include background-image('/../assets/images/careers-icon.svg');
+            height: 17px;
+            width: 18px;
+            left: -32px;
+            top: 1px;
+        }
+        .main-header__nav__link--login:before {
+            @include background-image('/../assets/images/login-icon.svg');
+            height: 13px;
+            width: 24px;
+            left: -34px;
+            top: 4px;
+        }
     }
 }
 
