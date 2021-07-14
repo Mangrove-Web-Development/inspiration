@@ -45,11 +45,6 @@
 <body id="bodyID" data-barba="wrapper">
     <a id="skipLink" href="#skipNavigation">Skip Navigation</a>
     <header id="mainHeader" class="main-header wo">
-        <div class="main-header__logo-area">
-            <a href="/">
-                <img src="/images/image.jpg" alt="Logo" />
-            </a>
-        </div>
         <nav id="mainNav" class="main-header__nav col-4-to-8">
             {% assign pageURLsplit = page.url | split: '/' %}
             {% capture pagePermalink %}/{{ pageURLsplit[1] }}/{% endcapture %}
@@ -58,5 +53,10 @@
                 <a data-barba-update class="main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="{{ navItem.url }}">{{ navItem.title }}</a>
             {% endfor %}
         </nav>
+        <div class="main-header__logo-area col-1-to-7">
+            <a href="/">
+                <img src="../assets/images/inspiration-white.svg" alt="Inspiration Logo">
+            </a>
+        </div>
     </header>
     <div id="skipNavigation"></div>
