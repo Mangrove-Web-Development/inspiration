@@ -1,9 +1,6 @@
 ---
 # MOB 2020 Main Stylesheet
-# last modified August 18, 2020
 ---
-
-// this file must start with front matter, like above, so jekyll knows to parse and do shit with it! :D
 
 // ————————————————————————————————————————— 
 // VARIABLES: for partials
@@ -69,6 +66,7 @@ $easing: cubic-bezier(0.83, 0, 0.17, 1);
 // fonts
 $fraktionMono: 'Fraktion Mono', 'Courier New', Courier, monospace;
 $fraktionSans: 'Fraktion Sans', sans-serif;
+$neueWorld: 'Neue World Semi Extended Ultralight', serif;
 
 
 // ————————————————————————————————————————— 
@@ -184,7 +182,7 @@ p .button {
     margin: 0 !important;
 
     .main-header__logo-area {
-        margin: 0 50px;
+        margin: 50px 50px 0 50px;
 
         img {
             max-width: 13vw;
@@ -242,6 +240,10 @@ p .button {
     }
 }
 
+main {
+    margin-top: 100px;
+}
+
 // ————————————————————————————————————————— 
 // typography
 // —————————————————————————————————————————
@@ -251,19 +253,20 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: $blue;
+    font-family: $neueWorld;
+}
+
 p,
-li {
+li,
+a {
     margin: 0;
     padding: 0;
     color: $offWhite;
     font-family: $fraktionSans;
-}
-
-p,
-li {
-    margin: 0;
-    padding: 0;
 }
 
 b,
@@ -365,6 +368,35 @@ iframe {
     background-color: $navy;
 }
 
+.home-hero {
+    position: static;
+    height: calc(100vh - 52px);
+
+    .home-hero__content {
+        margin: 0 80px;
+
+        h1 {
+            font-size: 800%;
+            line-height: 110%;
+            margin-bottom: 50px;
+        }
+    }
+
+    .home-hero__image {
+        position: absolute;
+        top: 52px; 
+        right: 0;
+        height: calc(100vh - 52px);
+        width: 50vw;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
 // ————————————————————————————————————————— 
 // buttons
 // —————————————————————————————————————————
@@ -376,6 +408,27 @@ iframe {
     text-decoration: none !important;
     line-height: 1;
     &:hover {}
+}
+
+.home-hero__content__button {
+    display: inline-block;
+    margin-top: 100px;
+    font-family: $neueWorld;
+    font-size: 400%;
+    line-height: 100%;
+    text-decoration: none;
+    position: relative;
+
+    &:before {
+        content: '';
+        @include background-image('/../assets/images/home-buttong-bg.svg');
+        display: block;
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        top: -97%;
+        left: -25%;
+    }
 }
 
 

@@ -38,7 +38,7 @@
 .wo-full {
     display: grid;
     grid-template-columns: repeat($column-count, 1fr);
-    gap: $column-margin + px $column-margin + px;
+    gap: 0 $column-margin + px;
     justify-items: stretch;
     align-items: start;
 }
