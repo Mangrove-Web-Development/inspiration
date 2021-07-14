@@ -308,6 +308,12 @@ p.small {
 
 // ————————————————————————————— headings
 
+.h1 {
+    color: $offWhite;
+    font-size: 1000%;
+    line-height: 120%;
+}
+
 .h2 {
     font-size: 600%;
     line-height: 110%;
@@ -580,6 +586,40 @@ iframe {
             background-size: 16px 9px;
         }
     }
+}
+
+// ————————————————————————————————————————— 
+// layers
+// —————————————————————————————————————————
+.cta {
+    border: 2px solid green;
+    border-radius: 200px;
+    overflow: visible;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        * {
+            text-align: center;
+    
+        }
+
+        > div {
+            background-color: $navy;
+            position: absolute;
+            bottom: -140px;
+            padding: 50px;
+            border-radius: 9999999px;
+
+            a {
+                margin: 0;
+            }
+        }
+    }
+
+
 }
 
 
