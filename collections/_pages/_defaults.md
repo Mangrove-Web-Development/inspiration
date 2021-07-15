@@ -28,7 +28,7 @@ _array_structures:
     # Full Width Image
     # ———
     - label: Full Width Image
-      icon: notes
+      icon: insert_photo
       value:
         _id: full_w_image # use file name w/ underscores
         full_w_image:
@@ -49,9 +49,9 @@ _array_structures:
     # Our Customers
     # ———
     - label: Customers
-      icon: notes
+      icon: crop_portrait
       value:
-        _id: customers
+        _id: customers # use file name w/ underscores
         intro_heading:
         customer_sections:
         - customer_name:
@@ -62,6 +62,6 @@ _array_structures:
     -label: Youtube Embed Code
      icon: movie
      value:
-     _id: youtube_embed_code_block
+     _id: youtube_embed_code_block # use file name w/ underscores
         youtube_embed_code_block:
 ---

@@ -2,7 +2,7 @@
 
 <main data-barba="container" data-barba-namespace="page">
     
-    {% for block in page.post_blocks %}
+    {% for block in page.page_blocks %}
         {% case block._id %}
             {% when 'investment_section' %}
                 {% include investment-section.html block=block %}
