@@ -40,9 +40,6 @@ _array_structures:
       value:
         _id: team # use file name w/ underscores
         intro_heading:
-        intro_text:
-        add_intro: false
-        team_section_title:
         team_member:
             - name:
               job_title:
