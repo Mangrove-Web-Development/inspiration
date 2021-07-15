@@ -59,6 +59,7 @@ $redPastel: #FFB6CB;
 $offWhite: #EEEEF0;
 $grey: #CED0D7;
 $darkGrey: #ADB3BE;
+$offBlack: #040B15;
 
 // easings
 $easing: cubic-bezier(0.83, 0, 0.17, 1);
@@ -135,6 +136,9 @@ checkbox,
     font-style: normal;
     line-height: 1;
     text-align: left;
+}
+.page-news{
+    background-color: $offBlack;
 }
 
 .pv {
