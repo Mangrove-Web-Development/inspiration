@@ -511,6 +511,20 @@ iframe {
     }
 }
 
+// ————————————————————————————————————————— 
+// input
+// —————————————————————————————————————————
+input{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid $offWhite;
+    margin: 0;
+    padding: 0;
+    font-size: 180%;
+    line-height: 1.2;
+    padding: 10px;
+}
+
 
 
 // ————————————————————————————————————————— 
