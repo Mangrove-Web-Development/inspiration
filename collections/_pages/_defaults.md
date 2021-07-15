@@ -24,7 +24,7 @@ _array_structures:
       value:
         _id: lg_intro_paragraph # use file name w/ underscores
         large_intro_paragraph:
-            # ———
+    # ———
     # Full Width Image
     # ———
     - label: Full Width Image
@@ -59,4 +59,9 @@ _array_structures:
     # ———
     # Video Embed
     # ———
+    -label: Youtube Embed Code
+     icon: movie
+     value:
+     _id: youtube_embed_code_block
+        youtube_embed_code_block:
 ---
