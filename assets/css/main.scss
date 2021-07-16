@@ -280,7 +280,7 @@ main {
 .h6 {
     margin: 0;
     padding: 0;
-    color: $blue;
+    color: $blueLighter;
     font-family: $neueWorld;
 }
 
@@ -502,7 +502,7 @@ iframe {
         .slick-next .slick-prev-icon,
         .slick-prev .slick-next-icon,
         .slick-prev .slick-prev-icon {
-            color: $red;
+            color: $green;
         }
 
         .slick-slide {
@@ -555,7 +555,7 @@ iframe {
 }
 
 .button--round {
-    @include background-image('/../assets/images/home-buttong-bg.svg');
+    @include background-image('/../assets/images/green-circle-button-bg.svg');
     margin-top: 75px;
     display: flex;
     justify-content: center;
@@ -568,12 +568,12 @@ iframe {
 }
 
 .button--line {
-    color: $redPastel;
+    color: $green;
 
     &:after {
         display: block;
         content: '';
-        background-image: url('/../assets/images/circle-red-light.svg');
+        background-image: url('/../assets/images/btn-line.svg');
         height: 2px;
         width: 120%;
         margin-top: 15px;
@@ -595,9 +595,9 @@ iframe {
         @include background-image('/../assets/images/home-buttong-bg.svg');
         display: block;
         position: absolute;
-        height: 130px;
-        width: 130px;
-        top: -107%;
+        height: 138px;
+        width: 138px;
+        top: -120%;
         left: -25%;
     }
 }
@@ -705,7 +705,7 @@ input{
         font-family: $neueWorld;
         font-size: 1200%;
         line-height: 1;
-        color: $green;
+        color: $blue;
         margin: 0;
     }
 
@@ -718,7 +718,7 @@ input{
 }   
 
 .cta {
-    border: 2px solid green;
+    border: 1px solid $blue;
     border-radius: 200px;
     overflow: visible;
 
