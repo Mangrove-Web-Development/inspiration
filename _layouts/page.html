@@ -2,40 +2,9 @@
 
 <main data-barba="container" data-barba-namespace="page">
 
-    <div class="page-header wo">
-        <h1 class="col-2-to-7 h1 editable">{{ page.title }}</h1>
-    </div>
+    {% include page-header-general.html %}
     
-    {% for block in page.page_blocks %}
-        {% case block._id %}
-            {% when 'investment_section' %}
-                {% include investment-section.html block=block %}
-            
-            {% when 'image' %}
-                {% include image.html block=block %}
 
-            {% when 'lg_paragraph' %}
-                {% include lg-paragraph.html block=block %}
-
-            {% when 'full_w_image' %}
-                {% include lg-full_w_image.html block=block %}
-                
-            {% when 'general_content' %}
-                {% include general-content.html block=block %}
-            
-            {% when 'team' %}
-                {% include team.html block=block %}
-
-            {% when 'customers' %}
-                {% include customers.html block=block %}
-
-            {% when 'youtube_embed' %}
-                {% include youtube-embed.html block=block %}             
-
-            {% else %}
-            <!-- else -->
-        {% endcase %}
-    {% endfor %}
 
 
 </main>
