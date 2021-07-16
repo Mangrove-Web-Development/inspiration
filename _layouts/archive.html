@@ -10,9 +10,7 @@
 	<div class="wo">
         <div class="col-8-to-10">
             <p class="editable">
-                {% for category in site.categories %}
-				{{ category_name }}
-				{% endfor %}
+				{{site.categories | capitalize | join: ', '}}
             </p>
         </div>
     </div>
