@@ -59,9 +59,9 @@ _array_structures:
     # ———
     # Video Embed
     # ———
-    -label: Youtube Embed Code
-     icon: movie
-     value:
-     _id: youtube_embed_code_block # use file name w/ underscores
-        youtube_embed_code_block:
+    - label: Youtube Embed Code
+      icon: movie
+      value:
+      _id: youtube_embed_code_block # use file name w/ underscores
+          youtube_embed_code_block:
 ---
