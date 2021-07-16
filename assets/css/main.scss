@@ -396,8 +396,8 @@ p.small {
     line-height: 150%;
     font-weight: 600;
     letter-spacing: 0.01em;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .general-content h5,
@@ -476,15 +476,15 @@ iframe {
     background-color: transparent;
     border: none;
     font-family: $fraktionSans;
-    font-size: 230%;
+    font-size: 200%;
     line-height: 100%;
     text-decoration: none;
     text-transform: uppercase;
     color: $bluePastel;
+    margin-bottom: 0;
 }
 
 .button--round {
-    @include background-image('/../assets/images/green-circle-button-bg.svg');
     margin-top: 75px;
     display: flex;
     justify-content: center;
@@ -493,8 +493,28 @@ iframe {
     width: 180px;
     padding: 30px;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1.5;
     color: $offWhite !important;
+
+    &:after {
+        content: '';
+        @include background-image('/../assets/images/green-circle-button-bg.svg');
+        height: 180px;
+        width: 180px;
+        padding: 30px;
+        position: absolute;
+        transition: height 1s $easing, width 1s $easing;
+    }
+
+    &:hover:after {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .button--line {
@@ -636,6 +656,8 @@ iframe {
 
     > .button {
         margin-top: -60px;
+        position: relative;
+        z-index: 12;
     }
 
     .home-latest-news__article {
@@ -644,6 +666,7 @@ iframe {
         padding: 40px;
         overflow: hidden;
         text-decoration: none;
+        margin-top: -20px;
 
         .h5 {
             padding-bottom: 60px;
