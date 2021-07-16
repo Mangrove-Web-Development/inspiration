@@ -692,6 +692,26 @@ iframe {
     }
 }
 
+.general-content {
+    h2, h3 {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50px;
+            height: 10vw;
+            width: 1px;
+            background-color: $green;
+        }
+    }
+
+    ul li::marker {
+        color: $redLight;
+    }
+}
+
 
 // ————————————————————————————————————————— 
 // news page / archive tempate
