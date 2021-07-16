@@ -175,5 +175,20 @@ $(document).ready(function () {
 
 
 
+    // —————————————————————————————————————————————————————
+    // home page testimonial slider
+    // —————————————————————————————————————————————————————
+    $(document).ready(function() {
+        $('.home-testimonials__slider').slick({
+            arrowsPlacement: 'beforeSlides',
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+        });
+    });
+
+
+
 
 }); // end document.ready

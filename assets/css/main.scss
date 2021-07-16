@@ -125,6 +125,11 @@ $neueWorld: 'Neue World', serif;
 // core styles & classes
 // ————————————————————————————————————————— 
 
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body,
 input,
 textarea,
@@ -281,7 +286,8 @@ main {
 
 p,
 li,
-a {
+a,
+blockquote {
     margin: 0;
     padding: 0;
     color: $offWhite;
@@ -289,7 +295,8 @@ a {
 }
 
 p, 
-li {
+li,
+blockquote {
     font-size: 200%;
     line-height: 150%;
     letter-spacing: 0.01em;
@@ -332,19 +339,21 @@ p.small {
     margin-top: 40px;
 }
 
-.large,
 .h4 {
+    font-family: $fraktionSans;
     font-size: 270%;
     line-height: 150%;
-    /* or 40px */
+    font-weight: 600;
     letter-spacing: 0.01em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
+.large,
 .h5 {
     font-family: $fraktionSans;
     color: $offWhite;
-    font-size: 320%;
-    font-weight: 600;
+    font-size: 270%;
     line-height: 150%;
     letter-spacing: 0.01em;
     margin-top: 30px;
@@ -449,6 +458,68 @@ iframe {
     }
 }
 
+.home-testimonials {
+    .home-testimonials__slider {
+        margin-left: 50px;
+
+        h3, h4 {
+            margin: 0;
+        }
+
+        img {
+            height: 160px;
+            width: 130px;
+            border-radius: 999999px;
+            margin-bottom: 30px;
+        }
+
+        blockquote:before {
+            content: '“';
+            margin-left: -0.3em;
+        }
+        blockquote:after {
+            content: '”';
+        }
+
+        button.slick-arrow {
+            position: absolute;
+            top: -60px;
+            right: 0;
+            left: auto;
+
+            &.slick-prev {
+                right: 30vw;
+            }
+
+            &.slick-next {
+                right: 20vw;
+            }
+        }
+
+        
+
+        .slick-next .slick-next-icon,
+        .slick-next .slick-prev-icon,
+        .slick-prev .slick-next-icon,
+        .slick-prev .slick-prev-icon {
+            color: $red;
+        }
+
+        .slick-slide {
+
+            >div {
+                width: calc(33vw - 35px);
+
+                >div {
+                    background-color: $navyDarker;
+                    padding: 50px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
+
 .home-latest-news {
     overflow: visible;
 
@@ -507,7 +578,7 @@ iframe {
         position: absolute;
         height: 130px;
         width: 130px;
-        top: -97%;
+        top: -107%;
         left: -25%;
     }
 }
@@ -610,6 +681,23 @@ input{
 // ————————————————————————————————————————— 
 // layers
 // —————————————————————————————————————————
+.home-intro__stat {
+    h3 {
+        font-family: $neueWorld;
+        font-size: 1200%;
+        line-height: 1;
+        color: $green;
+        margin: 0;
+    }
+
+    p {
+        font-family: $neueWorld;
+        color: $offWhite;
+        font-size: 500%;
+        line-height: 1;
+    }
+}   
+
 .cta {
     border: 2px solid green;
     border-radius: 200px;
