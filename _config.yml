@@ -79,6 +79,7 @@ defaults:
   - scope:
       path: ""
       type: "pages"
+      label: "pages collection"
     values:
       layout: "page"
   - scope:
