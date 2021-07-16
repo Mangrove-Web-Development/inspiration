@@ -9,7 +9,7 @@ title: News
 	<article class="col-1-to-12">
 		{{ post.featured-image }}
 		<div class="news-feed--grid">
-			<p>{{ post.date }}</p>
+			<p>{{ post.date | date_to_string }}}}</p>
 			<!-- loop through post categories -->
 			<div>
 				{% for category in post.categories %}
