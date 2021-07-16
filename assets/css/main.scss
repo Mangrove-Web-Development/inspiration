@@ -712,6 +712,20 @@ iframe {
     }
 }
 
+.full-w-image {
+    >div {
+        border-radius: 50px;
+        overflow: hidden;
+        max-height: 90vh;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 
 // ————————————————————————————————————————— 
 // news page / archive tempate
