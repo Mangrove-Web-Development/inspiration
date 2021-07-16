@@ -531,9 +531,12 @@ iframe {
         background-color: $navyLight;
         border-radius: 50px;
         padding: 40px;
+        overflow: hidden;
 
         .h5 {
             padding-bottom: 60px;
+            font-size: 320%;
+            font-weight: 600;
         }
     }
 }
@@ -560,6 +563,19 @@ iframe {
     width: 180px;
     padding: 20px;
     text-align: center;
+}
+
+.button--line {
+    color: $redLighter;
+
+    &:after {
+        display: block;
+        content: '';
+        background-image: url('/../assets/images/circle-red-light.svg');
+        height: 2px;
+        width: 120%;
+        margin-top: 15px;
+    }
 }
 
 .home-hero__content__button {
