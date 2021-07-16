@@ -220,6 +220,7 @@ p .button {
         padding: 17px 25px;
 
         a {
+            display: inline-block;
             font-family: $fraktionMono;
             font-size: 170%;
             font-weight: 400;
@@ -228,6 +229,34 @@ p .button {
             color: $offWhite;
             text-transform: uppercase;
             margin: 0 25px;
+            position: relative;
+
+            &.active:before {
+                content: '';
+                background-image: url('/../assets/images/active-52px-left.svg');
+                width: 20px;
+                height: 52px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: 21px 57px;
+                position: absolute;
+                top: -18px;
+                left: -20px;
+            }
+
+            &.active:after {
+                content: '';
+                background-image: url('/../assets/images/active-52px-right.svg');
+                width: 20px;
+                height: 52px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: 21px 57px;
+                position: absolute;
+                top: -18px;
+                right: -20px;
+                background-position: right top;
+            }
         }
     }
 
