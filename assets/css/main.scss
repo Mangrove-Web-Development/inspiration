@@ -542,6 +542,7 @@ iframe {
 
     .home-hero__content {
         margin: 0 80px;
+        align-self: center;
 
         h1 {
             font-family: $neueWorld;
@@ -549,6 +550,7 @@ iframe {
             line-height: 110%;
             margin-bottom: 50px;
             color: $blue;
+            margin-top: -50px;
         }
     }
 
