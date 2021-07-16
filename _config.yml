@@ -64,6 +64,7 @@ collections:
     output: true
     permalink: /:categories/:title/
   pages:
+    label: "pages collection"
     output: true
     _hide_content: true
   top-level-pages:
@@ -78,7 +79,7 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "pages collection"
+      type: "pages"
     values:
       layout: "page"
   - scope:
