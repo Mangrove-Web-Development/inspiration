@@ -366,7 +366,7 @@ p.small {
     font-size: 600%;
     line-height: 110%;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding: 0;
     color: $blueLighter;
     font-family: $neueWorld;
@@ -467,6 +467,7 @@ iframe {
 // —————————————————————————————————————————
 
 .button {
+    display: block;
     background-color: transparent;
     border: none;
     font-family: $fraktionSans;
@@ -789,6 +790,11 @@ iframe {
     }
 }
 
+.page-cta {
+    .button {
+        margin-top: 50px;
+    }
+}
 
 // ————————————————————————————————————————— 
 // news page / archive tempate
