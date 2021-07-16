@@ -2,7 +2,7 @@
 layout: post
 title:
 date:
-_image: 
+featured_image: 
 categories: 
   - uncategorized
 ---
