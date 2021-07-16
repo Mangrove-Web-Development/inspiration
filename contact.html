@@ -10,7 +10,7 @@ layout: null
         <h1 class="col-2-to-7 h1 editable">{{ page.title }}</h1>
 
         <div class="col-1-to-13 wo pv200 page-header__intro">
-            <h2 class="h2 col-2-to-10 editable">Move to the inside lane with Inspiration.</h2>
+            <h2 class="h2 col-2-to-12 editable">Move to the inside lane with Inspiration.</h2>
             <div class="editable col-2-to-6">
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
@@ -26,9 +26,41 @@ layout: null
                 </p>
             </div>
         </div>
-
     </section>
 
+    <section class="contact-form wo">
+        <form method="post" action="/message-sent/" class="wo pv100 col-2-to-12">
+            <h2 class="h2 editable col-2-to-12">Send us a message.</h2>
+
+            <div class="col-3-to-11">
+                <label>
+                    <span class="label">Your Name</span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+    
+            <div class="col-3-to-11">
+                <label>
+                    <span class="label">Your Email Address</span>
+                    <input type="text" name="email">
+                </label>
+            </div>
+    
+            <div class="col-3-to-11">
+                <label>
+                    <span class="label">Your Message</span>
+                    <textarea name="message" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. ."></textarea>
+                </label>
+            </div>
+    
+            <input type="hidden" name="_to" value="support@manoverboard.com">
+            <input type="text" name="_gotcha" style="display: none;">
+    
+            <div class="col-3-to-11 center">
+                <button class="button" type="submit">Submit Message</button>
+            </div>
+        </form>  
+    </section>
 
 </main>
 
