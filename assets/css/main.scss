@@ -192,6 +192,11 @@ p .button {
     margin-bottom: 100px;
 }
 
+.pv200-p {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .pv {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -757,22 +762,47 @@ iframe {
 }
 
 .general-content {
-    h2, h3 {
-        position: relative;
+    &:not(.general-content--2-col) {
+        h2, h3 {
+            position: relative;
 
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -50px;
-            height: 10vw;
-            width: 1px;
-            background-color: $green;
+            &:before  {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -50px;
+                height: 10vw;
+                width: 1px;
+                background-color: $green;
+            }
         }
     }
 
     ul li::marker {
-        color: $redLight;
+        color: $navyGrey;
+    }
+
+    &.general-content--2-col {
+        .col-2-to-7 {
+            margin-right: 50px;
+            position: relative;
+
+            &:after {
+                content: '';
+                width: 1px;
+                height: 100%;
+                display: block;
+                background-color: $redDark;
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+            }
+        }
+
+        .col-7-to-12 {
+            margin-left: 50px;
+        }
     }
 }
 
@@ -793,6 +823,18 @@ iframe {
 .page-cta {
     .button {
         margin-top: 50px;
+    }
+}
+
+.logo-section {
+    background-color: $navyDarker;
+
+    .logo-section__logos {
+        margin-top: 50px;
+        img {
+            max-width: 200px;
+            margin: 20px;
+        }
     }
 }
 
