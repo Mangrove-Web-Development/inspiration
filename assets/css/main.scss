@@ -440,7 +440,7 @@ iframe {
     line-height: 100%;
     text-decoration: none;
     text-transform: uppercase;
-    color: $greenLight;
+    color: $bluePastel;
 }
 
 .button--round {
@@ -458,7 +458,7 @@ iframe {
 }
 
 .button--line {
-    color: $greenLight;
+    color: $grey;
 
     &:after {
         display: block;
@@ -508,6 +508,7 @@ iframe {
             font-size: 800%;
             line-height: 110%;
             margin-bottom: 50px;
+            color: $blue;
         }
     }
 
@@ -615,7 +616,7 @@ iframe {
 // —————————————————————————————————————————
 .contact-form {
     form {
-        border: 2px dotted $blueDarker;
+        border: 2px dotted $greenDark;
         padding-top: 7%;
         padding-bottom: 7%;
 
