@@ -64,6 +64,7 @@ collections:
     output: true
     permalink: /:categories/:title/
   pages:
+    label: pages_collection
     output: true
     _hide_content: true
   top-level-pages:
