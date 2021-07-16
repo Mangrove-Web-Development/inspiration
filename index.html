@@ -118,24 +118,24 @@ layout: null
             Get up to speed on our latest news.
         </h2>
         <a class="button button--round col-9-to-13" href="/news/">All news</a>
-        <article class="col-1-to-5">
+        <a href="{{ post.url }}" class="home-latest-news__article col-1-to-5">
             <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
             <!-- loop through post categories -->
             <h3 class="h5">{{ post.title }}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h3>
-            <a class="button button--line" href="{{ post.url }}">Read article</a>
-        </article>
-        <article class="col-5-to-9">
+            <p class="button button--line" aria-hidden="true">Read article</p>
+        </a>
+        <a href="{{ post.url }}" class="home-latest-news__article col-5-to-9">
             <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
             <!-- loop through post categories -->
             <h3 class="h5">{{ post.title }}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h3>
-            <a class="button button--line" href="{{ post.url }}">Read article</a>
-        </article>
-        <article class="col-9-to-13">
+            <p class="button button--line" aria-hidden="true">Read article</p>
+        </a>
+        <a href="{{ post.url }}" class="home-latest-news__article col-9-to-13">
             <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
             <!-- loop through post categories -->
             <h3 class="h5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. {{ post.title }}</h3>
-            <a class="button button--line" href="{{ post.url }}">Read article</a>
-        </article>
+            <p class="button button--line" aria-hidden="true">Read article</p>
+        </a>
     </section>
 
     <section class="cta wo pv200 white">

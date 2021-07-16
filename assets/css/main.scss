@@ -523,15 +523,16 @@ iframe {
 .home-latest-news {
     overflow: visible;
 
-    .button {
+    > .button {
         margin-top: -60px;
     }
 
-    article {
+    .home-latest-news__article {
         background-color: $navyLight;
         border-radius: 50px;
         padding: 40px;
         overflow: hidden;
+        text-decoration: none;
 
         .h5 {
             padding-bottom: 60px;
@@ -561,12 +562,13 @@ iframe {
     align-items: center;
     height: 180px;
     width: 180px;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    line-height: 1.6;
 }
 
 .button--line {
-    color: $redLighter;
+    color: $redPastel;
 
     &:after {
         display: block;
@@ -575,6 +577,7 @@ iframe {
         height: 2px;
         width: 120%;
         margin-top: 15px;
+        cursor: default;
     }
 }
 
