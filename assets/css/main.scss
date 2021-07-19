@@ -767,6 +767,8 @@ iframe {
 }
 
 .home-intro {
+    overflow: visible;
+    
     >.button:before {
         content: '';
         height: 80px;
@@ -796,12 +798,12 @@ iframe {
         &:nth-child(4):after {
             content: '';
             @include background-image('/../assets/images/stats-line-decoration.svg');
-            height: 80px;
-            width: 80vw;
+            height: 181px;
+            width: 1234px;
             display: block;
             position: absolute;
             margin-top: 19px;
-            margin-left: 100px;
+            margin-left: 89px;
         }
     } 
 }
