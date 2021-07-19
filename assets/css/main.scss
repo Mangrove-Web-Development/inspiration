@@ -933,6 +933,27 @@ iframe {
     .team-section__container{
         display: grid;
         grid-template-columns: 30% 30% 30%;
+        grid-row-gap: 120px;
+        justify-content: space-between;
+        text-align: center;
+
+        .team-section__container__team__member{
+            img{
+                height: auto;
+                width: 335px;
+                border-radius: 290px;
+                aspect-ratio: 3 / 4;
+            }
+            h3.h4{
+                color: $blueLight;
+                margin-top: 40px;
+                text-align: center;
+            }
+            h4.h5{
+                margin-top: 0px;
+                text-align: center;
+            }
+        }
     }
 }
 
