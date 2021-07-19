@@ -9,12 +9,12 @@ title: News
 	<article class="col-1-to-12">
 		{{ post.featured-image }}
 		<div class="news-feed--grid">
-			<p>{{ post.date | date_to_string | upcase }}}}</p>
+			<p>{{ post.date | date_to_string | upcase }}</p>
 			<!-- loop through post categories -->
 			<div>
 				{% for category in post.categories %}
-					<a href="{{ site.url}}/{{category}}">
-						{{ category }}
+					<a href="/{{category[0]}}">
+						{{ category[0] }}
 					</a>
 				  {% endfor %}
 			</div>
