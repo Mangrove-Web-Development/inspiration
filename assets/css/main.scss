@@ -792,6 +792,17 @@ iframe {
             font-size: 500%;
             line-height: 1;
         }
+
+        &:nth-child(4):after {
+            content: '';
+            @include background-image('/../assets/images/stats-line-decoration.svg');
+            height: 80px;
+            width: 80vw;
+            display: block;
+            position: absolute;
+            margin-top: 19px;
+            margin-left: 100px;
+        }
     } 
 }
   
