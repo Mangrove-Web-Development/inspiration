@@ -910,10 +910,22 @@ iframe {
 }
 
 .customers-section{
-    background-color: $darkGrey;
+    background-color: $navyGrey;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 135px;
+    padding-bottom: 135px;
 
+    .customers-section__list{
+        list-style-type: none;
+        border-left: 1px dashed $red;
+    }
     h2{
+        color: $bluePastel;
+    }
+    li{
         color: $offWhite;
+        text-decoration: none;
     }
 }
 
