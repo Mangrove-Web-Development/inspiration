@@ -13,8 +13,8 @@ title: News
 			<!-- loop through post categories -->
 			<div>
 				{% for category in post.categories %}
-					<a href="/{{category[0]}}">
-						{{ category[0] }}
+					<a href="/{{category | slugify: "latin"}}">
+						{{ category }}
 					</a>
 				  {% endfor %}
 			</div>
