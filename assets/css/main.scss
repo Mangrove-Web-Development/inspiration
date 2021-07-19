@@ -468,6 +468,10 @@ iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
 }
+.youtube-embed__embed{
+    padding: $column-margin+px;
+    border: dashed 1px $blueDarker;
+}
 
 // ————————————————————————————————————————— 
 // buttons
@@ -902,6 +906,21 @@ iframe {
 .page-cta {
     .button {
         margin-top: 50px;
+    }
+}
+
+.customers-section{
+    background-color: $darkGrey;
+
+    h2{
+        color: $offWhite;
+    }
+}
+
+.team-section{
+    .team-section__container{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
     }
 }
 
