@@ -990,16 +990,26 @@ iframe {
 
     .news-feed--grid {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 30% 30% 30%;
+        grid-template-areas:
+            "date category"
+            "title title"
+            "button .";
         margin: 50px;
 
-        >p, >div{
-            width: 50%;
+        p{
+            grid-area: date;
         }
-
+        div{
+            grid-area: category;
+        }
         .button.button--line{
+            grid-area: button;
             color: $green;
+            width: 70%;
+        }
+        .button.button--line::after{
+            left: -300px;
+            position: relative;
         }
     }
 }
