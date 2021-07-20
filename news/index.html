@@ -3,11 +3,11 @@ layout: archive
 title: News
 ---
 
-<section class="news-feed wo">
+<section class="news-feed wo pv200">
 	<!-- This loops through the paginated posts -->
 	{% for post in paginator.posts %}
-	<article class="col-1-to-12">
-		{{ post.featured-image }}
+	<article class="col-1-to-13">
+		<img src="{{ post.featured_image }}" alt="">
 		<div class="news-feed--grid">
 			<p>{{ post.date | date_to_string | upcase }}</p>
 			<!-- loop through post categories -->
@@ -18,7 +18,7 @@ title: News
 					</a>
 				  {% endfor %}
 			</div>
-			<h2>{{ post.title }}</h2>
+			<h2 class="h2">{{ post.title }}</h2>
 			<a href="{{ post.url }}">read article</a>
 		</div>
 	</article>

@@ -974,10 +974,25 @@ iframe {
 // —————————————————————————————————————————
 
 .news-feed {
+
+    article{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 100px;
+
+        img{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 6 / 4;
+            border-radius: 50px;
+        }
+    }
+
     .news-feed--grid {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 30% 30% 30%;
+        margin: 50px;
 
         >p, >div{
             width: 50%;
