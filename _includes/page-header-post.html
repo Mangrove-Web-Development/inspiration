@@ -1,0 +1,9 @@
+<section class="page-header wo">
+    <p class="eyebrow col-4-to-6">{{ post.date | date: "%b %e %Y" }}</p>
+    {% for category in post.categories %}
+		<a href="/{{category | slugify: "latin"}}" class="eyebrow col-7-to-8">
+			{{ category }}
+		</a>
+	{% endfor %}
+    <h1 class="h1 col-4-to-10">{{ post.title }}</h1>
+</section>
