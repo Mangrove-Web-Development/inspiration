@@ -22,7 +22,7 @@ $column-margin: 20;
 @import "layout";
 
 
-// ————————————————————————————————————————— 
+// ————————————————————————————————————————— c
 // VARIABLES: for base
 // ————————————————————————————————————————— 
 $headerheight: 52px;
@@ -532,7 +532,7 @@ iframe {
 }
 
 .button--line {
-    color: $grey;
+    color: $greenLighter;
 
     &:after {
         display: block;
@@ -944,7 +944,7 @@ iframe {
 
     .customers-section__list{
         list-style-type: none;
-        border-left: 1px dashed $red;
+        border-left: 1px solid $red;
     }
     h2{
         color: $bluePastel;
@@ -1038,7 +1038,6 @@ iframe {
         }
         .button.button--line{
             grid-area: button;
-            color: $green;
             width: 70%;
         }
         .button.button--line::after{
