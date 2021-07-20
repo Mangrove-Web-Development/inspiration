@@ -973,6 +973,14 @@ iframe {
 // news page / archive tempate
 // —————————————————————————————————————————
 
+.category-container{
+    margin-top: 60px;
+    list-style-type: none;
+    a{
+        color: $green;
+    }
+}
+
 .news-feed {
 
     article{
