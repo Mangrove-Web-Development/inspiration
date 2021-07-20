@@ -150,6 +150,11 @@ checkbox,
     .button--round{
         margin: auto;
     }
+    
+    .general-content:not(.general-content--2-col) h2::before, 
+    .general-content:not(.general-content--2-col) h3::before {
+      display: none;
+    }
 }
 
 .pv {
