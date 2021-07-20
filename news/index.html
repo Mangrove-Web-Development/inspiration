@@ -9,7 +9,7 @@ title: News
 	<article class="col-1-to-13">
 		<img src="{{ post.featured_image }}" alt="">
 		<div class="news-feed--grid">
-			<p class="eyebrow">{{ post.date | date: %b %e %Y }}</p>
+			<p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
 			<!-- {{ post.date | date_to_string | upcase }} -->
 			<!-- loop through post categories -->
 			<div>
