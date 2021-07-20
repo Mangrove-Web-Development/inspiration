@@ -9,17 +9,18 @@ title: News
 	<article class="col-1-to-13">
 		<img src="{{ post.featured_image }}" alt="">
 		<div class="news-feed--grid">
-			<p>{{ post.date | date_to_string | upcase }}</p>
+			<p class="eyebrow">{{ post.date | date: %b %e %Y }}</p>
+			<!-- {{ post.date | date_to_string | upcase }} -->
 			<!-- loop through post categories -->
 			<div>
 				{% for category in post.categories %}
-					<a href="/{{category | slugify: "latin"}}">
+					<a href="/{{category | slugify: "latin"}}" class="eyebrow">
 						{{ category }}
 					</a>
 				  {% endfor %}
 			</div>
 			<h2 class="h2">{{ post.title }}</h2>
-			<a href="{{ post.url }}">read article</a>
+			<a href="{{ post.url }}" class="button button--line">read article</a>
 		</div>
 	</article>
 	{% endfor %}
