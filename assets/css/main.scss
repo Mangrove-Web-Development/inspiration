@@ -357,6 +357,8 @@ strong {
 
 a {
     text-decoration: underline;
+    text-decoration-thickness: .05em;
+    text-underline-offset: 7px;
 }
 
 p.small {
@@ -1002,10 +1004,8 @@ iframe {
 .category-container{
     margin-top: 60px;
     list-style-type: none;
-    a{
+    a {
         color: $green;
-        text-decoration-thickness: .05em;
-        text-underline-offset: 1.5px;
     }
 }
 
