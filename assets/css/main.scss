@@ -528,7 +528,7 @@ iframe {
 }
 
 .button--line {
-    color: $grey;
+    color: $greenDarker;
 
     &:after {
         display: block;
@@ -1016,7 +1016,6 @@ iframe {
         }
         .button.button--line{
             grid-area: button;
-            color: $green;
             width: 70%;
         }
         .button.button--line::after{
