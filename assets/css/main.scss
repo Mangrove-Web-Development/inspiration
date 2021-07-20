@@ -1048,6 +1048,10 @@ iframe {
         .button.button--line{
             grid-area: button;
             width: 70%;
+            a{
+                color: $green;
+                text-decoration: none;
+            }
         }
         .button.button--line::after{
             left: -300px;
