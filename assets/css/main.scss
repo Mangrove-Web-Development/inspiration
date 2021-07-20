@@ -1004,6 +1004,8 @@ iframe {
     list-style-type: none;
     a{
         color: $green;
+        text-decoration-thickness: .05em;
+        text-underline-offset: 1.5px;
     }
 }
 
