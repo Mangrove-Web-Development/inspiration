@@ -766,8 +766,12 @@ iframe {
         height: $fullbrowserheight;
         align-content: center;
 
-        h1 {
+        > div {
+            background-color: $navy;
             margin-top: -100px !important;
+        }
+
+        h1 {
             margin-bottom: 20px;
         }
 
@@ -778,7 +782,7 @@ iframe {
             position: absolute;
             z-index: -1;
             top: -25%;
-            right: 0;
+            right: 10%;
         }
     }
 
