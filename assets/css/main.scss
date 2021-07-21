@@ -1171,16 +1171,48 @@ iframe {
             align-items: flex-start;
             justify-content: flex-start;
         }
+
+        a {
+            text-decoration: none;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 7px;
+            transition: all 300ms $easing;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
     
     .main-footer__social-media {
       display: flex;
       flex-direction: column;
       justify-content: end;
+      align-items: start;
       height: 100%;
       
       a {
         margin-top: 30px;
+        transition: all 300ms $easing;
+        border: 2px dotted transparent;
+        border-radius: 99999px;
+        padding: 5px;
+        margin-left: -5px;
+
+        &:hover {
+            border: 2px dotted $bluePastel;
+            padding: 10px;
+            margin-left: -10px;
+            margin-top: 20px;
+
+            & img {
+                transform: scale(0.9);
+            }
+        }
+
+        img {
+            transition: all 300ms $easing;
+        }
       }
     }
 
@@ -1196,6 +1228,17 @@ iframe {
 
         * {
             text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 7px;
+            transition: all 300ms $easing;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
