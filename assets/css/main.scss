@@ -250,7 +250,7 @@ p .button {
             position: relative;
             transition: all 300ms $easing;
 
-            &:before {
+            &:not(.main-header__nav__link--careers):not(.main-header__nav__link--login):before {
                 content: '';
                 background-image: url('/../assets/images/active-52px-left.svg');
                 width: 20px;
@@ -265,7 +265,7 @@ p .button {
                 opacity: 0;
             }
 
-            &:after {
+            &:not(.main-header__nav__link--careers):not(.main-header__nav__link--login):after {
                 content: '';
                 background-image: url('/../assets/images/active-52px-right.svg');
                 width: 20px;
@@ -560,6 +560,7 @@ iframe {
 
 .button--line {
     color: $greenLighter;
+    transition: all 600ms $easing;
 
     &:after {
         display: block;
@@ -569,6 +570,15 @@ iframe {
         width: 120%;
         margin-top: 15px;
         cursor: default;
+        transition: all 600ms $easing;
+    }
+
+    &:hover {
+        padding-left: 20px;
+
+        &:after {
+            margin-left: -20px;
+        }
     }
 }
 
