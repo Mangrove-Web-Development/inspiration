@@ -285,7 +285,7 @@ p .button {
             &.active:before,
             &:hover:after,
             &.active:after {
-                opacity: 1;
+                opacity: 1 !important;
             }
 
             &:hover {
