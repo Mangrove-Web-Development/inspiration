@@ -532,11 +532,11 @@ iframe {
     }
 
     &:hover {
-        color: $greenPastel !important;
+        color: $bluePastel !important;
         border: 1px solid $green;
 
         &:after {
-            transform: scale(0.8);
+            transform: scale(1.2);
         }
     }
 
@@ -564,6 +564,7 @@ iframe {
     line-height: 100%;
     text-decoration: none;
     position: relative;
+    transition: all 600ms $easing;
 
     &:before {
         content: '';
@@ -589,9 +590,13 @@ iframe {
         transition: all 600ms $easing;
     }
 
-    &:hover:after {
-        border: 1px solid $green;
-        transform: scale(0.8);
+    &:hover {
+        color: $bluePastel !important;
+
+        &:after {
+            border: 1px solid $green;
+            transform: scale(0.8);
+        }
     }
 }
 
@@ -663,7 +668,9 @@ iframe {
 
             &.slick-prev {
                 right: calc(20vw + 50px + 30px);
+                transition: all 300ms $easing;
                 >span {
+                    transition: all 300ms $easing;
                     @include background-image('/../assets/images/left-arrow.svg');
                     height: 50px;
                     width: 50px;
@@ -675,7 +682,9 @@ iframe {
 
             &.slick-next {
                 right: calc( 20vw );
+                transition: all 300ms $easing;
                 >span {
+                    transition: all 300ms $easing;
                     @include background-image('/../assets/images/right-arrow.svg');
                     height: 50px;
                     width: 50px;
@@ -736,11 +745,22 @@ iframe {
         overflow: hidden;
         text-decoration: none;
         margin-top: -20px;
+        transition: all 600ms $easing;
+        border: 1px solid transparent;
 
         .h5 {
             padding-bottom: 60px;
             font-size: 320%;
             font-weight: 600;
+            transition: all 600ms $easing;
+        }
+
+        &:hover {
+            border: 1px solid $navyGrey;
+
+            .h5 {
+                color: $bluePastel;
+            }
         }
     }
 }
