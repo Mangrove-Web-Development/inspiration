@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Test July 16th
-date: 2021-07-16 00:00:00
-featured-image:
+title: Testing Post July 21st
+date: 2021-07-21 00:00:00
+featured_image: /uploads/temp-3.jpg
 categories:
   - Testing
 ---
