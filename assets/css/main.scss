@@ -517,6 +517,9 @@ iframe {
     text-align: center;
     line-height: 1.5;
     color: $offWhite !important;
+    transition: all 600ms $easing;
+    border: 1px solid transparent;
+    border-radius: 999999px;
 
     &:after {
         content: '';
@@ -525,18 +528,18 @@ iframe {
         width: 180px;
         padding: 30px;
         position: absolute;
-        transition: height 1s $easing, width 1s $easing;
+        transition: all 600ms $easing;
     }
 
-    &:hover:after {
-        height: 200px;
-        width: 200px;
-    }
-}
+    &:hover {
+        color: $greenPastel !important;
+        border: 1px solid $green;
 
-@keyframes spin {
-    0% { transform: rotate(360deg); }
-    100% { transform: rotate(0deg); }
+        &:after {
+            transform: scale(0.8);
+        }
+    }
+
 }
 
 .button--line {
@@ -571,6 +574,24 @@ iframe {
         width: 138px;
         top: -120%;
         left: -25%;
+    }
+
+    &:after {
+        content: '';
+        border: 1px solid transparent;
+        border-radius: 9999px;
+        display: block;
+        position: absolute;
+        height: 138px;
+        width: 138px;
+        top: -120%;
+        left: -25%;
+        transition: all 600ms $easing;
+    }
+
+    &:hover:after {
+        border: 1px solid $green;
+        transform: scale(0.8);
     }
 }
 
