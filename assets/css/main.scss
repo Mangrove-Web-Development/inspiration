@@ -261,12 +261,12 @@ p .button {
                 content: '';
                 background-image: url('/../assets/images/active-52px-left.svg');
                 width: 20px;
-                height: 52px;
+                height: 54px;
                 display: inline-block;
                 background-repeat: no-repeat;
                 background-size: 21px 57px;
                 position: absolute;
-                top: -18px;
+                top: -20px;
                 left: -20px;
                 transition: all 300ms $easing;
                 opacity: 0;
@@ -276,12 +276,12 @@ p .button {
                 content: '';
                 background-image: url('/../assets/images/active-52px-right.svg');
                 width: 20px;
-                height: 52px;
+                height: 54px;
                 display: inline-block;
                 background-repeat: no-repeat;
                 background-size: 21px 57px;
                 position: absolute;
-                top: -18px;
+                top: -20px;
                 right: -20px;
                 background-position: right top;
                 transition: all 300ms $easing;
@@ -652,6 +652,7 @@ iframe {
 // —————————————————————————————————————————
 .home-hero {
     position: static;
+    overflow: visible;
     height: $fullbrowserheight;
 
     .home-hero__content {
