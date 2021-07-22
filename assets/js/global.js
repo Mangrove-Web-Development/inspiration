@@ -103,9 +103,31 @@ $(document).ready(function () {
     // —————————————————————————————————————————————————————
     // scroll events 
     // —————————————————————————————————————————————————————
-    $(window).scroll(function () {
+    var mainNav = document.querySelector('.main-header__nav');
+    var lastScrollTop = 0;
 
-    });
+    window.addEventListener("scroll", function() {
+        var st = window.pageYOffset || document.documentElement.scrollTop; 
+        // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop){
+            if (window.scrollY >= (mainNav.offsetHeight + 300)) {
+                mainNav.classList.add('main-header__nav--zero');
+                mainNav.classList.remove('main-header__nav--sticky');
+            }
+        } else {
+            if (window.scrollY >= (mainNav.offsetHeight + 300)) {
+                // show the sticky nav on scroll back up
+                mainNav.classList.remove('main-header__nav--zero');
+                mainNav.classList.add('main-header__nav--sticky');
+            } else {
+                // on the way back up to the top header nav
+                mainNav.classList.add('main-header__nav--zero');
+                setTimeout(mainNav.classList.remove('main-header__nav--sticky'), 600);
+                setTimeout(mainNav.classList.remove('main-header__nav--zero'), 650);
+            }
+        }
+        lastScrollTop = st <= 0 ? 0 : st;
+     }, false);
 
 
     // —————————————————————————————————————————————————————

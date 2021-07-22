@@ -222,9 +222,10 @@ p .button {
 // —————————————————————————————————————————
 .main-header {
     margin: 0 !important;
+    width: 100%;
 
     .main-header__logo-area {
-        margin: 50px 50px 0 50px;
+        margin: 120px 50px 0 50px;
 
         img {
             max-width: 13vw;
@@ -234,8 +235,14 @@ p .button {
     .main-header__nav {
         background-color: $navyLight;
         margin: 0 !important;
+        border: none;
         border-bottom: 1px solid $navyGrey;
         padding: 17px 25px;
+        transition: opacity 600ms $easing;
+        position: absolute;
+        width: 100%;
+        z-index: 1234567;
+        opacity: 1;
 
         a {
             display: inline-block;
@@ -292,6 +299,19 @@ p .button {
                 color: $bluePastel;
             }
         }
+    }
+
+    .main-header__nav.main-header__nav--sticky {
+        position: fixed;
+        margin: 25px !important;
+        padding-left: 100px;
+        width: calc( 100% - 50px);
+        opacity: 1 !important;
+        border: 1px solid $navyGrey;
+    }
+
+    .main-header__nav.main-header__nav--zero {
+        opacity: 0;
     }
 
     .main-header__nav--utility-nav {
