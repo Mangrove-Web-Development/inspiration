@@ -54,27 +54,33 @@
 <body id="bodyID" data-barba="wrapper" class="page-{{ pageURLsplit }}">
     <a id="skipLink" href="#skipNavigation">Skip Navigation</a>
     <header id="mainHeader" class="main-header wo">
-        <nav id="mainNav" class="main-header__nav col-1-to-13">  
-            <ul>  
-            {% for navItem in site.data.navigation %}
-                <li>
-                    <a class="main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="{{ navItem.url }}">{{ navItem.title }}</a>
-                    {% if navItem.submenu != null %}
-                    <ul>
-                        {% for subItem in navItem.submenu %}
-                        <li><a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ subItem.url }}">{{ subItem.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </li>
-            {% endfor %}
-            </ul>
-            <div class="main-header__nav--utility-nav">
-                <a class="main-header__nav__link--careers main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/careers/">Careers</a>
-                <a class="main-header__nav__link--login main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/">Login</a>
+        <nav id="mainNav" class="main-header__nav col-1-to-13 s-col-1-to-5">  
+            <button id="navToggle" class="nav-toggle strip" aria-expanded="false" aria-controls="mainNav">
+                <img class="nav-toggle__open" src="{{ site.url }}/assets/images/mobile-nav-open.svg" alt="Open Navigation">
+                <img class="nav-toggle__close" src="{{ site.url }}/assets/images/mobile-nav-close.svg" alt="Close Navigation">
+            </button>
+            <div>
+                <ul>  
+                {% for navItem in site.data.navigation %}
+                    <li {% if navItem.submenu != null %}class="main-header__nav__has-children" aria-haspopup="true" aria-expanded="false"{% endif %}>
+                        <a class="main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="{{ navItem.url }}">{{ navItem.title }}</a>
+                        {% if navItem.submenu != null %}
+                        <ul>
+                            {% for subItem in navItem.submenu %}
+                            <li><a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ subItem.url }}">{{ subItem.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+                <div class="main-header__nav--utility-nav">
+                    <a class="main-header__nav__link--careers main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/careers/">Careers</a>
+                    <a class="main-header__nav__link--login main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/">Login</a>
+                </div>
             </div>
         </nav>
-        <div class="main-header__logo-area col-1-to-7">
+        <div class="main-header__logo-area col-1-to-7 s-col-1-to-3">
             <a href="/">
                 <img src="{{ site.url }}/assets/images/inspiration-white.svg" alt="Inspiration Logo">
             </a>
