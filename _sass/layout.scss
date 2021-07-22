@@ -93,6 +93,16 @@ img[class*="col-"] {
         display: none !important;
     }
 
+    .wo,
+    .wo-stacked,
+    .wo-single {
+        margin: 0 35px;
+    }
+
+    .wo-full {
+        padding: 0 35px;
+    }
+
     @for $a-m from 1 through ($column-count-m) {
         @for $b-m from 1 through ($column-count-m + 1) {
             .m-col-#{$a-m}-to-#{$b-m} {
@@ -109,13 +119,23 @@ img[class*="col-"] {
     .wo-full {
         display: grid;
         grid-template-columns: repeat($column-count-s, 1fr);
-        gap: $column-margin + px $column-margin + px;
+        gap: 0 20px;
         justify-items: stretch;
         align-items: start;
     }
 
     .s-hide {
         display: none !important;
+    }
+
+    .wo,
+    .wo-stacked,
+    .wo-single {
+        margin: 0 20px;
+    }
+
+    .wo-full {
+        padding: 0 20px;
     }
 
     @for $a-s from 1 through ($column-count-s) {
