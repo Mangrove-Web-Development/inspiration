@@ -23,8 +23,5 @@
       url: /resources/tools/
 - title: News
   url: /news/
-  submenu:
-    - title:
-      url:
 - title: Contact
   url: /contact/

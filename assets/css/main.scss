@@ -223,6 +223,7 @@ p .button {
 .main-header {
     margin: 0 !important;
     width: 100%;
+    overflow: visible;
 
     .main-header__logo-area {
         margin: 120px 50px 0 50px;
@@ -244,7 +245,17 @@ p .button {
         z-index: 1234567;
         opacity: 1;
 
-        a {
+        ul,
+        li {
+            display: inline-block;
+            font-size: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-header__nav--utility-nav a, 
+        >ul >li >a {
             display: inline-block;
             font-family: $fraktionMono;
             font-size: 170%;
@@ -287,18 +298,59 @@ p .button {
                 transition: all 300ms $easing;
                 opacity: 0;
             }
+        }
 
-            &:hover:before,
-            &.active:before,
-            &:hover:after,
-            &.active:after {
-                opacity: 1 !important;
+        >ul >li ul {
+            display: none;
+            position: absolute;
+            flex-direction: column;
+            padding-top: 18px;
+
+            >li {
+                padding: 10px 0;
+                background-color: $navyLight;
+                border-left: 1px solid $navyGrey;
+                border-right: 1px solid $navyGrey;
+
+                >a {
+                    display: inline-block;
+                    font-family: $fraktionMono;
+                    font-size: 170%;
+                    font-weight: 400;
+                    line-height: 1;
+                    letter-spacing: 0.05em;
+                    color: $offWhite;
+                    margin: 0 25px;
+                    transition: all 300ms $easing;
+                }
             }
 
-            &:hover {
-                color: $bluePastel;
+            >li:first-of-type {
+                padding-top: 20px;
+            }
+
+            >li:last-of-type {
+                padding-bottom: 20px;
+                border-bottom: 1px solid $navyGrey;
             }
         }
+
+        li:hover {
+            >a {
+                color: $bluePastel;
+
+                &:before,
+                &.active:before,
+                &:after,
+                &.active:after {
+                    opacity: 1 !important;
+                }
+            }
+
+            >ul {
+                display: flex;
+            }
+        } 
     }
 
     .main-header__nav.main-header__nav--sticky {
@@ -396,6 +448,7 @@ strong {
     font-weight: 600;
 }
 
+.main-header__nav >ul >li ul li a:hover,
 a {
     text-decoration: underline;
     text-decoration-thickness: .05em;
@@ -950,7 +1003,6 @@ iframe {
     } 
 }
   
-
 .cta {
     border: 1px solid $blue;
     border-radius: 200px;
