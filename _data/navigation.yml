@@ -1,10 +1,22 @@
 - title: About
   url: /about/
+  submenu:
+    - title:
+      url:
 - title: Solutions
   url: /solutions/
+  submenu:
+    - title:
+      url:
 - title: Resources
   url: /resources/
+  submenu:
+    - title:
+      url:
 - title: News
   url: /news/
+  submenu:
+    - title:
+      url:
 - title: Contact
   url: /contact/
