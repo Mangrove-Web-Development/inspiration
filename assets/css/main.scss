@@ -255,6 +255,10 @@ p .button {
         }
     }
 
+    .main-header__nav__icon {
+        display: none;
+    }
+
     .main-header__nav.main-header__nav--sticky {
         position: fixed;
         margin: 25px !important;
@@ -262,6 +266,13 @@ p .button {
         width: calc( 100% - 50px);
         opacity: 1 !important;
         border: 1px solid $navyGrey;
+
+        .main-header__nav__icon {
+            display: block;
+            position: absolute;
+            left: 50px;
+            top: 13px;
+        }
     }
 
     .main-header__nav.main-header__nav--zero {
