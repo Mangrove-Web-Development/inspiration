@@ -193,10 +193,9 @@ p .button {
     font-size: 100%;
 }
 
-.pv200,
-.wo.pv200 {
-    margin-top: 200px;
-    margin-bottom: 200px;
+.pv {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .pv100,
@@ -205,15 +204,18 @@ p .button {
     margin-bottom: 100px;
 }
 
+.pv200,
+.wo.pv200 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
 .pv200-p {
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.pv {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
 
 
 

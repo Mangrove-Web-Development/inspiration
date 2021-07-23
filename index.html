@@ -9,7 +9,7 @@ layout: null
 <main data-barba="container" data-barba-namespace="home">
 
     <section class="home-hero wo">
-        <div class="home-hero__content col-1-to-7">
+        <div class="home-hero__content col-1-to-7 m-col-1-to-5 s-col-1-to-5">
             <h1 class="editable">Accelerating the EV transition</h1>
             <p class="editable large">
                 Inspiration invests in, develops, and manages the real assets that enable the EV transition
@@ -17,17 +17,17 @@ layout: null
             </p>
             <a class="editable home-hero__content__button" href="/">Get motoring</a>
         </div>
-        <div class="home-hero__image col-7-to-13">
+        <div class="home-hero__image col-7-to-13 m-col-5-to-9 s-col-1-to-5">
             <img class="editable" src="/../assets/images/placeholder.jpg" alt="">
         </div>
     </section>
 
     <section class="home-intro wo pv200">
-        <h2 class="editable h2 col-2-to-11">
+        <h2 class="editable h2 col-2-to-11 m-col-2-to-8 s-col-1-to-5">
             Avoid the speed bumps on the road to fleet electrification. We’ll help you navigate the course from start to
             finish and beyond.
         </h2>
-        <div class="editable col-2-to-7">
+        <div class="editable col-2-to-7 m-col-2-to-7 s-col-1-to-5">
             <p>
                 Inspiration invests in, develops, and manages the real assets that enable the EV transition for fleet
                 operators.
@@ -41,14 +41,14 @@ layout: null
             </p>
         </div>
 
-        <a class="button button--round editable col-2-to-7" href="/">Check under our hood</a>
+        <a class="button button--round editable col-2-to-7 m-col-2-to-7 s-col-1-to-5" href="/">Check under our hood</a>
 
-        <div class="home-intro__stat pv200 col-2-to-6">
+        <div class="home-intro__stat pv200 col-2-to-6 m-col-1-to-5 s-col-1-to-5">
             <h3 class="editable">3, 192</h3>
             <p class="editable">Lorem ipsum dolor sit amet</p>
         </div>
 
-        <div class="home-intro__stat pv200 col-6-to-10">
+        <div class="home-intro__stat pv200 col-6-to-10 m-col-5-to-9 s-col-1-to-5">
             <h3 class="editable">89%</h3>
             <p class="editable">Lorem ipsum dolor sit amet</p>
         </div>
@@ -56,7 +56,7 @@ layout: null
 
     <section class="home-testimonials pv200 white">
         <div class="wo-full">
-            <div class="col-1-to-13">
+            <div class="col-1-to-13 m-col-1-to-7 s-col-1-to-4">
                 <h2 class="h2 editable">
                     Hear what others are saying.
                 </h2>
@@ -114,23 +114,23 @@ layout: null
     </section>
 
     <section class="home-latest-news wo pv200 white">
-        <h2 class="h2 editable col-1-to-9">
+        <h2 class="h2 editable col-1-to-9 m-col-1-to-7 s-col-1-to-5">
             Get up to speed on our latest news.
         </h2>
-        <a class="button button--round col-9-to-13" href="/news/">All news</a>
-        <a href="{{ post.url }}" class="home-latest-news__article col-1-to-5">
+        <a class="button button--round col-9-to-13 m-col-7-to-9 s-col-1-to-5" href="/news/">All news</a>
+        <a href="{{ post.url }}" class="home-latest-news__article col-1-to-5 m-col-1-to-5 s-col-1-to-5">
             <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
             <!-- loop through post categories -->
             <h3 class="h5">{{ post.title }}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h3>
             <p class="button button--line" aria-hidden="true">Read article</p>
         </a>
-        <a href="{{ post.url }}" class="home-latest-news__article col-5-to-9">
+        <a href="{{ post.url }}" class="home-latest-news__article col-5-to-9 m-col-5-to-9 s-col-1-to-5">
             <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
             <!-- loop through post categories -->
             <h3 class="h5">{{ post.title }}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h3>
             <p class="button button--line" aria-hidden="true">Read article</p>
         </a>
-        <a href="{{ post.url }}" class="home-latest-news__article col-9-to-13">
+        <a href="{{ post.url }}" class="home-latest-news__article col-9-to-13 m-hide s-col-1-to-5">
             <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
             <!-- loop through post categories -->
             <h3 class="h5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. {{ post.title }}</h3>

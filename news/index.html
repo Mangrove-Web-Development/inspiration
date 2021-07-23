@@ -6,7 +6,7 @@ title: News
 <section class="news-feed wo pv200">
 	<!-- This loops through the paginated posts -->
 	{% for post in paginator.posts %}
-	<article class="col-1-to-13">
+	<article class="col-1-to-13 m-col-1-to-9 s-col-1-to-5">
 		<img src="{{ post.featured_image }}" alt="">
 		<div class="news-feed--grid">
 			<p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
