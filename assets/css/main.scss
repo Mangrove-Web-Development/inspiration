@@ -1,6 +1,41 @@
 ---
 # MOB 2020 Main Stylesheet
 ---
+// ————————————————————————————————————————— 
+// FONTS
+// —————————————————————————————————————————
+@font-face {
+	font-family: 'Fraktion Sans';
+	src: url('../fonts/FraktionSans-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/FraktionSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/FraktionSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/FraktionSans-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Fraktion Sans';
+	src: url('../fonts/FraktionSans-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/FraktionSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/FraktionSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/FraktionSans-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Neue World';
+	src: url('../fonts/NeueWorld-SemiExtendedUltralight.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/NeueWorld-SemiExtendedUltralight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/NeueWorld-SemiExtendedUltralight.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/NeueWorld-SemiExtendedUltralight.woff') format('woff'); /* Pretty Modern Browsers */
+	font-style: normal;
+	font-stretch: normal;
+}
+
 
 // ————————————————————————————————————————— 
 // VARIABLES: for partials
@@ -65,7 +100,6 @@ $offBlack: #040B15;
 $easing: cubic-bezier(0.83, 0, 0.17, 1);
 
 // fonts
-$fraktionMono: 'Fraktion Sans', sans-serif;
 $fraktionSans: 'Fraktion Sans', sans-serif;
 $neueWorld: 'Neue World', serif;
 
@@ -343,6 +377,7 @@ textarea,
     padding: 0;
     color: $offWhite;
     font-family: $fraktionSans;
+    font-weight: 400;
 }
 
 p, 
