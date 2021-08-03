@@ -3,47 +3,29 @@
 <main data-barba="container" data-barba-namespace="page">
 
     {% include page-header-general.html %}
+
+	{% for block in page.page_blocks %}
+    {% case block._id %}
+        {% when 'general_content' %}
+            {% include general-content.html block=block %}
+
+        {% when 'full_w_image' %}
+            {% include full-w-image.html block=block %}
+
+        {% when 'youtube_embed' %}
+            {% include youtube-embed.html block=block %}
+
+        {% when 'two_col_list' %}
+            {% include two-col-list.html block=block %}
+
+        {% when 'team' %}
+            {% include team.html block=block %}
+
+        {% else %}
+        <!-- else -->
+    {% endcase %}
+    {% endfor %}
     
-    {% include full-w-image.html %}
-
-    {% include general-content.html %}
-
-	{% include youtube-embed.html %}
-
-	{% include customers.html %}
-
-	<section class="team-section wo pv100">
-		<h2 class="team-section__header col-1-to-12 h1 pv">
-			<strong>Meet our team,</strong> lorem ipsum dolor sit amet, consectetuer adipiscing
-		</h2>
-		<div class="team-section__container col-2-to-12 pv100 wo">
-			<div class="team-section__container__team__member">
-				<img aria-hidden="true" src="https://fern-anvil.cloudvent.net/assets/images/placeholder-headshot.jpg?_cchid=0e5240d39dc63bc52e7d685029d18860" alt="">
-				<h3 class="h4">Member Name</h3>
-				<h4 class="h5">Job Title</h4>
-			</div>
-			<div class="team-section__container__team__member">
-				<img aria-hidden="true" src="https://fern-anvil.cloudvent.net/assets/images/placeholder-headshot.jpg?_cchid=0e5240d39dc63bc52e7d685029d18860" alt="">
-				<h3 class="h4">Member Name</h3>
-				<h4 class="h5">Job Title</h4>
-			</div>
-			<div class="team-section__container__team__member">
-				<img aria-hidden="true" src="https://fern-anvil.cloudvent.net/assets/images/placeholder-headshot.jpg?_cchid=0e5240d39dc63bc52e7d685029d18860" alt="">
-				<h3 class="h4">Member Name</h3>
-				<h4 class="h5">Job Title</h4>
-			</div>
-			<div class="team-section__container__team__member">
-				<img aria-hidden="true" src="https://fern-anvil.cloudvent.net/assets/images/placeholder-headshot.jpg?_cchid=0e5240d39dc63bc52e7d685029d18860" alt="">
-				<h3 class="h4">Member Name</h3>
-				<h4 class="h5">Job Title</h4>
-			</div>
-			<div class="team-section__container__team__member">
-				<img aria-hidden="true" src="https://fern-anvil.cloudvent.net/assets/images/placeholder-headshot.jpg?_cchid=0e5240d39dc63bc52e7d685029d18860" alt="">
-				<h3 class="h4">Member Name</h3>
-				<h4 class="h5">Job Title</h4>
-			</div>
-		</div>
-	</section>
 </main>
 
 {% include footer.html %}
