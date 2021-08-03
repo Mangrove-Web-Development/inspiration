@@ -1,3 +1,6 @@
-- social_media:
-  image:
+- social_media: Twitter
+  image: /assets/images/twitter.svg
+  url:
+- social_media: LinkedIn
+  image: /assets/images/linkedin.svg
   url:
