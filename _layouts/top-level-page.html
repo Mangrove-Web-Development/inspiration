@@ -3,19 +3,33 @@
 <main data-barba="container" data-barba-namespace="topLevelPage">
     {% include page-header-top-level.html %}
 
-    {% include page-intro.html %}
+    {% for block in page.page_blocks %}
+    {% case block._id %}
+        {% when 'page_intro' %}
+            {% include page-intro.html block=block %}
 
-    {% include general-content.html %}
+        {% when 'general_content' %}
+            {% include general-content.html block=block %}
 
-    {% include full-w-image.html %}
+        {% when 'full_w_image' %}
+            {% include full-w-image.html block=block %}
 
-    {% include page-cta.html %}
+        {% when 'page_cta' %}
+            {% include page-cta.html block=block %}
 
-    {% include logo-section.html %}
+        {% when 'logo_section' %}
+            {% include logo-section.html block=block %}
 
-    {% include general-content-2-col.html %}
+        {% when 'general_content_2_col' %}
+            {% include general-content-2-col.html block=block %}
 
-    {% include cta.html %}
+        {% when 'cta' %}
+            {% include cta.html block=block %}
+
+        {% else %}
+        <!-- else -->
+    {% endcase %}
+    {% endfor %}
 </main>
 
 {% include footer.html %}

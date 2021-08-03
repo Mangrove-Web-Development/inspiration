@@ -1,6 +1,84 @@
 ---
 layout: top-level-page
 title:
-categories: 
-  - uncategorized
+permalink:
+page_title:
+page_subtitle_text:
+background_image:
+page_blocks: []
+_array_structures:
+  # —————————————————————————————————————
+  # Page Blocks (Layers)
+  # —————————————————————————————————————
+  page_blocks:
+    # ———
+    # Page Intro
+    # ———
+    - label: Page Intro
+      icon: wysiwyg # fonts.google.com/icons
+      value:
+        _id: page_intro # use file name w/ underscores
+        heading:
+        column_1_text:
+        column_2_text:
+    # ———
+    # General Content 1 Col
+    # ———
+    - label: General Content - 1 Column
+      icon: wysiwyg # fonts.google.com/icons
+      value:
+        _id: general_content # use file name w/ underscores
+        general_content_html:
+    # ———
+    # General Content 2 Col
+    # ———
+    - label: General Content - 2 Columns
+      icon: wysiwyg # fonts.google.com/icons
+      value:
+        _id: general_content_2_col # use file name w/ underscores
+        general_content_1_html:
+        general_content_2_html:
+    # ———
+    # Full Width Image
+    # ———
+    - label: Full Width Image
+      icon: insert_photo # fonts.google.com/icons
+      value:
+        _id: full_w_image # use file name w/ underscores
+        image:
+        image_alt_text:
+    # ———
+    # Page CTA
+    # ———
+    - label: Page CTA
+      icon: insert_photo # fonts.google.com/icons
+      value:
+        _id: page_cta # use file name w/ underscores
+        image_on_left: true
+        image_on_right: false
+        image:
+        image_alt_text:
+        heading:
+        text:
+        link:
+    # ———
+    # Logo Section
+    # ———
+    - label: Logo Section
+      icon: insert_photo # fonts.google.com/icons
+      value:
+        _id: logo_section # use file name w/ underscores
+        heading:
+        text:
+        logos:
+          - image:
+            image_alt_text:
+    # ———
+    # Add CTA?
+    # ———
+    - label: Add CTA?
+      icon: insert_photo # fonts.google.com/icons
+      value:
+        _id: cta # use file name w/ underscores
+        comment: This adds a CTA to the bottom of the page. Save the page, and refresh to edit.
 ---
