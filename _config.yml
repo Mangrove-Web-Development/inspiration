@@ -48,9 +48,8 @@ _options:
     uploads_dir: "uploads"
   content: # Content Editor and block Editable Regions
     uploads_dir: "uploads"
-
-#cloudcannon:
-  #data: true
+  layout:
+    hidden: true
 
 # CloudCannon Field Descriptions
 _comments:
