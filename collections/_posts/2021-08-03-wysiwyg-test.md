@@ -1,0 +1,31 @@
+---
+layout: post
+title: WYSIWYG Test
+date: 2021-08-03 21:01:39
+featured_image:
+---
+# Sample document for editor area test
+
+This document is used in the articles Evaluating WYSIWYG-editors [2006](http://www.standards-schmandards.com/2006/wysiwyg-editor-test/) and [2007](http://www.standards-schmandards.com/2007/wysiwyg-editor-test-2/). It contains various markup features commonly used by content editors or "rédacteurs de contenu" as they are called in [France](http://en.wikipedia.org/wiki/France). It is important that a WYSIWYG tool has features that are easily available for the editor. If not, there is a risk that content won't receive **proper** markup. Examples of commonly found content are:
+
+1. Headings
+2. Links (with optional title)
+3. Lists (like this one)
+   * including nested lists
+4. Tables
+   * caption
+   * headers
+   * summary
+5. Language information
+6. Acronyms and abbreviations
+7. Emphasis and strong emphasis
+8. Quotes, inline and block
+9. Images
+
+## Test procedure
+
+In the test we will try to recreate this document using the editor tools. To make sure tables can be inserted *properly* we re-visit banana import statistics from 1998.
+
+For block quotes we will have a look at [what Joe Clark says about redheads](http://fawny.org/rhcp.html)\:
+
+> "Since boyhood I’ve always believed, at the deepest level, that redheads are standard-bearers of the grandest and most wondrous human beauty."
