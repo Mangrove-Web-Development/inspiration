@@ -17,32 +17,54 @@
 
     <nav id="footerNav" class="main-footer__nav col-5-to-13 m-col-2-to-9 s-col-1-to-5 wo">
         <div class="col-1-to-4 m-col-1-to-3 s-col-1-to-3">
+        {% for navItem in site.data.footer_navigation.first_column | limit: 1 %}
             <h2>
-                <a href="/">About</a>
+                <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+                    {{ navItem.title }}
+                </a>
             </h2>
-            <a href="/">Who we are</a>
-            <a href="/careers">Careers</a>
+        {% endfor %}
+        {% for navItem in site.data.footer_navigation.first_column | offset: 1 %}
+            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+                {{ navItem.title }}
+            </a>
+        {% endfor %}
         </div>
         <div class="col-4-to-7 m-col-3-to-5 s-col-3-to-5">
+            {% for navItem in site.data.footer_navigation.second_column | limit: 1 %}
             <h2>
-                <a href="/">Solutions</a>
+                <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+                    {{ navItem.title }}
+                </a>
             </h2>
-            <a href="/">For fleets</a>
-            <a href="/">For investors</a>
-            <a href="/">For partners</a>
+        {% endfor %}
+        {% for navItem in site.data.footer_navigation.second_column | offset: 1 %}
+            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+                {{ navItem.title }}
+            </a>
+        {% endfor %}
         </div>
         <div class="col-7-to-10 m-col-5-to-7 s-col-1-to-3">
+            {% for navItem in site.data.footer_navigation.third_column | limit: 1 %}
             <h2>
-                <a href="/">Resources</a>
+                <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+                    {{ navItem.title }}
+                </a>
             </h2>
-            <a href="/">Whitepaper</a>
-            <a href="/">Reports</a>
+        {% endfor %}
+        {% for navItem in site.data.footer_navigation.third_column | offset: 1 %}
+            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+                {{ navItem.title }}
+            </a>
+        {% endfor %}
         </div>
         <div class="col-10-to-13 m-col-7-to-9 s-col-3-to-5">
-            <a href="/news">News</a>
-            <a href="/contact">Contact</a>
-            <a href="/">Careers</a>
-            <a href="/">Login</a>
+            <h2 class="sr-only">Other Links</h2>
+            {% for navItem in site.data.footer_navigation.fourth_column %}
+            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+                {{ navItem.title }}
+            </a>
+        {% endfor %}
         </div>
     </nav>
 
