@@ -2,28 +2,22 @@
 layout: page
 title:
 permalink:
+page_title:
+page_subtitle_text:
 page_blocks: []
 _array_structures:
-  # —————————————————————————————————————
+# —————————————————————————————————————
   # Page Blocks (Layers)
   # —————————————————————————————————————
   page_blocks:
     # ———
-    # General Content
+    # General Content 1 Col
     # ———
-    - label: General Content
+    - label: General Content - 1 Column
       icon: wysiwyg # fonts.google.com/icons
       value:
         _id: general_content # use file name w/ underscores
         general_content_html:
-    # ———
-    # Large Intro Paragraph
-    # ———
-    - label: Large Intro Paragraph
-      icon: notes # fonts.google.com/icons
-      value:
-        _id: lg_intro_paragraph # use file name w/ underscores
-        large_intro_paragraph:
     # ———
     # Full Width Image
     # ———
@@ -31,7 +25,30 @@ _array_structures:
       icon: insert_photo # fonts.google.com/icons
       value:
         _id: full_w_image # use file name w/ underscores
-        full_w_image:
+        image:
+        image_alt_text:
+    # ———
+    # Video Embed
+    # ———
+    - label: Youtube Embed Code
+      icon: movie # fonts.google.com/icons
+      value:
+      _id: youtube_embed # use file name w/ underscores
+          youtube_embed_code_block:
+    # ———
+    # Two Column List
+    # ———
+    - label: Two Column List
+      icon: crop_portrait # fonts.google.com/icons
+      value:
+        _id: two_col_list # use file name w/ underscores
+        heading:
+        left_col_list:
+          - list_item:
+            list_link:
+        right_col_list:
+          - list_item:
+            list_link:
     # ———
     # Team Section
     # ———
@@ -39,29 +56,12 @@ _array_structures:
       icon: groups # fonts.google.com/icons
       value:
         _id: team # use file name w/ underscores
-        intro_heading:
+        heading:
         team_member:
-            - name:
-              job_title:
-              bio_html:
-              image:
-    # ———
-    # Our Customers
-    # ———
-    - label: Customers
-      icon: crop_portrait # fonts.google.com/icons
-      value:
-        _id: customers # use file name w/ underscores
-        intro_heading:
-        customer_sections:
-        - customer_name:
-          case_study_url:
-    # ———
-    # Video Embed
-    # ———
-    - label: Youtube Embed Code
-      icon: movie # fonts.google.com/icons
-      value:
-      _id: youtube_embed_code_block # use file name w/ underscores
-          youtube_embed_code_block:
+          - name:
+            job_title:
+            bio_html:
+            image:
+
+
 ---

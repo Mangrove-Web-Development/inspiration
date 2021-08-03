@@ -1,53 +1,21 @@
 <section class="customers-section wo pv-large">
     <h2 class="h2 customers-section__intro section-intro col-2-to-10 m-col-1-to-9 s-col-1-to-5">
-        {{ include.block.intro_heading}}
-        Our Customers
+        {{ include.block.heading}}
     </h2>
 
     <ul class="customers-section__list col-2-to-11 m-col-1-to-5 s-col-1-to-5 pv-medium">
-    {% for customer in include.block.customer_sections %}
+    {% for itemLeft in include.block.left_col_list %}
         <li>
-            <a href="{{ include.block.case_study_url }}">{{ include.block.customer_name }}</a>
+            <a href="{{ itemLeft.list_link }}">{{ itemLeft.list_item }}</a>
         </li>
     {% endfor %}
-        <li>
-            <a href="#">Customer Name Here</a>
-        </li>
-        <li>
-            <a href="#">Customer Name</a>
-        </li>
-        <li>
-            <a href="#">Customer Name lorem ipsum dolor</a>
-        </li>
-        <li>
-            <a href="#">Customer Name</a>
-        </li>
-        <li>
-            <a href="#">Customer Name</a>
-        </li>
-        <li>
-            <a href="#">Customer Name</a>
-        </li>
     </ul>
 
     <ul class="customers-section__list col-7-to-12 m-col-5-to-9 s-col-1-to-5 pv-medium">
+        {% for itemRight in include.block.right_col_list %}
         <li>
-            <a href="#">Customer Last Here</a>
+            <a href="{{ itemRight.list_link }}">{{ itemRight.list_item }}</a>
         </li>
-        <li>
-            <a href="#">Customer Name</a>
-        </li>
-        <li>
-            <a href="#">Customer Name lorem ipsum dolor</a>
-        </li>
-        <li>
-            <a href="#">Customer Name</a>
-        </li>
-        <li>
-            <a href="#">Customer Name</a>
-        </li>
-        <li>
-            <a href="#">Customer Name lorem ipsum dolor</a>
-        </li>
+    {% endfor %}
     </ul>
 </section>
