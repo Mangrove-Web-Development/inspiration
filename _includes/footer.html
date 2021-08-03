@@ -11,8 +11,9 @@
     </div>
 
     <div class="main-footer__social-media col-1-to-5 m-col-1-to-2 s-col-1-to-5">
-        <a href="/"><img src="{{ site.url }}/assets/images/twitter.svg" alt="Twitter" /></a>
-        <a href="/"><img src="{{ site.url }}/assets/images/linkedin.svg" alt="LinkedIn" /></a>
+    {% for socialMedia in site.data.social_media %}
+        <a href="{{ socialMedia.url }}"><img src="{{ socialMedia.image }}" alt="{{ socialMedia.social_media }}" /></a>
+    {% endfor %}
     </div>
 
     <nav id="footerNav" class="main-footer__nav col-5-to-13 m-col-2-to-9 s-col-1-to-5 wo">
