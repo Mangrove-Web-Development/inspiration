@@ -9,9 +9,7 @@
     
         <div class="logo-section__logos col-2-to-12 m-col-1-to-9 s-col-1-to-5 center">
         {% for logo in include.block.logos %}
-            <div class="team-section__container__team__member">
-                <img src="{{ logo.image }}" alt="{{ logo.image_alt_text }}">
-            </div>
+            <img src="{{ logo.image }}" alt="{{ logo.image_alt_text }}">
         {% endfor %}
         </div>
     </div>
