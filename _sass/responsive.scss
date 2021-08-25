@@ -1,8 +1,22 @@
 @media only screen and (min-width: 1100px) {}
 
+@media only screen and (min-width: 1100px) and (max-width: 1400px) {
+    body {
+        font-size: 56%;
+    }
+
+    p, li, input, textarea, .label, .home-testimonials blockquote {
+        font-size: 210%;
+    }
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1100px) {
     body {
         font-size: 50%;
+    }
+
+    main {
+        margin-top: 190px;
     }
 
     .pv {
@@ -31,7 +45,8 @@
         font-size: 770%;
     }
 
-    p, li, blockquote, input, textarea, .label {
+    p, li, input, textarea, .label,
+    .home-testimonials blockquote {
         font-size: 250%;
     }
 
@@ -40,6 +55,28 @@
         height: 150px;
         width: 150px;
         padding: 25px;
+    }
+
+    .home-hero__content__button:after,
+    .home-hero__content__button:before {
+        height: 112px;
+        width: 112px;
+    }
+
+    .home-intro {
+        .home-intro__stat {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+        .home-intro__stat:nth-child(4)::after {
+            margin-left: 193px;
+        }
+
+        > .button::before {
+            height: 110px;
+            margin-top: 350px;
+        }
     }
 
     .home-latest-news > .button::before {
@@ -84,6 +121,14 @@
         .slick-slide > div {
             width: calc(50vw - 40px);
         }
+
+        button.slick-arrow.slick-next {
+            right: 60px;
+        }
+
+        button.slick-arrow.slick-prev {
+            right: calc(7vw + 50px + 30px)
+        }
     }
 
     .home-latest-news .home-latest-news__article .h5 {
@@ -114,6 +159,10 @@
     }
 
     .main-footer {
+        .main-footer__logo img {
+            width: 160px;
+        }
+
         .main-footer__newsletter .h3 {
             margin-top: 0;
         }
@@ -163,10 +212,10 @@
     // —————————————————————————————————————————
     p,
     li,
-    blockquote,
     input,
     textarea,
-    .label {
+    .label,
+    .home-testimonials blockquote {
         font-size: 170%;
         line-height: 150%;
         letter-spacing: 0.01em;
@@ -350,6 +399,12 @@
         display: none;
     }
 
+    .page-header.page-header--post h1 {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
     .main-header .main-header__nav.main-header__nav--sticky .main-header__nav__icon {
         left: 20px;
         top: 12px;   
@@ -494,6 +549,13 @@
         }
     }
 
+    .cms-embed {
+        width: 110%;
+        margin-left: -5%;  
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
     .customers-section {
         padding: 60px 40px;
 
@@ -519,8 +581,34 @@
         }
     }
 
-    .main-footer .main-footer__logo img {
-        width: 160px;
+    .main-footer {
+        .main-footer__logo img {
+            width: 160px;
+        }
+
+        .main-footer__nav {
+            margin-bottom: 10px;
+
+            > div {
+                margin-bottom: 40px;
+            }
+        }
+
+        .main-footer__small {
+            font-size: 150%;
+        }
+
+        .main-footer__social-media {
+            display: inline-block;
+            margin: 50px 0;
+            margin-left: -10px;
+
+            a,
+            a:hover {
+                padding: 14px 9px;
+                margin: 0 10px 0 0;
+            }
+        }
     }
 }
 

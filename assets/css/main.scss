@@ -371,10 +371,10 @@ main {
 p,
 li,
 a,
-blockquote,
 input,
 textarea,
-.label {
+.label,
+.home-testimonials blockquote {
     margin: 0;
     padding: 0;
     color: $offWhite;
@@ -384,10 +384,10 @@ textarea,
 
 p,
 li,
-blockquote,
 input,
 textarea,
-.label {
+.label,
+.home-testimonials blockquote {
     font-size: 200%;
     line-height: 150%;
     letter-spacing: 0.01em;
@@ -467,6 +467,10 @@ p.small {
     letter-spacing: 0.01em;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.general-content blockquote p {
+    color: $blueLight;
 }
 
 .general-content h6,
@@ -1008,6 +1012,8 @@ iframe {
 }
 
 .general-content {
+    overflow: visible;
+
     &:not(.general-content--2-col) {
 
         h2,
