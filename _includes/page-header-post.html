@@ -1,9 +1,9 @@
 <section class="page-header page-header--post wo">
-    <p class="eyebrow col-4-to-6 m-col-2-to-8 s-col-1-to-5">{{ page.date | date: "%b %e %Y" }}</p>
+    <p class="eyebrow col-4-to-6 m-col-1-to-8 s-col-1-to-5">{{ page.date | date: "%b %e %Y" }}</p>
     {% for category in page.categories %}
 		<a href="/{{category | slugify: "latin"}}" class="eyebrow col-6-to-10">
 			{{ category }}
 		</a>
 	{% endfor %}
-    <h1 class="h2 col-4-to-10 m-col-2-to-8 s-col-1-to-5">{{ page.title }}</h1>
+    <h1 class="h2 col-4-to-10 m-col-1-to-8 s-col-1-to-5">{{ page.title }}</h1>
 </section>

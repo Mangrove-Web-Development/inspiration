@@ -132,14 +132,14 @@
     }
 
     .pv {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .pv100,
     .wo.pv100 {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
     .pv200,
@@ -153,6 +153,11 @@
         padding-bottom: 100px;
     }
 
+    .post {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     // ————————————————————————————————————————— 
     // typography
     // —————————————————————————————————————————
@@ -162,7 +167,7 @@
     input,
     textarea,
     .label {
-        font-size: 160%;
+        font-size: 170%;
         line-height: 150%;
         letter-spacing: 0.01em;
         margin-bottom: 10px;
@@ -205,7 +210,8 @@
     }
 
     .home-latest-news .home-latest-news__article .h5 {
-        font-size: 250%;
+        font-size: 220%;
+        max-width: 87%;
     }
 
     .general-content h4,
@@ -340,6 +346,10 @@
         }
     }
 
+    .page-header p:after {
+        display: none;
+    }
+
     .main-header .main-header__nav.main-header__nav--sticky .main-header__nav__icon {
         left: 20px;
         top: 12px;   
@@ -448,6 +458,64 @@
 
         h2 {
             max-width: 85%;
+        }
+    }
+
+    .contact-form form {
+        padding: 50px 30px;
+        margin-top: 0 !important;
+    }
+
+    .logo-section .logo-section__logos img {
+        max-width: 130px;
+    }
+
+    .page-cta__content {
+        margin-bottom: 60px;
+    }
+
+    .general-content.general-content--2-col {
+        .col-7-to-12 {
+            margin-left: 0;
+        }
+
+        .col-2-to-7 {
+            margin-right: 0;
+
+            &:after {
+                width: 100%; 
+                height: 1px;
+                position: relative;
+                right: 0;
+                top: auto;
+                margin: 40px 0 26px 0;
+                bottom: auto;
+            }
+        }
+    }
+
+    .customers-section {
+        padding: 60px 40px;
+
+        .customers-section__list {
+            padding-left: 20px;
+            margin: 0;
+
+            li {
+                margin-top: 0;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .team-section .team-section__container {
+        grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+
+        .team-section__container__team__member img {
+            height: 210px;
+            width: 100%
         }
     }
 
