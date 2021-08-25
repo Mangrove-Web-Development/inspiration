@@ -28,6 +28,7 @@ theme: manoverboard-alpha
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-archives
 sass:
   sass_dir: _sass
   style: compressed
@@ -37,6 +38,15 @@ collections_dir: collections
 # https://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: "/news/page-:num/"
+
+# archives
+# https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md
+jekyll-archives:
+  enabled: 
+    - categories
+  layout: archive
+  permalinks:
+    category: '/archive/:name/'
 
 
 # CloudCannon Options

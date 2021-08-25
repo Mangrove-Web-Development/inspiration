@@ -6,13 +6,30 @@
 			Latest {{ page.title }}
 		</h1>
 		<ul class="col-9-to-12 m-col-6-to-9 s-col-1-to-5 category-container">
-			<li><a href="">Category Name</a></li>
-			<li><a href="">Category Name</a></li>
-			<li><a href="">Category Name</a></li>
+			<li>
+				<a class="{% if page.url == "/news/" %}active{% endif %}" href="/news/">
+					All News
+				</a>
+			</li>
+			{% for category in site.categories %}
+			{% assign category_name = category[0] %}
+			{% capture category_permalink %}/archive/{{ category_name | slugify }}/{% endcapture %}
+			<li>
+				<a class="{% if page.url == category_permalink %}active{% endif %}" href="/archive/{{ category_name | slugify }}/">
+					{{ category_name | replace: "-", " " }}
+				</a>
+			</li>
+		{% endfor %}
 		</ul>
 	</div>
-
 	{{ content }}
+	{% if page.posts %}
+	<section class="news-feed wo pv200">
+		{% for post in page.posts %}
+		{% include archives-inner.html %}
+	{% endfor %}
+	</section>
+	{% endif %}
 </main>
 
 {% include footer.html %}

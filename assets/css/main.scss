@@ -665,6 +665,16 @@ iframe {
     }
 }
 
+.pagination {
+    overflow: visible; 
+    margin-top: -100px !important;
+    padding-top: 0;
+
+    .button {
+        margin-top: 0;
+    }
+}
+
 
 // ————————————————————————————————————————— 
 // home page

@@ -6,40 +6,22 @@ title: News
 <section class="news-feed wo pv200">
 	<!-- This loops through the paginated posts -->
 	{% for post in paginator.posts %}
-	<article class="col-1-to-13 m-col-1-to-9 s-col-1-to-5">
-		<img src="{{ post.featured_image }}" alt="">
-		<div class="news-feed--grid">
-			<p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
-			<!-- {{ post.date | date_to_string | upcase }} -->
-			<!-- loop through post categories -->
-			<div>
-				{% for category in post.categories %}
-					<a href="/{{category | slugify: "latin"}}" class="eyebrow">
-						{{ category }}
-					</a>
-				  {% endfor %}
-			</div>
-			<h2 class="h2">{{ post.title }}</h2>
-			<div class="button button--line">
-				<a href="{{ post.url }}">read article</a>
-			</div>
-		</div>
-	</article>
+		{% include archives-inner.html %}
 	{% endfor %}
 </section>
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
-<div class="wo pagination">
+<div class="wo pv100 pagination">
 	{% if paginator.previous_page %}
 	<div class="col-1-to-6 m-col-1-to-5 s-col-1-to-3">
-		<a href="{{ paginator.previous_page_path }}" class="button button--light">Previous</a>
+		<a href="{{ paginator.previous_page_path }}" class="button button--round">Previous Page</a>
 	</div>
 	{% endif %}
 
 	{% if paginator.next_page %}
 	<div class="col-6-to-13 m-col-5-to-11 s-col-3-to-5 right">
-		<a href="{{ paginator.next_page_path }}" class="button">Next</a>
+		<a href="{{ paginator.next_page_path }}" class="button button--round">Next Page</a>
 	</div>
 	{% endif %}
 </div>
