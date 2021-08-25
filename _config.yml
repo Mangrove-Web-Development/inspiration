@@ -70,6 +70,7 @@ _options:
 # CloudCannon Field Descriptions
 _comments:
   title: This will show up in the browser tab, and is used for SEO purposes.
+  their_testimonial_text: Quotations are automatically inserted.
 
 # Collections (Custom Post Types)
 # https://jekyllrb.com/docs/collections/
@@ -82,6 +83,9 @@ collections:
     _hide_content: true
   top-level-pages:
     output: true
+    _hide_content: true
+  testimonials:
+    output: false
     _hide_content: true
 
 defaults:
