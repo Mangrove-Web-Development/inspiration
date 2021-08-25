@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WYSIWYG Test
+title: Sample document for editor area test
 date: 2021-08-03 21:01:39
 featured_image: /uploads/refresh-brand.jpg
 ---
