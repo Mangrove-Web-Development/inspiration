@@ -93,6 +93,25 @@
     .category-container {
         margin-top: 10px;
     }
+
+    .team-section .team-section__container {
+        grid-template-columns: 50% 50%;
+
+        .team-section__container .team-section__container__team__member img {
+            height: 360px;
+            width: 295px;
+        }
+    }
+
+    .contact-form form {
+        padding-top: 13%;
+        padding-bottom: 80px;
+    }
+
+    .customers-section {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
