@@ -54,7 +54,7 @@ function is_touch_device() {
 (function () {
     'use strict';
 
-    function keyboardFocus (e) {
+    function keyboardFocus(e) {
         if (e.keyCode !== 9) {
             return;
         }
@@ -104,10 +104,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var mainNav = document.querySelector('.main-header__nav');
     var lastScrollTop = 0;
 
-    window.addEventListener("scroll", function() {
-        var st = window.pageYOffset || document.documentElement.scrollTop; 
+    window.addEventListener("scroll", function () {
+        var st = window.pageYOffset || document.documentElement.scrollTop;
         // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-        if (st > lastScrollTop){
+        if (st > lastScrollTop) {
             if (window.scrollY >= (mainNav.offsetHeight + 300)) {
                 mainNav.classList.add('main-header__nav--zero');
                 mainNav.classList.remove('main-header__nav--sticky');
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         lastScrollTop = st <= 0 ? 0 : st;
-     }, false);
+    }, false);
 
     // ——————————————————————————————————————————————————
     // hamburger nav
@@ -134,23 +134,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var menu = document.querySelector('.main-header__nav >div');
 
     function toggleNav() {
-      if (menu.classList.contains('is-active')) {
-        $('#navToggle').attr('aria-expanded', 'false');
-        menu.classList.remove('is-active');
-      } else {
-        menu.classList.add('is-active');
-        $('#navToggle').attr('aria-expanded', 'true');
-      }
+        if (menu.classList.contains('is-active')) {
+            $('#navToggle').attr('aria-expanded', 'false');
+            menu.classList.remove('is-active');
+        } else {
+            menu.classList.add('is-active');
+            $('#navToggle').attr('aria-expanded', 'true');
+        }
 
-      // set focus on first link within menu
-      $('.main-header__nav >div >ul >li:first-child > a').focus();
+        // set focus on first link within menu
+        $('.main-header__nav >div >ul >li:first-child > a').focus();
     }
 
 
     $('#navToggle').click(function () {
-      toggleNav();
+        toggleNav();
     });
-  });
+});
 
 
 $(document).ready(function () {
@@ -161,15 +161,15 @@ $(document).ready(function () {
     // search dropdown
     // —————————————————————————————————————————————————————
     var clicked = false;
-    
-    $('#toggleSearch').click(function() {
-        toggleBtnClick();
-    });  
-    
-    $('#searchClose').click(function() {
+
+    $('#toggleSearch').click(function () {
         toggleBtnClick();
     });
-    
+
+    $('#searchClose').click(function () {
+        toggleBtnClick();
+    });
+
     function toggleBtnClick() {
         if (clicked) {
             $('#searchContainer').addClass('search--hide');
@@ -187,36 +187,36 @@ $(document).ready(function () {
     // —————————————————————————————————————————————————————
     // set vars to "nav is closed"
     var clickedNav = false;
-    
+
     // --------------------------------- toggleNav Function
     function toggleNav() {
         // if var is true (nav is open), then close the nav and reset the var to false (nav is closed)
         if (!clickedNav) {
-            TweenMax.to( $('#navContainer'), 1, {
+            TweenMax.to($('#navContainer'), 1, {
                 ease: Elastic.easeOut.config(1, 0.75),
                 top: "0"
             });
             clickedNav = false;
         }
     }
-    
+
     // if the nav button is clicked, execute function
     jQuery('#toggleNav').click(function () {
         toggleNav();
     });
-    
+
     // --------------------------------- closeNav Function
     function closeNav() {
         clickedSubNav = false;
         // close main nav
-        TweenMax.to( $('#navContainer'), .75, {
+        TweenMax.to($('#navContainer'), .75, {
             ease: Elastic.easeIn.config(1, 0.75),
             top: "-100vh"
         });
         // reset the var to false/closed
         clickedSubNav = false;
     }
-    
+
     // if the close (x) button is clicked, execute the function
     jQuery('#closeNav').click(function () {
         closeNav();
@@ -227,7 +227,7 @@ $(document).ready(function () {
     // —————————————————————————————————————————————————————
     // home page testimonial slider
     // —————————————————————————————————————————————————————
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.home-testimonials__slider').slick({
             arrowsPlacement: 'beforeSlides',
             infinite: false,
@@ -236,20 +236,20 @@ $(document).ready(function () {
             dots: false,
             responsive: [
                 {
-                  breakpoint: 1100,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                  }
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
                 },
                 {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 },
-              ]
+            ]
         });
     });
 
