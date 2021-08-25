@@ -35,7 +35,7 @@ collections_dir: collections
 
 # pagination
 # https://jekyllrb.com/docs/pagination/
-paginate: 10
+paginate: 5
 paginate_path: "/news/page-:num/"
 
 
