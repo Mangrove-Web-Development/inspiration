@@ -2,7 +2,7 @@
 layout: post
 title: WYSIWYG Test
 date: 2021-08-03 21:01:39
-featured_image:
+featured_image: /uploads/refresh-brand.jpg
 ---
 ## Sample document for editor area test
 
