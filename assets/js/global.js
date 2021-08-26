@@ -25,14 +25,6 @@ try {
 }
 
 
-
-// —————————————————————————————————————————————————————
-// add class to target users with js or no js
-// —————————————————————————————————————————————————————
-document.documentElement.classList.remove("no-js");
-document.documentElement.classList.add("js");
-
-
 // —————————————————————————————————————————————————————
 // is touch device
 // —————————————————————————————————————————————————————
@@ -74,30 +66,50 @@ function is_touch_device() {
 })();
 
 
-// —————————————————————————————————————————————————————
-// make bg image square function
-// —————————————————————————————————————————————————————
-// add class "make-square" to elements
-// not tested, may be broken. contact Nikki if broken
-document.addEventListener("DOMContentLoaded", function () {
-    let squim = $('.make-square');
-
-    if (squim) {
-        function squareImage() {
-            let squimWidth = $('.make-square').width();
-            $('.make-square').css("height", squimWidth + 'px');
-        }
-        // init
-        squareImage();
-        window.addEventListener("resize", squareImage);
-    }
-});
-
-
 
 // Remember to minimize this file before putting into production site
 
 document.addEventListener("DOMContentLoaded", function () {
+    // —————————————————————————————————————————————————————
+    // home page image animation
+    // —————————————————————————————————————————————————————
+    let homeHeroImage = document.querySelector(".home-hero__image");
+
+    if (homeHeroImage) {
+        // fade image in full width
+        gsap.fromTo(homeHeroImage, {
+            width: "100vw",
+            opacity: 0,
+            duration: 0,
+            delay: 1,
+            ease: "Expo.easeOut",
+        }, {
+            opacity: 1,
+            duration: 1,
+            delay: 1,
+            ease: "Expo.easeOut",
+        });
+
+        // shove image to the side
+        gsap.fromTo(homeHeroImage, {
+            width: "100vw",
+            duration: 2,
+            delay: 1,
+            ease: "Expo.easeOut",
+        }, {
+            width: "50vw",
+            duration: 1,
+            delay: 3,
+            ease: "Expo.easeOut",
+        });
+        // gsap.to(".home-hero__content *", {
+        //     marginTop: "0",
+        //     duration: 1,
+        //     delay: .8,
+        //     ease: "Expo.easeOut",
+        // });
+    }
+
     // —————————————————————————————————————————————————————
     // scroll events 
     // —————————————————————————————————————————————————————
@@ -153,29 +165,27 @@ document.addEventListener("DOMContentLoaded", function () {
     // —————————————————————————————————————————————————————
     // home page testimonial slider
     // —————————————————————————————————————————————————————
-    $(document).ready(function () {
-        $('.home-testimonials__slider').slick({
-            arrowsPlacement: 'beforeSlides',
-            infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: false,
-            responsive: [
-                {
-                    breakpoint: 1100,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-            ]
-        });
+    $('.home-testimonials__slider').slick({
+        arrowsPlacement: 'beforeSlides',
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+        ]
     });
-});
+}); // end if DOMContentLoaded
