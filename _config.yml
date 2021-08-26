@@ -89,7 +89,7 @@ collections:
   testimonials:
     output: false
     _hide_content: true
-  case_studies:
+  case-studies:
     output: true
     _hide_content: true
     permalink: /case-study/:title/
@@ -110,6 +110,11 @@ defaults:
       type: "top-level-pages"
     values:
       layout: "top-level-page"
+  - scope: 
+      path: ""
+      type: "case-studies"
+    values:
+      layout: "case-study"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
