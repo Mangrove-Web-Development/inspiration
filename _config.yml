@@ -89,6 +89,10 @@ collections:
   testimonials:
     output: false
     _hide_content: true
+  case_studies:
+    output: true
+    _hide_content: true
+    permalink: /case-study/:title/
 
 defaults:
   - scope:

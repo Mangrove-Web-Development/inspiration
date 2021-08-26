@@ -1,0 +1,16 @@
+<section class="single-testimonial pv100">
+    <div class="wo pv200-p">
+    {% for testimonial in site.testimonials %}
+        {{ include.block.select_testimonial }}
+
+        <img src="{{ testimonial.image }}" alt="" class="col-3-to-5 m-col-1-to-3 s-col-1-to-5">
+        <h3 class="h4 col-4-to-10 m-col-3-to-8 s-col-1-to-5">{{ testimonial.their_name }}</h3>
+        <h4 class="h5 col-4-to-10 m-col-3-to-8 s-col-1-to-5">{{ testimonial.their_title }}</h4>
+        <blockquote class="col-4-to-10 m-col-3-to-8 s-col-1-to-5">
+            {{ testimonial.testimonial_text }}
+        </blockquote>
+    {% endfor %}
+
+
+    </div>
+</section>

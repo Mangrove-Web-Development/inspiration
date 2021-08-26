@@ -1,0 +1,31 @@
+{% include head.html %}
+
+<main data-barba="container" data-barba-namespace="case-study">
+
+    {% include page-header-case-study.html %}
+
+	{% for block in page.page_blocks %}
+    {% case block._id %}
+        {% when 'general_content' %}
+            {% include general-content.html block=block %}
+
+        {% when 'full_w_image' %}
+            {% include full-w-image.html block=block %}
+
+        {% when 'youtube_embed' %}
+            {% include youtube-embed.html block=block %}
+
+        {% when 'three_stats' %}
+            {% include three-stats.html block=block %}
+
+        {% when 'single_testimonial' %}
+            {% include single-testimonial.html block=block %}
+
+        {% else %}
+        <!-- else -->
+    {% endcase %}
+    {% endfor %}
+    
+</main>
+
+{% include footer.html %}

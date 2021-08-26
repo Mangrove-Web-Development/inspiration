@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 3,
             ease: "Expo.easeOut",
             position: "absolute",
-            top: "calc(50vh - 70px)",
+            top: "calc(50vh - 50px)",
             zIndex: 12,
         });
 
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 0,
             ease: "Expo.easeOut",
             position: "absolute",
-            top: "calc(50vh - 70px)",
+            top: "calc(50vh - 50px)",
             zIndex: 12,
         }, {
             height: "50vh",
