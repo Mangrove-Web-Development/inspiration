@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // ——————————————————————————————————————————————————
     // hamburger nav
     // ——————————————————————————————————————————————————
-    var toggle = document.querySelector('#navToggle');
     var menu = document.querySelector('.main-header__nav >div');
 
     function toggleNav() {
@@ -150,79 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
     $('#navToggle').click(function () {
         toggleNav();
     });
-});
-
-
-$(document).ready(function () {
-
-
-
-    // —————————————————————————————————————————————————————
-    // search dropdown
-    // —————————————————————————————————————————————————————
-    var clicked = false;
-
-    $('#toggleSearch').click(function () {
-        toggleBtnClick();
-    });
-
-    $('#searchClose').click(function () {
-        toggleBtnClick();
-    });
-
-    function toggleBtnClick() {
-        if (clicked) {
-            $('#searchContainer').addClass('search--hide');
-            clicked = false;
-        } else {
-            $('#searchContainer').removeClass('search--hide');
-            clicked = true;
-            $('#s').focus();
-        }
-    }
-
-
-    // —————————————————————————————————————————————————————
-    // mobile navigation starter
-    // —————————————————————————————————————————————————————
-    // set vars to "nav is closed"
-    var clickedNav = false;
-
-    // --------------------------------- toggleNav Function
-    function toggleNav() {
-        // if var is true (nav is open), then close the nav and reset the var to false (nav is closed)
-        if (!clickedNav) {
-            TweenMax.to($('#navContainer'), 1, {
-                ease: Elastic.easeOut.config(1, 0.75),
-                top: "0"
-            });
-            clickedNav = false;
-        }
-    }
-
-    // if the nav button is clicked, execute function
-    jQuery('#toggleNav').click(function () {
-        toggleNav();
-    });
-
-    // --------------------------------- closeNav Function
-    function closeNav() {
-        clickedSubNav = false;
-        // close main nav
-        TweenMax.to($('#navContainer'), .75, {
-            ease: Elastic.easeIn.config(1, 0.75),
-            top: "-100vh"
-        });
-        // reset the var to false/closed
-        clickedSubNav = false;
-    }
-
-    // if the close (x) button is clicked, execute the function
-    jQuery('#closeNav').click(function () {
-        closeNav();
-    });
-
-
 
     // —————————————————————————————————————————————————————
     // home page testimonial slider
@@ -252,8 +178,4 @@ $(document).ready(function () {
             ]
         });
     });
-
-
-
-
-}); // end document.ready
+});
