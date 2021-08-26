@@ -86,6 +86,9 @@ custom_latest_posts:
             Get up to speed on our latest news.
         </h2>
         <a class="button button--round col-9-to-13 m-col-7-to-9 s-col-1-to-5" href="/news/">All news</a>
+        {% if page.custom_latest_posts %}
+        
+        {% else %}
         {% for post in site.posts limit: 3 %}
         <a href="{{ post.url }}" class="home-latest-news__article s-col-1-to-5">
             <p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
@@ -94,6 +97,8 @@ custom_latest_posts:
             <p class="button button--line" aria-hidden="true">Read article</p>
         </a>
         {% endfor %}
+
+        {% endif %}
     </section>
 
     {% include cta.html %}
