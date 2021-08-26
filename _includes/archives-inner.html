@@ -6,7 +6,7 @@
         <!-- loop through post categories -->
         <div>
             {% for category in post.categories %}
-                <a href="/{{category | slugify: "latin"}}" class="eyebrow">
+                <a href="/archive/{{category | slugify: "latin"}}" class="eyebrow">
                     {{ category }}
                 </a>
               {% endfor %}
