@@ -6,6 +6,7 @@ featured_image: /uploads/refresh-brand.jpg
 categories:
   - category
   - testing
+featured_post: false
 ---
 ## General content, one column.
 
