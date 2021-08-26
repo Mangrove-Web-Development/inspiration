@@ -71,7 +71,8 @@ _options:
 _comments:
   title: This will show up in the browser tab, and is used for SEO purposes.
   their_testimonial_text: Quotations are automatically inserted.
-  custom_latest_posts: Please only select three.
+  custom_latest_posts: This will show the three newest posts marked as 'featured' in the News.
+  featured_post: When custom latest posts is true on the Home page, this post will show instead of the most recent News post.
 
 # Collections (Custom Post Types)
 # https://jekyllrb.com/docs/collections/
