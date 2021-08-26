@@ -71,6 +71,7 @@ _options:
 _comments:
   title: This will show up in the browser tab, and is used for SEO purposes.
   their_testimonial_text: Quotations are automatically inserted.
+  custom_latest_posts: Please only select three.
 
 # Collections (Custom Post Types)
 # https://jekyllrb.com/docs/collections/
