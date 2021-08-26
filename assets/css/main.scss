@@ -1075,14 +1075,20 @@ a {
 
 .full-w-image {
     >div {
-        border-radius: 50px;
-        overflow: hidden;
-        max-height: 90vh;
-
         img {
+            border-radius: 50px;
+            max-height: 90vh;
             height: 100%;
             width: 100%;
             object-fit: cover;
+            overflow: hidden;
+        }
+
+        p {
+            color: $bluePastel; 
+            margin-left: 40px;
+            margin-top: 20px;
+            display: block;
         }
     }
 }
