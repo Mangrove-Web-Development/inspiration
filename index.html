@@ -4,8 +4,7 @@ title: Home
 permalink: /
 featured_image: /uploads/mark-basarab-z8ct_Q3oCqM-unsplash.jpg
 featured_image_alt_text: You can see down a highway edged with trees, there's a snowy mountain.
-custom_latest_posts:
-  - 2021-08-25-news-post - Copy - Copy - Copy - Copy - Copy - Copy
+custom_latest_posts: true
 ---
 
 {% include head.html %}
@@ -88,7 +87,7 @@ custom_latest_posts:
         </h2>
         <a class="button button--round col-9-to-13 m-col-7-to-9 s-col-1-to-5" href="/news/">All news</a>
         {% if page.custom_latest_posts %}
-        
+
         {% else %}
         {% for post in site.posts limit: 3 %}
         <a href="{{ post.url }}" class="home-latest-news__article s-col-1-to-5">
