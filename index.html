@@ -85,24 +85,14 @@ featured_image_alt_text: You can see down a highway edged with trees, there's a 
             Get up to speed on our latest news.
         </h2>
         <a class="button button--round col-9-to-13 m-col-7-to-9 s-col-1-to-5" href="/news/">All news</a>
-        <a href="{{ post.url }}" class="home-latest-news__article col-1-to-5 m-col-1-to-5 s-col-1-to-5">
-            <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
+        {% for post in site.posts limit: 3 %}
+        <a href="{{ post.url }}" class="home-latest-news__article s-col-1-to-5">
+            <p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
             <!-- loop through post categories -->
-            <h3 class="h5">{{ post.title }}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h3>
+            <h3 class="h5">{{ post.title }}</h3>
             <p class="button button--line" aria-hidden="true">Read article</p>
         </a>
-        <a href="{{ post.url }}" class="home-latest-news__article col-5-to-9 m-col-5-to-9 s-col-1-to-5">
-            <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
-            <!-- loop through post categories -->
-            <h3 class="h5">{{ post.title }}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h3>
-            <p class="button button--line" aria-hidden="true">Read article</p>
-        </a>
-        <a href="{{ post.url }}" class="home-latest-news__article col-9-to-13 m-hide s-col-1-to-5">
-            <p class="eyebrow">{{ post.date }}JAN 01 2021</p>
-            <!-- loop through post categories -->
-            <h3 class="h5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. {{ post.title }}</h3>
-            <p class="button button--line" aria-hidden="true">Read article</p>
-        </a>
+        {% endfor %}
     </section>
 
     {% include cta.html %}

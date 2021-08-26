@@ -1,4 +1,10 @@
-@media only screen and (min-width: 1100px) {}
+@media only screen and (min-width: 1100px) {
+    .home-latest-news {
+        .home-latest-news__article {
+            width: calc(33vw - 40px);
+        }
+    }
+}
 
 @media only screen and (min-width: 1100px) and (max-width: 1400px) {
     body {
@@ -192,6 +198,16 @@
             aspect-ratio: auto;
             height: 35vw;
             object-fit: cover;
+        }
+    }
+
+    .home-latest-news {
+        .home-latest-news__article {
+            width: calc(50vw - 40px);
+
+            &:last-child {
+                display: none;
+            }
         }
     }
 
