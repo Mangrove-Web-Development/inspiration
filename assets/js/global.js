@@ -75,7 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // —————————————————————————————————————————————————————
     let homeHeroImage = document.querySelector(".home-hero__image");
 
-    if (homeHeroImage) {
+    // if not mobile, do the animation
+    if (homeHeroImage.offsetLeft != 0) {
         // fade image in full width
         gsap.fromTo(homeHeroImage, {
             width: "100vw",
@@ -102,12 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 3,
             ease: "Expo.easeOut",
         });
-        // gsap.to(".home-hero__content *", {
-        //     marginTop: "0",
-        //     duration: 1,
-        //     delay: .8,
-        //     ease: "Expo.easeOut",
-        // });
     }
 
     // —————————————————————————————————————————————————————
