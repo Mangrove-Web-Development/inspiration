@@ -374,7 +374,8 @@ a,
 input,
 textarea,
 .label,
-.home-testimonials blockquote {
+.home-testimonials blockquote,
+.single-testimonial blockquote {
     margin: 0;
     padding: 0;
     color: $offWhite;
@@ -387,7 +388,8 @@ li,
 input,
 textarea,
 .label,
-.home-testimonials blockquote {
+.home-testimonials blockquote,
+.single-testimonial blockquote {
     font-size: 200%;
     line-height: 150%;
     letter-spacing: 0.01em;
@@ -733,15 +735,6 @@ a {
             margin-bottom: 30px;
         }
 
-        blockquote:before {
-            content: '“';
-            margin-left: -0.3em;
-        }
-
-        blockquote:after {
-            content: '”';
-        }
-
         button.slick-arrow {
             position: absolute;
             top: -80px;
@@ -781,8 +774,6 @@ a {
             }
         }
 
-
-
         .slick-next .slick-next-icon,
         .slick-next .slick-prev-icon,
         .slick-prev .slick-next-icon,
@@ -802,6 +793,18 @@ a {
                 }
             }
         }
+    }
+}
+
+.single-testimonial,
+.home-testimonials {
+    blockquote:before {
+        content: '“';
+        margin-left: -0.3em;
+    }
+
+    blockquote:after {
+        content: '”';
     }
 }
 
@@ -934,6 +937,13 @@ a {
 
         a.eyebrow {
             color: $green;
+        }
+    }
+
+    &.page-header--case-study {
+        img {
+            max-width: 250px;
+            margin-top: 10px;
         }
     }
 
@@ -1164,6 +1174,56 @@ a {
             max-width: 200px;
             margin: 20px;
         }
+    }
+}
+
+.three-stats {
+    .three-stats__stat {
+        width: calc(33% - 80px);
+        display: inline-block;
+        margin: 0 40px;
+
+        * {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: "Neue World",serif;
+            font-size: 1200%;
+            line-height: 1;
+            color: #057ADC;
+            margin: 0;
+        }
+    }
+}
+
+.single-testimonial {
+    background-color: $navyDarker;
+
+    img {
+        grid-row-end: 4;
+        grid-row-start: 1;
+        height: 260px;
+        width: 217px;
+        border-radius: 999999px;
+    }
+
+    .h4, .h5, blockquote {
+        margin-left: 50px;
+    }
+
+    .h4 {
+        align-self: end;
+        margin-top: 0;
+    }
+
+    .h5 {
+        margin-top: 0;
+    }
+
+    blockquote {
+        align-self: start;
     }
 }
 
