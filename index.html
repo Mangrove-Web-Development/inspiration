@@ -88,6 +88,16 @@ custom_latest_posts: true
         <a class="button button--round col-9-to-13 m-col-7-to-9 s-col-1-to-5" href="/news/">All news</a>
         {% if page.custom_latest_posts %}
 
+        {% assign featuredPosts = site.posts | where: "featured_post", "true" %}
+        {% for post in featuredPosts limit: 3 %}
+        <a href="{{ post.url }}" class="home-latest-news__article s-col-1-to-5">
+            <p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
+            <!-- loop through post categories -->
+            <h3 class="h5">{{ post.title }}</h3>
+            <p class="button button--line" aria-hidden="true">Read article</p>
+        </a>
+        {% endfor %}
+
         {% else %}
         {% for post in site.posts limit: 3 %}
         <a href="{{ post.url }}" class="home-latest-news__article s-col-1-to-5">
