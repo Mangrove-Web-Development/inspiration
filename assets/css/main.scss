@@ -547,6 +547,9 @@ iframe {
 // ————————————————————————————————————————— 
 // buttons
 // —————————————————————————————————————————
+a {
+    display: inline-block;
+}
 
 .button {
     display: block;
@@ -1191,8 +1194,15 @@ iframe {
         grid-template-areas:
             "date category"
             "title title"
-            "button .";
+            "button button";
+        grid-template-columns: 1fr 1fr;
         margin: 50px;
+        width: 90%;
+
+        .h2 {
+            grid-area: title;
+            margin-top: 20px;
+        }
 
         p {
             grid-area: date;
@@ -1200,11 +1210,17 @@ iframe {
 
         div {
             grid-area: category;
+            margin-bottom: 20px;
+            margin-top: 10px;
+
+            a {
+                word-break: keep-all;
+            }
         }
 
         .button.button--line {
             grid-area: button;
-            width: 380px;
+            width: 50%;
 
             a {
                 color: $green;
@@ -1213,7 +1229,7 @@ iframe {
         }
 
         .button.button--line::after {
-            left: -300px;
+            left: -65%;
             position: relative;
         }
     }
