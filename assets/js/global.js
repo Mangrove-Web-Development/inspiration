@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let homeHeroImage = document.querySelector(".home-hero__image");
 
     // if not mobile, do the desktop animation
-    if (homeHeroImage.offsetLeft != 0) {
+    if (homeHeroImage && (homeHeroImage.offsetLeft != 0)) {
         // fade image in full width
         gsap.fromTo(homeHeroImage, {
             width: "100vw",
