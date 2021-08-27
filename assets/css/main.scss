@@ -909,12 +909,13 @@ a {
         }
 
         .page-header--top-level__image {
-            height: 180%;
+            height: 160%;
+            max-height: 1200px;
             width: auto;
             display: block;
             position: absolute;
             z-index: -1;
-            top: -40%;
+            top: -30%;
             right: 10%;
         }
     }
