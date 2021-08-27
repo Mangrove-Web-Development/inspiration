@@ -265,7 +265,7 @@ p .button {
         margin: 120px 50px 0 50px;
 
         img {
-            max-width: 13vw;
+            width: 13vw;
         }
     }
 
@@ -941,6 +941,8 @@ a {
     }
 
     &.page-header--case-study {
+        margin-top: 0 !important;
+
         img {
             max-width: 250px;
             margin-top: 10px;
