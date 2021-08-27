@@ -5,7 +5,7 @@
         <!-- {{ post.date | date_to_string | upcase }} -->
         <!-- loop through post categories -->
         <div>
-            {% for category in post.categories %}
+            {% for category in post.categories limit: 1 %}
                 <a href="/archive/{{category | slugify: "latin"}}" class="eyebrow">
                     {{ category }}
                 </a>
