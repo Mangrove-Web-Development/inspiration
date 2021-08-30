@@ -1,6 +1,6 @@
 {% if include.block.image_on_left == true %}
 <section class="page-cta wo pv200">
-    <div class="page-cta__content col-2-to-7 m-col-1-to-5 s-col-1-to-5">
+    <div class="page-cta__content page-cta__image col-2-to-7 m-col-1-to-5 s-col-1-to-5">
         <img src="{{ include.block.image }}" alt="{{ include.block.image_alt_text }}">
     </div>
     <div class="page-cta__content col-8-to-12 m-col-5-to-9 s-col-1-to-5">
@@ -24,7 +24,7 @@
         </p>
         <a class="button button--line" href="{{ include.block.link }}">Learn more</a>
     </div>
-    <div class="page-cta__content col-7-to-12 m-col-5-to-9 s-col-1-to-5">
+    <div class="page-cta__content page-cta__image col-7-to-12 m-col-5-to-9 s-col-1-to-5">
         <img src="{{ include.block.image }}" alt="{{ include.block.image_alt_text }}">
     </div>
 </section>

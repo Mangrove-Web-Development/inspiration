@@ -639,6 +639,11 @@
 
     .page-cta__content {
         margin-bottom: 60px;
+        order: 2;
+    }
+
+    .page-cta__image {
+        order: 1;
     }
 
     .general-content.general-content--2-col {
