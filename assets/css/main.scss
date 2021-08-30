@@ -1358,9 +1358,14 @@ ul.news-category-loop {
     .main-footer__nav {
         margin-bottom: 100px;
 
-        h2 a {
-            color: $offWhite;
-            font-weight: bold;
+        h2 {
+            margin-top: 0;
+            padding-top: 0;
+            
+            a {
+                color: $offWhite;
+                font-weight: bold;
+            }
         }
 
         >div {
