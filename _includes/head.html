@@ -75,12 +75,12 @@
             <div>
                 <ul>  
                 {% for navItem in site.data.navigation %}
-                    <li {% if navitem.submenu != null %}class="main-header__nav__has-children" aria-haspopup="true" aria-expanded="false"{% endif %}>
-                        <a class="main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="{{ navItem.url }}">{{ navItem.title }}</a>
+                    <li class="{% if pagePermalink == navItem.url %}active{% endif %}" {% if navitem.submenu != null %}class="main-header__nav__has-children" aria-haspopup="true" aria-expanded="false"{% endif %}>
+                        <a class="main-header__nav__link" href="{{ navItem.url }}">{{ navItem.title }}</a>
                         {% if navItem.submenu != null %}
                         <ul>
                             {% for subItem in navItem.submenu %}
-                            <li><a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ subItem.url }}">{{ subItem.title }}</a></li>
+                            <li class="{% if pagePermalink == subItem.url %}active{% endif %}"><a class="main-header__nav__link" href="{{ subItem.url }}">{{ subItem.title }}</a></li>
                             {% endfor %}
                         </ul>
                         {% endif %}

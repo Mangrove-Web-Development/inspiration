@@ -895,6 +895,7 @@
             }
         }
 
+        li.active,
         li:focus-within,
         li:hover {
             >a {
@@ -907,7 +908,10 @@
                     opacity: 1 !important;
                 }
             }
+        }
 
+        li:focus-within,
+        li:hover {
             >ul {
                 display: flex;
             }

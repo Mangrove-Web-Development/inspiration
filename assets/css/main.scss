@@ -148,7 +148,8 @@ serif;
 }
 
 .keyboard-focus :focus {
-    outline: 2px solid blue;
+    outline: 2px solid white;
+    border-radius: 5px;
 }
 
 // skip link defaults
@@ -163,6 +164,8 @@ serif;
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);
     transition: .4s all $easing;
+    color: $offBlack !important;
+    font-size: 200%;
 
     &:focus {
         top: 0;
