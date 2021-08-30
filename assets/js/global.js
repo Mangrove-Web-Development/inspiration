@@ -105,62 +105,62 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     } else { // do the mobile animation
         // fade image in full height
-        gsap.fromTo(homeHeroImage, {
-            height: "100vh",
-            opacity: 0,
-            duration: 0,
-            delay: 1,
-            ease: "Expo.easeOut",
-            position: "absolute",
-            top: "-18px",
-            zIndex: 12,
-        }, {
-            opacity: 1,
-            duration: 1,
-            delay: 1,
-            ease: "Expo.easeOut",
-            position: "absolute",
-            top: "-18px",
-            zIndex: 12,
-        });
+        // gsap.fromTo(homeHeroImage, {
+        //     height: "100vh",
+        //     opacity: 0,
+        //     duration: 0,
+        //     delay: 1,
+        //     ease: "Expo.easeOut",
+        //     position: "absolute",
+        //     top: "-18px",
+        //     zIndex: 12,
+        // }, {
+        //     opacity: 1,
+        //     duration: 1,
+        //     delay: 1,
+        //     ease: "Expo.easeOut",
+        //     position: "absolute",
+        //     top: "-18px",
+        //     zIndex: 12,
+        // });
 
 
-        // shorten height 
-        gsap.fromTo(homeHeroImage, {
-            opacity: 1,
-            duration: 0,
-            delay: 2,
-            ease: "Expo.easeOut",
-            position: "absolute",
-            top: "-18px",
-            zIndex: 12,
-        }, {
-            height: "50vh",
-            duration: 1,
-            delay: 3,
-            ease: "Expo.easeOut",
-            position: "absolute",
-            top: "calc(50vh - 50px)",
-            zIndex: 12,
-        });
+        // // shorten height 
+        // gsap.fromTo(homeHeroImage, {
+        //     opacity: 1,
+        //     duration: 0,
+        //     delay: 2,
+        //     ease: "Expo.easeOut",
+        //     position: "absolute",
+        //     top: "-18px",
+        //     zIndex: 12,
+        // }, {
+        //     height: "50vh",
+        //     duration: 1,
+        //     delay: 3,
+        //     ease: "Expo.easeOut",
+        //     position: "absolute",
+        //     top: "calc(50vh - 50px)",
+        //     zIndex: 12,
+        // });
 
-        // move image back into flow of page
-        gsap.fromTo(homeHeroImage, {
-            height: "50vh",
-            duration: 0,
-            delay: 0,
-            ease: "Expo.easeOut",
-            position: "absolute",
-            top: "calc(50vh - 50px)",
-            zIndex: 12,
-        }, {
-            height: "50vh",
-            duration: 1,
-            delay: 5,
-            ease: "Expo.easeOut",
-            position: "static",
-            top: "auto",
-        });
+        // // move image back into flow of page
+        // gsap.fromTo(homeHeroImage, {
+        //     height: "50vh",
+        //     duration: 0,
+        //     delay: 0,
+        //     ease: "Expo.easeOut",
+        //     position: "absolute",
+        //     top: "calc(50vh - 50px)",
+        //     zIndex: 12,
+        // }, {
+        //     height: "50vh",
+        //     duration: 1,
+        //     delay: 5,
+        //     ease: "Expo.easeOut",
+        //     position: "static",
+        //     top: "auto",
+        // });
     }
 
     // —————————————————————————————————————————————————————

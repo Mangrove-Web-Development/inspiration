@@ -1361,7 +1361,7 @@ ul.news-category-loop {
         h2 {
             margin-top: 0;
             padding-top: 0;
-            
+
             a {
                 color: $offWhite;
                 font-weight: bold;
@@ -1423,7 +1423,8 @@ ul.news-category-loop {
     .main-footer__small {
         font-family: $fraktionSans;
         font-size: 170%;
-        line-height: 200%;
+        line-height: 1.2;
+        margin-bottom: 15px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: $grey;
