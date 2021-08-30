@@ -936,11 +936,7 @@ a {
             &::after {
                 background: none;
             }
-        }
-
-        a.eyebrow {
-            color: $green;
-        }
+        }        
     }
 
     &.page-header--case-study {
@@ -968,6 +964,28 @@ a {
     }
 }
 
+ul.news-category-loop {
+    margin: 0;
+    padding: 0;
+
+    li.eyebrow {
+        list-style: none;
+        display: inline-block;
+        color: $green;
+        margin: 0;
+        padding: 0;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        a {
+            color: $green;
+        }
+    }
+}
+
 .home-intro {
     overflow: visible;
 
@@ -983,7 +1001,7 @@ a {
 
     .home-intro__stat {
         margin-left: 30px;
-        
+
         h3 {
             font-family: $neueWorld;
             font-size: 1200%;
@@ -1284,10 +1302,13 @@ a {
             grid-area: date;
         }
 
-        div {
+        p.eyebrow {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
             grid-area: category;
-            margin-bottom: 20px;
-            margin-top: 10px;
 
             a {
                 word-break: keep-all;

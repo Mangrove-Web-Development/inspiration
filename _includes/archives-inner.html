@@ -4,13 +4,15 @@
         <p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
         <!-- {{ post.date | date_to_string | upcase }} -->
         <!-- loop through post categories -->
-        <div>
-            {% for category in post.categories limit: 1 %}
-                <a href="/archive/{{category | slugify: "latin"}}" class="eyebrow">
+        <ul class="news-category-loop">
+            {% for category in post.categories %}
+            <li class="eyebrow">
+                <a href="/archive/{{category | slugify: "latin"}}">
                     {{ category }}
                 </a>
-              {% endfor %}
-        </div>
+            </li>
+        {% endfor %}
+        </ul>
         <h2 class="h2">{{ post.title }}</h2>
         <div class="button button--line">
             <a href="{{ post.url }}">read article</a>

@@ -1,9 +1,13 @@
 <section class="page-header page-header--post wo">
-    <p class="eyebrow col-4-to-6 m-col-1-to-8 s-col-1-to-5">{{ page.date | date: "%b %e %Y" }}</p>
-    {% for category in page.categories limit: 1%}
-		<a href="/{{category | slugify: "latin"}}" class="eyebrow col-6-to-10">
-			{{ category }}
-		</a>
+    <p class="eyebrow col-4-to-6 m-col-2-to-4 s-col-1-to-5">{{ page.date | date: "%b %e %Y" }}</p>
+	<ul class="news-category-loop col-6-to-10 m-col-4-to-7 s-col-1-to-5">
+	{% for category in page.categories %}
+		<li class="eyebrow">
+			<a href="/archive/{{category | slugify: "latin"}}">
+				{{ category }}
+			</a>
+		</li>
 	{% endfor %}
-    <h1 class="h2 col-4-to-10 m-col-1-to-8 s-col-1-to-5">{{ page.title }}</h1>
+	</ul>
+    <h1 class="h2 col-4-to-10 m-col-2-to-7 s-col-1-to-5">{{ page.title }}</h1>
 </section>
