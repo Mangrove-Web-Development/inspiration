@@ -206,6 +206,17 @@ function loadSite() {
         display: "none",
         duration: 0,
     });
+
+    AOS.init({
+        delay: 800,
+        duration: 1000,
+        easing: 'ease-out-cubic',
+        once: true,
+    });
+
+    $('#navToggle').click(function () {
+        toggleNav();
+    });
 }
 
 
@@ -214,10 +225,6 @@ function loadSite() {
 document.addEventListener("DOMContentLoaded", function () {
     navScrolly();
     testimSlider();
-
-    $('#navToggle').click(function () {
-        toggleNav();
-    });
 
 }); // end if DOMContentLoaded
 
@@ -287,6 +294,12 @@ if (window.inEditorMode) {
         barba.hooks.after((data) => {   
             testimSlider();
             navScrolly();
+            AOS.init({
+                delay: 800,
+                duration: 1000,
+                easing: 'ease-out-cubic',
+                once: true,
+            });
         
             $('#navToggle').click(function () {
                 toggleNav();
