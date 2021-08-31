@@ -132,18 +132,80 @@ function navScrolly() {
 function toggleNav() {
     var menu = document.querySelector('.main-header__nav >div');
 
-    function toggleNav() {
-        if (menu.classList.contains('is-active')) {
-            $('#navToggle').attr('aria-expanded', 'false');
-            menu.classList.remove('is-active');
-        } else {
-            menu.classList.add('is-active');
-            $('#navToggle').attr('aria-expanded', 'true');
-        }
-
-        // set focus on first link within menu
-        $('.main-header__nav >div >ul >li:first-child > a').focus();
+    if (menu.classList.contains('is-active')) {
+        $('#navToggle').attr('aria-expanded', 'false');
+        menu.classList.remove('is-active');
+    } else {
+        menu.classList.add('is-active');
+        $('#navToggle').attr('aria-expanded', 'true');
     }
+
+    // set focus on first link within menu
+    $('.main-header__nav >div >ul >li:first-child > a').focus();
+}
+
+// ——————————————————————————————————————————————————
+// load bar
+// https://codepen.io/ahsanrathore/pen/MwppEB
+// ——————————————————————————————————————————————————
+function loadSite() { 
+    var perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
+    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+    time = parseInt((EstimatedTime/1000)%60)*.1;
+
+    console.log(time);
+
+    let loadSite = gsap.timeline();
+    // animate the progress
+    loadSite.to((".once-transition__bar__progress"), {
+        delay: 1,
+        ease: Expo.easeOut,
+        width: "0px",
+        duration: time,
+    });
+
+    // animate progress bar out
+    loadSite.to((".once-transition__bar"), {
+        ease: Expo.easeOut,
+        opacity: 0,
+        duration: 0.5,
+    });
+
+    // reveal page
+    loadSite.to((".once-transition__background"), {
+        ease: Expo.easeOut,
+        borderWidth: 0,
+        duration: 4,
+    });
+
+    // homepage animation
+    let homeHeroImage = document.querySelector(".home-hero__image");
+
+    // if not mobile, do the desktop animation
+    if (homeHeroImage && (homeHeroImage.offsetLeft != 0)) {
+        // fade image in full width
+        loadSite.to(homeHeroImage, {
+            width: "100vw",
+            opacity: 1,
+            delay: -2,
+            duration: 0,
+            ease: "Expo.easeOut",
+        });
+
+        // shove image to the side
+        loadSite.to(homeHeroImage, {
+            delay: 1,
+            width: "50vw",
+            duration: 1,
+            ease: "Expo.easeOut",
+        });
+    }
+    
+    // REMOVE once-transition SUPER IMPORTANT
+    loadSite.to((".once-transition"), {
+        display: "none",
+        duration: 0,
+    });
 }
 
 
@@ -156,12 +218,6 @@ document.addEventListener("DOMContentLoaded", function () {
     $('#navToggle').click(function () {
         toggleNav();
     });
-
-    // —————————————————————————————————————————————————————
-    // home page image animation
-    // —————————————————————————————————————————————————————
-    // in index file
-
 
 }); // end if DOMContentLoaded
 
@@ -177,6 +233,10 @@ if (window.inEditorMode) {
         // —————————————————————————————————————————————————— 
         barba.init({
             transitions: [{
+                name: 'loader',
+                once(data) {
+                    loadSite();
+                },
                 name: 'default',
                 leave(data) {
                     // automatically close nav

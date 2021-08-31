@@ -62,6 +62,13 @@
 {% capture pagePermalink %}/{{ pageURLsplit[1] }}/{% endcapture %}
 
 <body id="bodyID" data-barba="wrapper" class="page-{{ pageURLsplit }}">
+    <div class="once-transition">
+        <div class="once-transition__bar">
+            <div class="once-transition__bar__progress"></div>
+            <img src="/assets/images/loader.svg" alt="">
+        </div>
+        <div class="once-transition__background"></div>
+    </div>
     <a id="skipLink" href="#skipNavigation">Skip Navigation</a>
     <header id="mainHeader" class="main-header wo">
         <nav id="mainNav" class="main-header__nav col-1-to-13 m-col-1-to-13 s-col-1-to-5">  
