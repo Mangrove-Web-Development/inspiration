@@ -187,14 +187,14 @@ function loadSite() {
         loadSite.to(homeHeroImage, {
             width: "100vw",
             opacity: 1,
-            delay: -2,
+            delay: -4,
             duration: 0,
             ease: "Expo.easeOut",
         });
 
         // shove image to the side
         loadSite.to(homeHeroImage, {
-            delay: 1,
+            delay: -2,
             width: "50vw",
             duration: 1,
             ease: "Expo.easeOut",
