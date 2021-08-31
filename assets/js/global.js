@@ -65,107 +65,39 @@ function is_touch_device() {
     document.addEventListener('keydown', keyboardFocus, false);
 })();
 
+// —————————————————————————————————————————————————————
+// home page testimonial slider
+// —————————————————————————————————————————————————————
+function testimSlider() {
+    $('.home-testimonials__slider').slick({
+        arrowsPlacement: 'beforeSlides',
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+        ]
+    });
+}
 
-
-// Remember to minimize this file before putting into production site
-
-document.addEventListener("DOMContentLoaded", function () {
-    // —————————————————————————————————————————————————————
-    // home page image animation
-    // —————————————————————————————————————————————————————
-    let homeHeroImage = document.querySelector(".home-hero__image");
-
-    // if not mobile, do the desktop animation
-    if (homeHeroImage && (homeHeroImage.offsetLeft != 0)) {
-        // fade image in full width
-        gsap.fromTo(homeHeroImage, {
-            width: "100vw",
-            opacity: 0,
-            duration: 0,
-            delay: 1,
-            ease: "Expo.easeOut",
-        }, {
-            opacity: 1,
-            duration: 1,
-            delay: 1,
-            ease: "Expo.easeOut",
-        });
-
-        // shove image to the side
-        gsap.fromTo(homeHeroImage, {
-            width: "100vw",
-            duration: 2,
-            delay: 1,
-            ease: "Expo.easeOut",
-        }, {
-            width: "50vw",
-            duration: 1,
-            delay: 3,
-            ease: "Expo.easeOut",
-        });
-    } else { // do the mobile animation
-        // fade image in full height
-        // gsap.fromTo(homeHeroImage, {
-        //     height: "100vh",
-        //     opacity: 0,
-        //     duration: 0,
-        //     delay: 1,
-        //     ease: "Expo.easeOut",
-        //     position: "absolute",
-        //     top: "-18px",
-        //     zIndex: 12,
-        // }, {
-        //     opacity: 1,
-        //     duration: 1,
-        //     delay: 1,
-        //     ease: "Expo.easeOut",
-        //     position: "absolute",
-        //     top: "-18px",
-        //     zIndex: 12,
-        // });
-
-
-        // // shorten height 
-        // gsap.fromTo(homeHeroImage, {
-        //     opacity: 1,
-        //     duration: 0,
-        //     delay: 2,
-        //     ease: "Expo.easeOut",
-        //     position: "absolute",
-        //     top: "-18px",
-        //     zIndex: 12,
-        // }, {
-        //     height: "50vh",
-        //     duration: 1,
-        //     delay: 3,
-        //     ease: "Expo.easeOut",
-        //     position: "absolute",
-        //     top: "calc(50vh - 50px)",
-        //     zIndex: 12,
-        // });
-
-        // // move image back into flow of page
-        // gsap.fromTo(homeHeroImage, {
-        //     height: "50vh",
-        //     duration: 0,
-        //     delay: 0,
-        //     ease: "Expo.easeOut",
-        //     position: "absolute",
-        //     top: "calc(50vh - 50px)",
-        //     zIndex: 12,
-        // }, {
-        //     height: "50vh",
-        //     duration: 1,
-        //     delay: 5,
-        //     ease: "Expo.easeOut",
-        //     position: "static",
-        //     top: "auto",
-        // });
-    }
-
-    // —————————————————————————————————————————————————————
-    // scroll events 
-    // —————————————————————————————————————————————————————
+// —————————————————————————————————————————————————————
+// scroll events 
+// —————————————————————————————————————————————————————
+function navScrolly() {
     var mainNav = document.querySelector('.main-header__nav');
     var lastScrollTop = 0;
 
@@ -191,10 +123,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         lastScrollTop = st <= 0 ? 0 : st;
     }, false);
+}
 
-    // ——————————————————————————————————————————————————
-    // hamburger nav
-    // ——————————————————————————————————————————————————
+
+// ——————————————————————————————————————————————————
+// hamburger nav
+// ——————————————————————————————————————————————————
+function toggleNav() {
     var menu = document.querySelector('.main-header__nav >div');
 
     function toggleNav() {
@@ -209,36 +144,119 @@ document.addEventListener("DOMContentLoaded", function () {
         // set focus on first link within menu
         $('.main-header__nav >div >ul >li:first-child > a').focus();
     }
+}
 
+
+// Remember to minimize this file before putting into production site
+
+document.addEventListener("DOMContentLoaded", function () {
+    navScrolly();
+    testimSlider();
 
     $('#navToggle').click(function () {
         toggleNav();
     });
 
     // —————————————————————————————————————————————————————
-    // home page testimonial slider
+    // home page image animation
     // —————————————————————————————————————————————————————
-    $('.home-testimonials__slider').slick({
-        arrowsPlacement: 'beforeSlides',
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-        ]
-    });
+    // in index file
+
+
 }); // end if DOMContentLoaded
+
+
+
+
+if (window.inEditorMode) {
+    // do not load barba
+} else {
+    document.addEventListener("DOMContentLoaded", function () {
+        // ——————————————————————————————————————————————————
+        // Barba
+        // —————————————————————————————————————————————————— 
+        barba.init({
+            transitions: [{
+                name: 'default',
+                leave(data) {
+                    // automatically close nav
+                    // var menu = document.querySelector('#mainNav');
+                    // $('#navToggle').attr('aria-expanded', 'false');
+                    // menu.classList.remove('is-active');
+                    // gsap.to(menu, {
+                    //     right: "-590px",
+                    //     display: "none",
+                    //     duration: .35,
+                    //     ease: "circ.out",
+                    // });
+
+                    return gsap.to(data.current.container, {
+                        ease: Power4.easeInOut,
+                        opacity: 0,
+                        display: "none",
+                        duration: .5,
+                    });
+                },
+                enter(data) {
+                    // scroll to the top of the page
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+
+                    return gsap.fromTo(
+                        data.next.container,
+                        {
+                            ease: Power4.easeInOut,
+                            opacity: 0,
+                        },
+                        {
+                            delay: 1,
+                            opacity: 1,
+                            duration: .5,
+                        }
+                    );
+                },
+            }]
+        });
+
+        barba.hooks.once((data) => {
+            // help fathom get the correct URL on first page
+            // fathom.trackPageview({
+            //     url: data.next.url.href,
+            // });
+        }); // end barba.hooks.once
+
+        barba.hooks.after((data) => {   
+            testimSlider();
+            navScrolly();
+        
+            $('#navToggle').click(function () {
+                toggleNav();
+            });
+
+            // —————————————————————————————————————————
+            // U P D A T E   N A V - A C T I V E
+            // —————————————————————————————————————————
+            let nextItem = data.next.url.path;
+            let menu = document.querySelectorAll(".main-header__nav__link");
+            let currentPermalink = window.location.pathname;
+            let currentPermalinkSplit = currentPermalink.split("/");
+            let currentParentPage = "/" + currentPermalinkSplit[1] + "/";
+
+            // for each menu item, run the active class update function
+            menu.forEach((link) => {
+                // remove all active classes
+                link.parentElement.classList.remove("active");
+                // add active class to the link
+                if (link.pathname == nextItem) {
+                    link.parentElement.classList.add("active");
+                } else if (link.attributes.href.nodeValue == currentParentPage) {
+                    link.parentElement.classList.add("active");
+                }
+            });
+
+            // help fathom get the correct URL on subsequent pages
+            // fathom.trackPageview({
+            //     url: data.next.url.href,
+            // });
+        });
+    }); // end content loaded
+}
