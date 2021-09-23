@@ -200,7 +200,7 @@ function loadSite() {
 
         // shove image to the side
         loadSite.to(homeHeroImage, {
-            delay: -2,
+            delay: -3,
             width: "50vw",
             duration: 1,
             ease: "Expo.easeOut",
