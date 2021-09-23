@@ -183,6 +183,12 @@ function loadSite() {
 
     // if not mobile, do the desktop animation
     if (homeHeroImage && (homeHeroImage.offsetLeft != 0)) {
+        // SHOW once-transition SUPER IMPORTANT
+        loadSite.to((".once-transition"), {
+            display: "flex",
+            duration: 0,
+        });
+          
         // fade image in full width
         loadSite.to(homeHeroImage, {
             width: "100vw",
