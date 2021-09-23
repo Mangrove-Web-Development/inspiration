@@ -156,6 +156,12 @@ function loadSite() {
     console.log(time);
 
     let loadSite = gsap.timeline();
+      // SHOW once-transition SUPER IMPORTANT
+      loadSite.to((".once-transition"), {
+          display: "flex",
+          duration: 0,
+      });
+        
     // animate the progress
     loadSite.to((".once-transition__bar__progress"), {
         delay: 1,
@@ -183,12 +189,6 @@ function loadSite() {
 
     // if not mobile, do the desktop animation
     if (homeHeroImage && (homeHeroImage.offsetLeft != 0)) {
-        // SHOW once-transition SUPER IMPORTANT
-        loadSite.to((".once-transition"), {
-            display: "flex",
-            duration: 0,
-        });
-          
         // fade image in full width
         loadSite.to(homeHeroImage, {
             width: "100vw",
