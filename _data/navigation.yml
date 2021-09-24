@@ -15,12 +15,8 @@
 - title: Resources
   url: /resources/
   submenu:
-    - title: Whitepapers
-      url: /resources/whitepapers/
-    - title: Reports
-      url: /resources/reports/
-    - title: Tools
-      url: /resources/tools/
+    - title:
+      url:
 - title: News
   url: /news/
 - title: Contact
