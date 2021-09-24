@@ -1,6 +1,6 @@
 ---
 layout: post
-title: News post
+title: Press releases test post
 date: 2021-08-25 00:00:00
 featured_image: /uploads/refresh-brand.jpg
 categories:
