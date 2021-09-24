@@ -467,14 +467,14 @@ p.small {
 .h2 {
     font-size: 600%;
     line-height: 110%;
-    margin-top: 0;
+    margin-top: 80px;
     margin-bottom: 30px;
     padding: 0;
+    padding-top: 20px;
     color: $blueLighter;
     font-family: $neueWorld;
 }
-
-.general-content h3,
+,
 .h3 {
     font-size: 450%;
     line-height: 150%;
@@ -485,7 +485,7 @@ p.small {
     font-family: $neueWorld;
 }
 
-.general-content h4,
+.general-content h3,
 .h4 {
     color: $offWhite;
     font-family: $fraktionSans;
@@ -497,7 +497,7 @@ p.small {
     margin-bottom: 20px;
 }
 
-.general-content h5,
+.general-content h4,
 .general-content blockquote p,
 .large,
 .h5 {
@@ -514,6 +514,7 @@ p.small {
     color: $blueLight;
 }
 
+.general-content h5,
 .general-content h6,
 .h6,
 .eyebrow {
