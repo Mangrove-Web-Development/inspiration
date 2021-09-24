@@ -15,12 +15,6 @@ second_column:
 third_column:
   - title: Resources
     url: /resources/
-  - title: Whitepapers
-    url: /resources/whitepapers/
-  - title: Reports
-    url: /resources/reports/
-  - title: Tools
-    url: /resources/tools/
 fourth_column:
   - title: News
     url: /news/
