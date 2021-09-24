@@ -214,7 +214,7 @@ function loadSite() {
     });
 
     AOS.init({
-        delay: 800,
+        delay: 400,
         duration: 1000,
         easing: 'ease-out-cubic',
         once: true,
