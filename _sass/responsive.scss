@@ -365,12 +365,11 @@
     .general-content h2,
     .h2 {
         font-size: 400%;
-        margin-top: 0;
+        margin-top: 60px;
         margin-bottom: 30px;
     }
 
     .home-intro .home-intro__stat p,
-    .general-content h3,
     .h3 {
         font-size: 300%;
         line-height: 110%;
@@ -383,14 +382,14 @@
         max-width: 87%;
     }
 
-    .general-content h4,
+    .general-content h3,
     .h4 {
         font-size: 200%;
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
-    .general-content h5,
+    .general-content h4,
     .general-content blockquote p,
     .large,
     .h5 {
@@ -399,6 +398,7 @@
         margin-bottom: 10px;
     }
 
+    .general-content h5,
     .general-content h6,
     .h6,
     .eyebrow {
