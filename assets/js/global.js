@@ -214,13 +214,6 @@ function loadSite() {
         delay: -2,
     });
 
-    AOS.init({
-        delay: 400,
-        duration: 1000,
-        easing: 'ease-out-cubic',
-        once: true,
-    });
-
     $('#navToggle').click(function () {
         toggleNav();
     });
@@ -232,6 +225,13 @@ function loadSite() {
 document.addEventListener("DOMContentLoaded", function () {
     navScrolly();
     testimSlider();
+
+    AOS.init({
+        delay: 400,
+        duration: 1000,
+        easing: 'ease-out-cubic',
+        once: true,
+    });
 
 }); // end if DOMContentLoaded
 
@@ -301,15 +301,16 @@ if (window.inEditorMode) {
         barba.hooks.after((data) => {   
             testimSlider();
             navScrolly();
-            AOS.init({
-                delay: 800,
-                duration: 1000,
-                easing: 'ease-out-cubic',
-                once: true,
-            });
         
             $('#navToggle').click(function () {
                 toggleNav();
+            });
+
+            AOS.init({
+                delay: 400,
+                duration: 1000,
+                easing: 'ease-out-cubic',
+                once: true,
             });
 
             // —————————————————————————————————————————
