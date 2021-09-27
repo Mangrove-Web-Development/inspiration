@@ -95,8 +95,12 @@
                 {% endfor %}
                 </ul>
                 <div class="main-header__nav--utility-nav">
-                    <a class="main-header__nav__link--careers main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/careers/">Careers</a>
-                    <a class="main-header__nav__link--login main-header__nav__link{% if pagePermalink == navItem.url %} active{% endif %}" href="/">Login</a>
+                    {% if site.data.utility_links.show_careers%}
+                    <a class="main-header__nav__link--careers main-header__nav__link{% if pagePermalink == site.data.utility_links.careers_url %} active{% endif %}" href="{{ site.data.utility_links.careers_url }}">{{ site.data.utility_links.careers_title }}</a>
+                    {% endif %}
+                    {% if site.data.utility_links.show_login %}
+                    <a class="main-header__nav__link--login main-header__nav__link{% if pagePermalink == site.data.utility_links.login_url %} active{% endif %}" href="{{ site.data.utility_links.login_url }}">{{ site.data.utility_links.login_title }}</a>
+                    {% endif %}
                 </div>
             </div>
         </nav>
