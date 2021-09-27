@@ -4,6 +4,7 @@ title: Home
 permalink: /
 featured_image: /uploads/mark-basarab-z8ct_Q3oCqM-unsplash.jpg
 featured_image_alt_text: You can see down a highway edged with trees, there's a snowy mountain.
+show_testimonials: true
 custom_latest_posts: false
 ---
 
@@ -56,6 +57,7 @@ custom_latest_posts: false
         </div>
     </section>
 
+    {% if page.show_testimonials %}
     <section class="home-testimonials pv200 white">
         <div class="wo-full">
             <div class="col-1-to-13 m-col-1-to-7 s-col-1-to-5">
@@ -79,6 +81,7 @@ custom_latest_posts: false
             {% endfor %}
         </div>
     </section>
+    {% endif %}
 
     <section class="home-latest-news wo pv200 white">
         <h2 class="h2 editable col-1-to-9 m-col-1-to-7 s-col-1-to-5">

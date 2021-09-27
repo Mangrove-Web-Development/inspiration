@@ -6,7 +6,11 @@
     {% for teamMember in include.block.team_member %}
         <div class="team-section__container__team__member">
             <img aria-hidden="true" src="{{ teamMember.image }}" alt="">
-            <h3 class="h4">{{ teamMember.name }}</h3>
+            <h3 class="h4">
+                <a href="{{ teamMember.link }}">
+                    {{ teamMember.name }}
+                </a>
+            </h3>
             <h4 class="h5">{{ teamMember.job_title }}</h4>
         </div>
     {% endfor %}
