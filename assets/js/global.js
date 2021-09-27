@@ -211,6 +211,7 @@ function loadSite() {
     loadSite.to((".once-transition"), {
         display: "none",
         duration: 0,
+        delay: -2,
     });
 
     AOS.init({
