@@ -7,7 +7,8 @@
         <div class="team-section__container__team__member">
             <img aria-hidden="true" src="{{ teamMember.image }}" alt="">
             <h3 class="h4">
-                <a href="{{ teamMember.link }}">
+                <a href="{{ teamMember.link }}" target="_blank" rel="noopener noreferrer">
+                    <span class="sr-only">Opens in new tab: </span>
                     {{ teamMember.name }}
                 </a>
             </h3>
