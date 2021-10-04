@@ -510,6 +510,10 @@
         .home-hero__content {
             margin: 0;
             margin-top: 20px;
+
+            a.button.button--round{
+                font-size: 175% !important;
+            }
         }
 
         .home-hero__image {
