@@ -186,12 +186,12 @@
     }
 
     .team-section .team-section__container {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 30% 30%;
 
-        .team-section__container .team-section__container__team__member img {
-            height: 360px;
-            width: 295px;
-        }
+        // .team-section__container .team-section__container__team__member img {
+        //     height: 360px;
+        //     width: 295px;
+        // }
     }
 
     .contact-form form {
