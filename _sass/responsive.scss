@@ -12,6 +12,12 @@
     }
 }
 
+@media only screen and (min-width: 2000px){
+    .team-section .team-section__container {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
     body {
         font-size: 56%;
@@ -187,11 +193,6 @@
 
     .team-section .team-section__container {
         grid-template-columns: 30% 30% 30%;
-
-        // .team-section__container .team-section__container__team__member img {
-        //     height: 360px;
-        //     width: 295px;
-        // }
     }
 
     .contact-form form {
@@ -738,7 +739,7 @@
 
         .team-section__container__team__member img {
             height: 210px;
-            width: 100%
+            width: 150px;
         }
     }
 
