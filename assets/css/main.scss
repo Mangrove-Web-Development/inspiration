@@ -1242,6 +1242,18 @@ ul.news-category-loop {
                     text-decoration: underline;
                     text-align: center;
                 }
+                a::after{
+                    background-image: url(data:image/svg+xml;utf8;base64,IDxzdmcgaGVpZ2h0PSIxMDI0IiB3aWR0aD0iNzY4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02NDAgNzY4SDEyOFYyNTcuOTA1OTk5OTk5OTk5OTVMMjU2IDI1NlYxMjhIMHY3NjhoNzY4VjU3Nkg2NDBWNzY4ek0zODQgMTI4bDEyOCAxMjhMMzIwIDQ0OGwxMjggMTI4IDE5Mi0xOTIgMTI4IDEyOFYxMjhIMzg0eiIgZmlsbD0iIzc4ODE4NyIvPjwvc3ZnPg==);
+                    background-size: cover;
+                    display: inline-block;
+                    width: .6em;
+                    height: .75em;
+                    top: .05em;
+                    position: relative;
+                    left: .2em;
+                    margin-right: .2em;
+                    opacity: .5;
+                }
                 
             }
 
