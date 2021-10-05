@@ -4,9 +4,9 @@ title: Home
 permalink: /
 featured_image: /uploads/mark-basarab-z8ct_Q3oCqM-unsplash.jpg
 featured_image_alt_text: You can see down a highway edged with trees, there's a snowy mountain.
-show_testimonials: false
-show_stats: false
-show_news: false
+hide_testimonials: false
+hide_stats: false
+hide_news: false
 custom_latest_posts: false
 ---
 
@@ -42,7 +42,7 @@ custom_latest_posts: false
 
         <a class="button button--round editable col-2-to-7 m-col-2-to-7 s-col-1-to-5" href="/contact/">Get rolling</a>
 
-        {% if page.show_stats %}
+        {% if page.hide_stats %}
         <div class="home-intro__stat pv200 col-2-to-6 m-col-1-to-5 s-col-1-to-5">
             <h3 class="editable">
                 3, 192
@@ -63,7 +63,7 @@ custom_latest_posts: false
         {% endif %}
     </section>
 
-    {% if page.show_testimonials %}
+    {% if page.hide_testimonials %}
     <section class="home-testimonials pv200 white">
         <div class="wo-full">
             <div class="col-1-to-13 m-col-1-to-7 s-col-1-to-5">
@@ -89,7 +89,7 @@ custom_latest_posts: false
     </section>
     {% endif %}
 
-    {% if page.show_news %}
+    {% if page.hide_news %}
     <section class="home-latest-news wo pv200 white">
         <h2 class="h2 editable col-1-to-9 m-col-1-to-7 s-col-1-to-5">
             Get up to speed on our latest news.
