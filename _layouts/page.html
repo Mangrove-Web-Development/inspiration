@@ -2,7 +2,11 @@
 
 <main data-barba="container" data-barba-namespace="page">
 
+    {% if page.show_image_header %}
+    {% include page-header-top-level.html %}
+    {% else %}
     {% include page-header-general.html %}
+    {% endif %}
 
 	{% for block in page.page_blocks %}
     {% case block._id %}
