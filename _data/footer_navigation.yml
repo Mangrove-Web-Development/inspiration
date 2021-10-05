@@ -1,8 +1,6 @@
 first_column:
   - title: About
     url: /about/
-  - title: Who we are
-    url: /about/who-we-are/
   - title: Careers
     url: /careers/
 second_column:
@@ -15,8 +13,8 @@ second_column:
 third_column:
   - title: Resources
     url: /resources/
-fourth_column:
   - title: News
     url: /news/
+fourth_column:
   - title: Contact
     url: /contact/
