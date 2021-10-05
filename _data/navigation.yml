@@ -1,8 +1,5 @@
 - title: About
   url: /about/
-  submenu:
-    - title: Who we are
-      url: /about/who-we-are/
 - title: Solutions
   url: /solutions/
   submenu:
