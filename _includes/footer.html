@@ -3,79 +3,55 @@
         <img class="editable" src="https://fern-anvil.cloudvent.net/assets/images/inspiration-white.svg" alt="Inspiration Logo" />
     </div>
 
-    <div class="main-footer__newsletter col-5-to-13 m-col-4-to-9 s-col-1-to-5">
+    <!-- <div class="main-footer__newsletter col-5-to-13 m-col-4-to-9 s-col-1-to-5">
         <h2 class="h3 editable">
             Sign up for our newsletter.
         </h2>
-        <!--
+        
         <input type="text" name="email" placeholder="jondoe@mail.com" autocomplete="email">
-        <input class="button" type="submit" value="Submit"> -->
-    </div>
+        <input class="button" type="submit" value="Submit"> 
+    </div> -->
 
-    <div class="main-footer__social-media col-1-to-5 m-col-1-to-2 s-col-1-to-5">
-    {% for socialMedia in site.data.social_media %}
-        <a href="{{ socialMedia.url }}"><img src="{{ socialMedia.image }}" alt="{{ socialMedia.social_media }}" /></a>
-    {% endfor %}
-    </div>
 
     <nav id="footerNav" class="main-footer__nav col-5-to-13 m-col-2-to-9 s-col-1-to-5 wo">
-        <div class="col-1-to-4 m-col-1-to-3 s-col-1-to-3">
-        {% for navItem in site.data.footer_navigation.first_column | limit: 1 %}
+        <div class="main-footer__links col-1-to-10 m-col-3-to-9 s-col-1-to-5">
+        {% for navItem in site.data.footer_navigation %}
             <h2>
                 <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
                     {{ navItem.title }}
                 </a>
             </h2>
-        {% endfor %}
-        {% for navItem in site.data.footer_navigation.first_column | offset: 1 %}
-            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
-                {{ navItem.title }}
-            </a>
-        {% endfor %}
-        </div>
-        <div class="col-4-to-7 m-col-3-to-5 s-col-3-to-5">
-            {% for navItem in site.data.footer_navigation.second_column | limit: 1 %}
-            <h2>
-                <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
-                    {{ navItem.title }}
-                </a>
-            </h2>
-        {% endfor %}
-        {% for navItem in site.data.footer_navigation.second_column | offset: 1 %}
-            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
-                {{ navItem.title }}
-            </a>
-        {% endfor %}
-        </div>
-        <div class="col-7-to-10 m-col-5-to-7 s-col-1-to-3">
-            {% for navItem in site.data.footer_navigation.third_column | limit: 1 %}
-            <h2>
-                <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
-                    {{ navItem.title }}
-                </a>
-            </h2>
-        {% endfor %}
-        {% for navItem in site.data.footer_navigation.third_column | offset: 1 %}
-            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
-                {{ navItem.title }}
-            </a>
-        {% endfor %}
-        </div>
-        <div class="col-10-to-13 m-col-7-to-9 s-col-3-to-5">
-            <h2 class="sr-only">Other Links</h2>
-            {% for navItem in site.data.footer_navigation.fourth_column %}
-            <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
-                {{ navItem.title }}
-            </a>
         {% endfor %}
         </div>
     </nav>
 
-    <div class="main-footer__small col-5-to-13 m-col-1-to-9 s-col-1-to-5">
-        <small class="editable">© 2021 Inspiration </small>  |  
+    <div class="main-footer__social-media col-1-to-5 m-col-1-to-4 s-col-1-to-5">
+        {% for socialMedia in site.data.social_media %}
+            <a href="{{ socialMedia.url }}"><img src="{{ socialMedia.image }}" alt="{{ socialMedia.social_media }}" /></a>
+        {% endfor %}
+    </div>
+
+    <div class="main-footer__small col-5-to-9 m-col-1-to-4 s-col-1-to-5">
+        <small class="editable">© {{ 'now' | date: "%Y" }} Inspiration </small>  |  
         <a class="editable" href="/privacy/">Privacy</a>  |  
         <a class="editable" href="/accessibility/">Accessibility</a>
     </div>
+
+    <address class="main-footer__address col-9-to-13 m-col-5-to-9 s-col-1-to-5">
+        <p class="editable">
+            1625 Eye Street NW, Suite 200
+        </p>
+        <p class="editable">
+            Washington, DC 20006
+        </p>
+        <p class="editable">
+            202-650-0858
+        </p>
+        <p class="editable">
+            info@inspirationmobility.com
+        </p>
+    </address>
+
 </footer>
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />

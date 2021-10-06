@@ -1532,6 +1532,15 @@ ul.news-category-loop {
             }
         }
     }
+    .main-footer__small{
+        align-self: end;
+    }
+
+    .main-footer__nav .main-footer__links{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 input {
