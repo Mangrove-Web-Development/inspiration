@@ -638,6 +638,7 @@ a {
     width: 180px;
     padding: 30px;
     text-align: center;
+    transform-origin: center center;
     line-height: 1.5;
     color: $offWhite !important;
     transition: all 600ms $easing;
