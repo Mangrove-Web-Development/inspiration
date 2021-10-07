@@ -582,6 +582,14 @@ li li {
     font-size: 100%;
 }
 
+ul li::before{
+    list-style: none;
+    background-color: #65748c;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+}
+
 iframe {
     height: auto;
     width: 100%;
