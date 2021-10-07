@@ -1009,6 +1009,9 @@
         }
     }
 
+    .page-header.page-header--top-level {
+        height: calc(77vh - 152px);
+    }
     .main-header {
         .main-header__nav {
             height: 52px;
