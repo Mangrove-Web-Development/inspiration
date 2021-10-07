@@ -583,7 +583,7 @@ li li {
 }
 
 // list items with purely links were bahaving weird as inline-block
-ul li + a{
+ul li a{
     display: block;
 }
 
