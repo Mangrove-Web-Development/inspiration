@@ -582,6 +582,11 @@ li li {
     font-size: 100%;
 }
 
+// list items with purely links were bahaving weird as inline-block
+ul li + a{
+    display: block;
+}
+
 iframe {
     height: auto;
     width: 100%;
