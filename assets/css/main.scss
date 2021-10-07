@@ -645,6 +645,7 @@ a {
 
     &:after {
         position: absolute;
+        transform-origin: center center;
         content: '';
         @include background-image('/../assets/images/green-circle-button-bg.svg');
         height: 180px;
