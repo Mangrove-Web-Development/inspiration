@@ -644,12 +644,12 @@ a {
     border-radius: 999999px;
 
     &:after {
+        position: absolute;
         content: '';
         @include background-image('/../assets/images/green-circle-button-bg.svg');
         height: 180px;
         width: 180px;
         padding: 30px;
-        position: absolute;
         transition: all 600ms $easing;
     }
 
