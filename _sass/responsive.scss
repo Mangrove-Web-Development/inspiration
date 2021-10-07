@@ -570,6 +570,11 @@
             transform: translateX(-20%);
         }
     }
+    .subpage-top-level-header .page-header.page-header--top-level{
+        .page-header--top-level__image{
+            top: -50%;
+        }
+    }
 
     .main-header .main-header__nav.main-header__nav--sticky .main-header__nav__icon {
         left: 20px;
