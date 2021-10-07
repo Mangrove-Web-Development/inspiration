@@ -651,6 +651,7 @@ a {
         padding: 30px;
         position: absolute;
         transition: all 600ms $easing;
+        bottom: 0px;
     }
 
     &:hover {
@@ -1070,7 +1071,7 @@ ul.news-category-loop {
         display: block;
         background-color: #057ADC;
         position: absolute;
-        margin-top: 360px;
+        bottom: -110px;
     }
 
     .home-intro__stat {
