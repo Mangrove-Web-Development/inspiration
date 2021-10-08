@@ -1562,6 +1562,9 @@ ul.news-category-loop {
 
     .main-footer__address{
         text-transform: uppercase;
+        p:last-child{
+            margin-bottom: 12px;
+        }
     }
 }
 
