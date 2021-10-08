@@ -3,5 +3,4 @@ careers_url: /careers/
 show_careers: true
 login_title: Login
 login_url: /
-show_login: true
-
+show_login: false
