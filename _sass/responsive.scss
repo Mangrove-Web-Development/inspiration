@@ -807,6 +807,8 @@
     }
 
     .main-footer {
+
+
         .main-footer__logo img {
             width: 160px;
         }
@@ -828,6 +830,10 @@
             font-size: 150%;
             line-height: 1.5em;
             margin-bottom: 20px;
+
+            //make this section be on the bottom
+            grid-row-start: 5;
+            grid-row-end: 6;
         }
 
         .main-footer__social-media {
