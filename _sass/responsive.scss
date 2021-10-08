@@ -87,6 +87,14 @@
     .main-header .main-header__nav > div > ul > li > a {
         font-size: 200% !important;
     }
+    .main-footer{
+        .main-footer__address{
+            margin-left: -5%;
+        }
+        .main-footer__logo{
+            margin-bottom: -22px;
+        }
+    }
 
     .main-header .main-header__nav.main-header__nav--sticky {
         padding-left: 60px;
