@@ -1563,10 +1563,11 @@ ul.news-category-loop {
     .main-footer__address{
         text-transform: uppercase;
         p{
-            margin-bottom: 10px;
+            font-size: 16px;
+            margin-bottom: 0px;
         }
         p:last-child{
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
     }
 }
