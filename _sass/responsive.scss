@@ -267,7 +267,8 @@
         }
         .main-footer__small{
             span{
-                display: none;
+                opacity: 0;
+                padding-right: 100%;
             }
         }
     }
