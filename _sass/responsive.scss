@@ -4,6 +4,13 @@
             width: calc(33vw - 40px);
         }
     }
+
+    .main-footer{
+        .main-footer__address{
+            // match the contact up top
+            margin-left: -95px;
+        }
+    }
 }
 
 @media only screen and (min-width: 1700px) {
