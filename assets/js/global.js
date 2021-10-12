@@ -293,9 +293,9 @@ if (window.inEditorMode) {
 
         barba.hooks.once((data) => {
             // help fathom get the correct URL on first page
-            // fathom.trackPageview({
-            //     url: data.next.url.href,
-            // });
+            fathom.trackPageview({
+                url: data.next.url.href,
+            });
         }); // end barba.hooks.once
 
         barba.hooks.after((data) => {   
@@ -335,9 +335,9 @@ if (window.inEditorMode) {
             });
 
             // help fathom get the correct URL on subsequent pages
-            // fathom.trackPageview({
-            //     url: data.next.url.href,
-            // });
+            fathom.trackPageview({
+                url: data.next.url.href,
+            });
         });
     }); // end content loaded
 }
