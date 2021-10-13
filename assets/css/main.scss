@@ -1037,10 +1037,12 @@ a {
         display: inline-block;
     }
 }
+// ovveride
 .subpage-top-level-header .page-header.page-header--top-level .page-header--top-level__image{
     height: 120%;
-    top: -10%;
-    width: 80%;
+    top: -30%;
+    width: 50%;
+    right: 0%;
 }
 
 ul.news-category-loop {
