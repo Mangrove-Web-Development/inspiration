@@ -1068,15 +1068,15 @@ ul.news-category-loop {
 .home-intro {
     overflow: visible;
 
-    >.button:before {
-        content: '';
-        height: 80px;
-        width: 1px;
-        display: block;
-        background-color: #057ADC;
-        position: absolute;
-        bottom: -110px;
-    }
+    // >.button:before {
+    //     content: '';
+    //     height: 80px;
+    //     width: 1px;
+    //     display: block;
+    //     background-color: #057ADC;
+    //     position: absolute;
+    //     bottom: -110px;
+    // }
 
     .home-intro__stat {
         margin-left: 30px;
