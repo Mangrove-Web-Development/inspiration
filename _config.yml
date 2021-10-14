@@ -20,7 +20,7 @@
 
 title: Inspiration
 description: >- # this means to ignore newlines until "baseurl:"
-url: "https://fern-anvil.cloudvent.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://inspirationmobility.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
