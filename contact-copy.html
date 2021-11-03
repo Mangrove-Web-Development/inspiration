@@ -1,0 +1,61 @@
+---
+title: Contact
+permalink: /contact/
+layout: null
+---
+
+{% include head.html %}
+
+<main data-barba="container" data-barba-namespace="contact">
+    <section class="page-header wo">
+        <h1 class="col-2-to-7 m-col-1-to-9 s-col-1-to-5 h1 editable">
+            Contact
+        </h1>
+
+        <div class="col-1-to-13 m-col-1-to-9 s-col-1-to-5 wo pv100 page-header__intro">
+            <h2 class="h2 col-3-to-11 m-col-1-to-9 s-col-1-to-5 editable">
+                <strong>Wherever you are on your EV journey, we&rsquo;d love to connect to see if we can help accelerate your progress.</strong>
+            </h2>
+            <div class="col-3-to-11 m-col-1-to-9 s-col-1-to-5 editable">
+                <p>Inspiration serves customers across North America. With offices in DC, NY, and LA, our team is ready to help you start your electrification journey.</p>
+                <p>For Media inquiries <a href="mailto:media@inspirationmobility.com">media@inspirationmobility.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form wo">
+        <form method="POST" name="Contact" action="/message-sent/" data-netlify="true" class="wo pv100 col-3-to-11 m-col-1-to-9 s-col-1-to-5">
+            <h2 class="h2 editable col-2-to-12 m-col-2-to-8 s-col-1-to-5">
+                Get in touch today.
+            </h2>
+
+            <div class="col-2-to-12 m-col-2-to-8 s-col-1-to-5">
+                <label>
+                    <span class="label">Your Name</span>
+                    <input type="text" name="name" />
+                </label>
+            </div>
+    
+            <div class="col-2-to-12 m-col-2-to-8 s-col-1-to-5">
+                <label>
+                    <span class="label">Your Email Address</span>
+                    <input type="text" name="email" />
+                </label>
+            </div>
+    
+            <div class="col-2-to-12 m-col-2-to-8 s-col-1-to-5">
+                <label>
+                    <span class="label">Your Message</span>
+                    <textarea name="message" placeholder="Let's talk about EV"></textarea>
+                </label>
+            </div>
+    
+            <div class="col-2-to-12 m-col-2-to-8 s-col-1-to-5 center">
+                <button class="button button--round" type="submit">Submit Message</button>
+            </div>
+        </form>  
+    </section>
+
+</main>
+
+{% include footer.html %}
