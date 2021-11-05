@@ -994,6 +994,17 @@ a {
             top: -30%;
             right: -15%;
         }
+        
+        p:after {
+            content: '';
+            @include background-image('/../assets/images/red-arrow-down.svg');
+            height: 30px;
+            width: 39px;
+            position: absolute;
+            bottom: -8vw;
+            left: 0;
+            display: inline-block;
+        }
     }
 
     &.page-header--post {
@@ -1024,17 +1035,6 @@ a {
 
     p {
         position: relative;
-    }
-
-    p:after {
-        content: '';
-        @include background-image('/../assets/images/red-arrow-down.svg');
-        height: 30px;
-        width: 39px;
-        position: absolute;
-        bottom: -8vw;
-        left: 0;
-        display: inline-block;
     }
 }
 // ovveride
