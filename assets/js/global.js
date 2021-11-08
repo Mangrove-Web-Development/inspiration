@@ -290,6 +290,13 @@ if (window.inEditorMode) {
                 },
             }]
         });
+        
+        Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+            var inlineScript = $(container).find('script.loadInlineScript')
+            inlineScript.each(function(i, elm) {
+                eval(elm.innerHTML);
+            })
+        });
 
         barba.hooks.once((data) => {
             // help fathom get the correct URL on first page
