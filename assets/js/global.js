@@ -339,11 +339,17 @@ if (window.inEditorMode) {
             fathom.trackPageview({
                 url: data.next.url.href,
             });
-            
-            var inlineScript = $('#hbFormScript').find('script.loadInlineScript')
-            inlineScript.each(function(i, elm) {
-                eval(elm.innerHTML);
-            })
+        
+            // hubspot contact form script
+            let hubSpotForm = `
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "20521848",
+              formId: "f93a3e50-8ae2-43f2-85a4-b01ecad797f9"
+            });
+            `
+            document.getElementById("hbFormScript").appendChild(hubSpotForm);
+                        
         });
     }); // end content loaded
 }
