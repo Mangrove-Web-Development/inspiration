@@ -313,10 +313,6 @@ if (window.inEditorMode) {
                 once: true,
             });
             
-            var inlineScript = $(container).find('script.loadInlineScript')
-            inlineScript.each(function(i, elm) {
-                eval(elm.innerHTML);
-            })
 
             // —————————————————————————————————————————
             // U P D A T E   N A V - A C T I V E
@@ -343,6 +339,11 @@ if (window.inEditorMode) {
             fathom.trackPageview({
                 url: data.next.url.href,
             });
+            
+            var inlineScript = $('#hbFormScript').find('script.loadInlineScript')
+            inlineScript.each(function(i, elm) {
+                eval(elm.innerHTML);
+            })
         });
     }); // end content loaded
 }
