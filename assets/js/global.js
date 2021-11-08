@@ -290,13 +290,6 @@ if (window.inEditorMode) {
                 },
             }]
         });
-        
-        barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
-            var inlineScript = $(container).find('script.loadInlineScript')
-            inlineScript.each(function(i, elm) {
-                eval(elm.innerHTML);
-            })
-        });
 
         barba.hooks.once((data) => {
             // help fathom get the correct URL on first page
@@ -319,6 +312,11 @@ if (window.inEditorMode) {
                 easing: 'ease-out-cubic',
                 once: true,
             });
+            
+            var inlineScript = $(container).find('script.loadInlineScript')
+            inlineScript.each(function(i, elm) {
+                eval(elm.innerHTML);
+            })
 
             // —————————————————————————————————————————
             // U P D A T E   N A V - A C T I V E
