@@ -291,7 +291,7 @@ if (window.inEditorMode) {
             }]
         });
         
-        Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+        barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
             var inlineScript = $(container).find('script.loadInlineScript')
             inlineScript.each(function(i, elm) {
                 eval(elm.innerHTML);
