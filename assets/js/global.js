@@ -148,20 +148,20 @@ function toggleNav() {
 // load bar
 // https://codepen.io/ahsanrathore/pen/MwppEB
 // ——————————————————————————————————————————————————
-function loadSite() { 
+function loadSite() {
     var perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
-    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-    time = parseInt((EstimatedTime/1000)%60)*.1;
+        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+        time = parseInt((EstimatedTime / 1000) % 60) * .1;
 
     console.log(time);
 
     let loadSite = gsap.timeline();
-      // SHOW once-transition SUPER IMPORTANT
-      loadSite.to((".once-transition"), {
-          display: "flex",
-          duration: 0,
-      });
-        
+    // SHOW once-transition SUPER IMPORTANT
+    loadSite.to((".once-transition"), {
+        display: "flex",
+        duration: 0,
+    });
+
     // animate the progress
     loadSite.to((".once-transition__bar__progress"), {
         delay: 1,
@@ -206,7 +206,7 @@ function loadSite() {
             ease: "Expo.easeOut",
         });
     }
-    
+
     // REMOVE once-transition SUPER IMPORTANT
     loadSite.to((".once-transition"), {
         display: "none",
@@ -289,12 +289,21 @@ if (window.inEditorMode) {
                     );
                 },
             }],
-            
+
             views: [{
-              namespace: 'contact',
-              afterEnter() {
-                
-              }
+                namespace: 'contact',
+                beforeEnter() {
+                    (function () {
+                        if (window.localStorage) {
+                            if (!localStorage.getItem('firstLoad')) {
+                                localStorage['firstLoad'] = true;
+                                window.location.reload();
+                            }
+                            else
+                                localStorage.removeItem('firstLoad');
+                        }
+                    })();
+                }
             }]
         });
 
@@ -306,10 +315,10 @@ if (window.inEditorMode) {
             });
         }); // end barba.hooks.once
 
-        barba.hooks.after((data) => {   
+        barba.hooks.after((data) => {
             testimSlider();
             navScrolly();
-        
+
             $('#navToggle').click(function () {
                 toggleNav();
             });
@@ -320,7 +329,7 @@ if (window.inEditorMode) {
                 easing: 'ease-out-cubic',
                 once: true,
             });
-            
+
 
             // —————————————————————————————————————————
             // U P D A T E   N A V - A C T I V E
