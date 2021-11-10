@@ -125,25 +125,6 @@ function navScrolly() {
     }, false);
 }
 
-
-// ——————————————————————————————————————————————————
-// hamburger nav
-// ——————————————————————————————————————————————————
-function toggleNav() {
-    var menu = document.querySelector('.main-header__nav >div');
-
-    if (menu.classList.contains('is-active')) {
-        $('#navToggle').attr('aria-expanded', 'false');
-        menu.classList.remove('is-active');
-    } else {
-        menu.classList.add('is-active');
-        $('#navToggle').attr('aria-expanded', 'true');
-    }
-
-    // set focus on first link within menu
-    $('.main-header__nav >div >ul >li:first-child > a').focus();
-}
-
 // ——————————————————————————————————————————————————
 // load bar
 // https://codepen.io/ahsanrathore/pen/MwppEB
@@ -153,7 +134,7 @@ function loadSite() {
         EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
         time = parseInt((EstimatedTime / 1000) % 60) * .1;
 
-    console.log(time);
+    // console.log(time);
 
     let loadSite = gsap.timeline();
     // SHOW once-transition SUPER IMPORTANT
@@ -213,16 +194,34 @@ function loadSite() {
         duration: 0,
         delay: -2,
     });
+}
 
-    $('#navToggle').click(function () {
-        toggleNav();
-    });
+// ——————————————————————————————————————————————————
+// hamburger nav
+// ——————————————————————————————————————————————————
+function toggleNav() {
+    var menu = document.querySelector('.main-header__nav >div');
+
+    if (menu.classList.contains('is-active')) {
+        $('#navToggle').attr('aria-expanded', 'false');
+        menu.classList.remove('is-active');
+    } else {
+        menu.classList.add('is-active');
+        $('#navToggle').attr('aria-expanded', 'true');
+    }
+
+    // set focus on first link within menu
+    $('.main-header__nav >div >ul >li:first-child > a').focus();
 }
 
 
 // Remember to minimize this file before putting into production site
 
 document.addEventListener("DOMContentLoaded", function () {
+    $('#navToggle').click(function () {
+        toggleNav();
+    });
+
     navScrolly();
     testimSlider();
 
@@ -254,9 +253,9 @@ if (window.inEditorMode) {
                 name: 'default',
                 leave(data) {
                     // automatically close nav
-                    // var menu = document.querySelector('#mainNav');
-                    // $('#navToggle').attr('aria-expanded', 'false');
-                    // menu.classList.remove('is-active');
+                    var menu = document.querySelector('#mainNav > div');
+                    $('#navToggle').attr('aria-expanded', 'false');
+                    menu.classList.remove('is-active');
                     // gsap.to(menu, {
                     //     right: "-590px",
                     //     display: "none",
@@ -319,9 +318,9 @@ if (window.inEditorMode) {
             testimSlider();
             navScrolly();
 
-            $('#navToggle').click(function () {
-                toggleNav();
-            });
+            // $('#navToggle').click(function () {
+            //     toggleNav();
+            // });
 
             AOS.init({
                 delay: 400,
