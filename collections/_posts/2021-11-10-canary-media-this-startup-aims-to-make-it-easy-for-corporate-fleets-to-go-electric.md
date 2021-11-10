@@ -3,7 +3,7 @@ layout: post
 title: >-
     Canary Media: This startup aims to make it easy for corporate fleets to go
     electric
-date: 2021-11-10 00:00:00
+date: 2021-11-10 12:00:00
 featured_image: /uploads/resized-revel-driver.webp
 categories:
     - In the News
