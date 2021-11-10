@@ -293,7 +293,7 @@ if (window.inEditorMode) {
             views: [{
               namespace: 'contact',
               afterEnter() {
-                window.location.reload();
+                
               }
             }]
         });
