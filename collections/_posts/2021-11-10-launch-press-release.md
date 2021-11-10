@@ -25,9 +25,7 @@ With the imperative to cut carbon emissions from transport more urgent than ever
 
 **About Inspiration&nbsp;**&nbsp;
 
-Inspiration is the first purpose-built EV solutions company. Our mission is to accelerate the electrification of transportation by partnering with fleet businesses to finance vehicles and deliver turnkey charging solutions to enable the rapid deployment of reliable, low-cost, zero-emissions EV fleets. Acting as a partner and system integrator, Inspiration designs and implements a custom solution that ensures every fleet electrification is seamless. Whether a company is a traditional fleet operator looking to transition to EVs or an electric mobility business launched as EV-only from the start, Inspiration can help. Companies interested in electrifying or expanding their fleets can learn more at [inspirationmobility.com](https://www.inspirationmobility.com/){: target="_blank" rel="noreferrer noopener"}.&nbsp;&nbsp;
-
-&nbsp;
+Inspiration is the first purpose-built EV solutions company. Our mission is to accelerate the electrification of transportation by partnering with fleet businesses to finance vehicles and deliver turnkey charging solutions to enable the rapid deployment of reliable, low-cost, zero-emissions EV fleets. Acting as a partner and system integrator, Inspiration designs and implements a custom solution that ensures every fleet electrification is seamless. Whether a company is a traditional fleet operator looking to transition to EVs or an electric mobility business launched as EV-only from the start, Inspiration can help. Companies interested in electrifying or expanding their fleets can learn more at [inspirationmobility.com](https://www.inspirationmobility.com/){: target="_blank" rel="noreferrer noopener"}.&nbsp;
 
 **About ArcLight Capital Partners**&nbsp;
 
@@ -35,9 +33,7 @@ ArcLight is one of the leading energy infrastructure firms. Founded in 2001, the
 
 **About Revel**&nbsp;
 
-Revel is a Brooklyn-born company that’s leading cities to a zero-carbon future by integrating technology, operations, and infrastructure across energy and mobility sectors. Through the Revel app, users can rent electric mopeds, sign up for monthly eBike subscriptions, hail an electric car ride or find fast charging stations compatible with any brand of EV. Founded in 2018, Revel now operates in four New York City boroughs, Washington, D.C., Miami and San Francisco. To learn more, visit [gorevel.com](http://gorevel.com/){: target="_blank" rel="noreferrer noopener"} and follow @\_gorevel on Twitter.&nbsp;
-
-&nbsp;
+Revel is a Brooklyn-born company that’s leading cities to a zero-carbon future by integrating technology, operations, and infrastructure across energy and mobility sectors. Through the Revel app, users can rent electric mopeds, sign up for monthly eBike subscriptions, hail an electric car ride or find fast charging stations compatible with any brand of EV. Founded in 2018, Revel now operates in four New York City boroughs, Washington, D.C., Miami and San Francisco. To learn more, visit [gorevel.com](http://gorevel.com/){: target="_blank" rel="noreferrer noopener"} and follow @\_gorevel on Twitter.
 
 **Media contact**&nbsp;
 
