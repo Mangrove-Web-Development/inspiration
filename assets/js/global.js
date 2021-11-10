@@ -288,7 +288,7 @@ if (window.inEditorMode) {
                         }
                     );
                 },
-            }]
+            }],
             
             views: [{
               namespace: 'contact',
