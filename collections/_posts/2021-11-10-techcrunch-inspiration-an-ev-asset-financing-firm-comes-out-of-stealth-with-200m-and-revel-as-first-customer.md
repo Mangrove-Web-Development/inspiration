@@ -4,7 +4,7 @@ title: >-
     TechCrunch: Inspiration, an EV asset financing firm, comes out of stealth
     with $200M and Revel as first customer
 date: 2021-11-10 06:00:00
-featured_image: /uploads/revel1.jpg
+featured_image: /uploads/revel1-1.jpg
 categories:
     - In the News
 featured_post: false
