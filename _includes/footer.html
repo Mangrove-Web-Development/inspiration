@@ -30,7 +30,7 @@
         <!--End Mailchimp Signup Form-->
     </div>
 
-    <nav id="footerNav" class="main-footer__nav col-5-to-13 m-col-2-to-9 s-col-1-to-5 wo">
+    <nav id="footerNav" class="main-footer__nav col-5-to-13 m-col-2-to-9 s-col-1-to-5">
         <div class="main-footer__links">
         {% for navItem in site.data.footer_navigation %}
             <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
