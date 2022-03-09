@@ -1468,24 +1468,9 @@ ul.news-category-loop {
     .main-footer__nav {
         margin-bottom: 60px;
 
-        h2 {
-            margin-top: 0;
-            padding-top: 0;
-
-            a {
-                color: $offWhite;
-                font-weight: bold;
-            }
-        }
-
-        >div {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-
         a {
+            color: $offWhite;
+            font-weight: bold;
             text-decoration: none;
             text-decoration-thickness: 1px;
             text-underline-offset: 7px;
