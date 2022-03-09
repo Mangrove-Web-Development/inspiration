@@ -32,9 +32,9 @@
 
     <nav id="footerNav" class="main-footer__nav col-5-to-8 m-col-2-to-9 s-col-1-to-5">
     {% for navItem in site.data.footer_navigation %}
-        <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+        <div><a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
             {{ navItem.title }}
-        </a>
+        </a></div>
     {% endfor %}
     </nav>
     
