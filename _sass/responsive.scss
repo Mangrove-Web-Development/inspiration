@@ -107,8 +107,13 @@
         font-size: 200% !important;
     }
     .main-footer{
-        .main-footer__logo{
-            margin-bottom: -22px;
+        .main-footer__newsletter {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        
+        .main-footer__address {
+            margin-bottom: 60px;
         }
     }
 
@@ -294,12 +299,6 @@
             margin-bottom: -42px;
             a{
                 margin-right: 30px;
-            }
-        }
-        .main-footer__small{
-            span{
-                opacity: 0;
-                padding-right: 100%;
             }
         }
     }
