@@ -845,16 +845,7 @@
         }
 
         .main-footer__nav {
-            margin-bottom: 10px;
-
-            // > div {
-            //     margin-bottom: 40px;
-            // }
-        }
-            // footer
-        .main-footer__nav .main-footer__links{
-            flex-direction: column;
-            padding-top: 20px;
+            margin-bottom: 40px;
         }
 
         .main-footer__small {
@@ -879,6 +870,11 @@
                 padding: 14px 9px;
                 margin: 0 10px 0 0;
             }
+        }
+        
+        .main-footer__newsletter {
+            margin-bottom: 50px;
+            margin-top: 50px;
         }
     }
 }
