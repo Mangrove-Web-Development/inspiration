@@ -1467,6 +1467,7 @@ ul.news-category-loop {
 
     .main-footer__nav {
         margin-bottom: 60px;
+        column-count: 2;
 
         a {
             color: $offWhite;
@@ -1542,12 +1543,6 @@ ul.news-category-loop {
     }
     .main-footer__small{
         align-self: end;
-    }
-
-    .main-footer__nav .main-footer__links{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
     }
 
     .main-footer__address{
