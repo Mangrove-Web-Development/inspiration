@@ -46,7 +46,7 @@
         url('../fonts/NeueWorld-SemiExtendedUltralight.woff2') format('woff2'),
         /* Super Modern Browsers */
         url('../fonts/NeueWorld-SemiExtendedUltralight.woff') format('woff');
-    /* Pretty Modern Browsers */
+    /* Pretty Modern Browsers */n
     font-style: normal;
     font-stretch: normal;
     font-display: swap;
@@ -1574,6 +1574,31 @@ ul.news-category-loop {
         p:last-child{
             margin-bottom: 16px;
         }
+    }
+    
+    .main-footer__newsletter {
+        margin-bottom: 80px;
+      
+        h2.h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        form#mc-embedded-subscribe-form {
+            position: relative;
+            
+            input#mce-EMAIL {
+                width: 100%;
+                padding: 15px 10px;
+            }
+            
+            input#mc-embedded-subscribe {
+                position: absolute;
+                top: 11px;
+                right: 0;
+            }
+        }
+
     }
 }
 
