@@ -30,7 +30,7 @@
         <!--End Mailchimp Signup Form-->
     </div>
 
-    <nav id="footerNav" class="main-footer__nav col-5-to-13 m-col-2-to-9 s-col-1-to-5">
+    <nav id="footerNav" class="main-footer__nav col-5-to-8 m-col-2-to-9 s-col-1-to-5">
         <div class="main-footer__links">
         {% for navItem in site.data.footer_navigation %}
             <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
@@ -39,20 +39,8 @@
         {% endfor %}
         </div>
     </nav>
-
-    <div class="main-footer__social-media col-1-to-5 m-col-1-to-4 s-col-1-to-5">
-        {% for socialMedia in site.data.social_media %}
-            <a href="{{ socialMedia.url }}"><img src="{{ socialMedia.image }}" alt="{{ socialMedia.social_media }}" /></a>
-        {% endfor %}
-    </div>
-
-    <div class="main-footer__small col-5-to-9 m-col-1-to-4 s-col-1-to-5">
-        <small class="editable">© 2021 Inspiration </small>  <span>|</span>  
-        <a class="editable" href="/privacy/">Privacy</a>  |  
-        <a class="editable" href="/accessibility/">Accessibility</a>
-    </div>
-
-    <address class="main-footer__address col-11-to-13 m-col-4-to-9 s-col-1-to-5">
+    
+    <address class="main-footer__address col-8-to-13 m-col-4-to-9 s-col-1-to-5">
         <p class="editable">
             1625 Eye Street NW, Suite 200
         </p>
@@ -66,6 +54,18 @@
             <a href="javascript:window.location.href = 'mailto:' + ['info','inspirationmobility.com'].join('@')">info@inspirationmobility.com</a>
         </p>
     </address>
+
+    <div class="main-footer__social-media col-1-to-5 m-col-1-to-4 s-col-1-to-5">
+        {% for socialMedia in site.data.social_media %}
+            <a href="{{ socialMedia.url }}"><img src="{{ socialMedia.image }}" alt="{{ socialMedia.social_media }}" /></a>
+        {% endfor %}
+    </div>
+
+    <div class="main-footer__small col-5-to-9 m-col-1-to-4 s-col-1-to-5">
+        <small class="editable">© 2021 Inspiration </small>  <span>|</span>  
+        <a class="editable" href="/privacy/">Privacy</a>  |  
+        <a class="editable" href="/accessibility/">Accessibility</a>
+    </div>
 
 </footer>
 
