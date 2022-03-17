@@ -7,7 +7,7 @@ categories:
   - In the News
 featured_post: false
 ---
-*ChargedFleet\*\*, March 17, 2022* — A fleet operation will never find that perfect moment to move toward electric vehicles. Forget about waiting for more choices in vehicles, lower prices, or expanded battery capacity.
+*ChargedFleet, March 17, 2022* — A fleet operation will never find that perfect moment to move toward electric vehicles. Forget about waiting for more choices in vehicles, lower prices, or expanded battery capacity.
 
 It will cost more to wait and then try to do it all at once based on an elusive perfect moment, says one fleet electrification expert. That’s because the best results come from gradual, phased planning and execution based on a customized plan.
 
