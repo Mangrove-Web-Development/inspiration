@@ -4,7 +4,7 @@ title: >-
   Your Customers Want Electric Vehicles: Here's How You (and Inspiration!) Can
   Help
 date: 2022-03-25 11:00:00
-featured_image: /uploads/nvla-leasewire-logo.jpg
+featured_image: /uploads/nvla-leasewire-logo-1.jpg
 categories:
   - Insights
 featured_post: true
