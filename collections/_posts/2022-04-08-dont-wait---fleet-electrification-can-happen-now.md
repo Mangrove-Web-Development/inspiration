@@ -2,7 +2,7 @@
 layout: post
 title: Don't Wait - Fleet Electrification Can Happen Now
 date: 2022-04-08 12:00:00
-featured_image: /uploads/charged-fleet.png
+featured_image: /uploads/chargedfleet-interview.png
 categories:
   - In the News
 featured_post: false
