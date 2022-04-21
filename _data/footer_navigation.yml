@@ -1,10 +1,14 @@
-  - title: About
-    url: /about/
-  - title: Solutions
-    url: /solutions/
-  - title: Resources
-    url: /resources/
-  - title: News
-    url: /news/
-  - title: Contact
-    url: /contact/
+- title: About
+  url: /about/
+  
+- title: Solutions
+  url: /solutions/
+  
+- title: Resources
+  url: /resources/
+  
+- title: News
+  url: /news/
+  
+- title: Contact
+  url: /contact/

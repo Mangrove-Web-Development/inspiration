@@ -3,41 +3,42 @@
         <img class="editable" src="/assets/images/inspiration-white.svg" alt="Inspiration Logo" />
     </div>
 
-    <!-- <div class="main-footer__newsletter col-5-to-13 m-col-4-to-9 s-col-1-to-5">
+    <div class="main-footer__newsletter col-5-to-13 m-col-1-to-9 s-col-1-to-5">
         <h2 class="h3 editable">
             Sign up for our newsletter.
         </h2>
         
-        <input type="text" name="email" placeholder="jondoe@mail.com" autocomplete="email">
-        <input class="button" type="submit" value="Submit"> 
-    </div> -->
+        <!-- Begin Mailchimp Signup Form -->
+        <form action="https://inspirationmobility.us14.list-manage.com/subscribe/post?u=25b6e3c2e13e6e4f781405832&amp;id=795fe529ae" 
+              method="post" 
+              id="mc-embedded-subscribe-form" 
+              name="mc-embedded-subscribe-form" 
+              class="validate" 
+              target="_blank" novalidate>
+      	  <h3 class="sr-only">Enter your email to receive our newsletter.</h3>
+          <label class="sr-only" for="mce-EMAIL">Email Address  <span class="asterisk">required</span></label>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="yourname@email.com">
+        	<div id="mce-responses" class="clear">
+        		<div class="response" id="mce-error-response" style="display:none"></div>
+        		<div class="response" id="mce-success-response" style="display:none"></div>
+        	</div>    
+        	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_25b6e3c2e13e6e4f781405832_795fe529ae" tabindex="-1" value=""></div>
+          <!-- end honeypot -->
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </form>
+        <!--End Mailchimp Signup Form-->
+    </div>
 
-
-    <nav id="footerNav" class="main-footer__nav col-5-to-13 m-col-2-to-9 s-col-1-to-5 wo">
-        <div class="main-footer__links col-1-to-10 m-col-3-to-9 s-col-1-to-5">
-        {% for navItem in site.data.footer_navigation %}
-            <h2>
-                <a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
-                    {{ navItem.title }}
-                </a>
-            </h2>
-        {% endfor %}
-        </div>
+    <nav id="footerNav" class="main-footer__nav col-5-to-8 m-col-1-to-5 s-col-1-to-5">
+    {% for navItem in site.data.footer_navigation %}
+        <div><a class="main-header__nav__link{% if pagePermalink == subItem.url %} active{% endif %}" href="{{ navItem.url }}">
+            {{ navItem.title }}
+        </a></div>
+    {% endfor %}
     </nav>
-
-    <div class="main-footer__social-media col-1-to-5 m-col-1-to-4 s-col-1-to-5">
-        {% for socialMedia in site.data.social_media %}
-            <a href="{{ socialMedia.url }}"><img src="{{ socialMedia.image }}" alt="{{ socialMedia.social_media }}" /></a>
-        {% endfor %}
-    </div>
-
-    <div class="main-footer__small col-5-to-9 m-col-1-to-4 s-col-1-to-5">
-        <small class="editable">© 2021 Inspiration </small>  <span>|</span>  
-        <a class="editable" href="/privacy/">Privacy</a>  |  
-        <a class="editable" href="/accessibility/">Accessibility</a>
-    </div>
-
-    <address class="main-footer__address col-11-to-13 m-col-4-to-9 s-col-1-to-5">
+    
+    <address class="main-footer__address col-9-to-13 m-col-5-to-9 s-col-1-to-5">
         <p class="editable">
             1625 Eye Street NW, Suite 200
         </p>
@@ -51,6 +52,18 @@
             <a href="javascript:window.location.href = 'mailto:' + ['info','inspirationmobility.com'].join('@')">info@inspirationmobility.com</a>
         </p>
     </address>
+
+    <div class="main-footer__social-media col-1-to-5 m-col-1-to-3 s-col-1-to-5">
+        {% for socialMedia in site.data.social_media %}
+            <a href="{{ socialMedia.url }}"><img src="{{ socialMedia.image }}" alt="{{ socialMedia.social_media }}" /></a>
+        {% endfor %}
+    </div>
+
+    <div class="main-footer__small col-5-to-13 m-col-3-to-9 s-col-1-to-5">
+        <small class="editable">© 2021 Inspiration </small>  <span>|</span>  
+        <a class="editable" href="/privacy/">Privacy</a>  |  
+        <a class="editable" href="/accessibility/">Accessibility</a>
+    </div>
 
 </footer>
 
