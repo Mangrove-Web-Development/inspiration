@@ -2,19 +2,14 @@
 
 <main data-barba="container" data-barba-namespace="archive">
 	<div class="wo page-heading">
-		<h1 class="col-2-to-7 m-col-1-to-6 s-col-1-to-5 h1 editable">
+		<h1 class="col-2-to-12 m-col-1-to-9 s-col-1-to-5 h1 editable">
 		    Latest News
 		</h1>
-		<ul class="col-9-to-12 m-col-6-to-9 s-col-1-to-5 category-container">
+		<ul class="col-2-to-12 m-col-1-to-9 s-col-1-to-5 category-container">
 			<li>
-				<h2>
+				<h2 class="h4">
 					Filter by category:
 				</h2>
-			</li>
-			<li>
-				<a class="{% if page.url == '/news/' %}active{% endif %}" href="/news/">
-					All News
-				</a>
 			</li>
 			{% for category in site.categories %}
 			{% assign category_name = category[0] %}
@@ -29,8 +24,8 @@
 	</div>
 	{{ content }}
 	{% if page.posts %}
-	<section class="news-feed wo pv200">
-		{% for post in page.posts %}
+	<section class="news-feed wo pv100">
+	{% for post in page.posts %}
 		{% include archives-inner.html %}
 	{% endfor %}
 	</section>

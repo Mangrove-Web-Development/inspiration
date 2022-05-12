@@ -1,9 +1,15 @@
 <article>
-    <img src="{{ post.featured_image }}" alt="">
-    <a href="{{ post.url }}" class="home-latest-news__article s-col-1-to-5">
-        <p class="eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
+    {% if post.featured_image.logo == true %}
+    <div class="news-feed__logo">
+        <img src="{{ post.featured_image.image }}" alt="{{ post.featured_image.alt_text }}">
+    </div>
+    {% else %}
+    <img src="{{ post.featured_image.image }}" alt="{{ post.featured_image.alt_text }}">
+    {% endif %}
+    <a href="{{ post.url }}">
+        <p class="news-feed__date eyebrow">{{ post.date | date: "%b %e %Y" }}</p>
         {% for category in post.categories limit:1 %}
-        <p> {{ category }}</p>
+        <p class="news-feed__cats"> {{ category }}</p>
         {% endfor %}
         <h2 class="h5">{{ post.title }}</h2>
         <p class="button button--line" aria-hidden="true">Read article</p>

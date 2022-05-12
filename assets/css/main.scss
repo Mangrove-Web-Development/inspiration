@@ -1376,12 +1376,42 @@ ul.news-category-loop {
 // —————————————————————————————————————————
 
 .category-container {
-    margin-top: 60px;
+    margin-top: 30px;
     list-style-type: none;
+    padding: 0;
 
-    a {
-        color: $green;
-        text-transform: uppercase;
+    li:not(:first-child) {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+
+        a {
+            color: $green;
+
+            &.active {
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+    }
+
+    li:not(:last-child):not(:first-child) a:after {
+        content: ',';
+        position: absolute;
+        margin-left: 2px;
+    }
+
+    li:first-child {
+        font-size: 100%;
+        display: inline-block;
+        margin: 0;
+        margin-right: 20px;
+
+        h2.h4 {
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 
@@ -1393,10 +1423,26 @@ ul.news-category-loop {
     article {
         width: calc(33% - 10px);
 
+        .news-feed__logo,
         > img {
             border-radius: 50px 50px 0 0;
-            height: 220px;
+            height: 20vw;
             width: 100%; 
+        }
+
+        .news-feed__logo {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-height: 100px;
+                max-width: 280px;
+            }
+        }
+
+        > img {
             object-fit: cover;
         }
 
@@ -1409,12 +1455,23 @@ ul.news-category-loop {
             margin-top: -20px;
             transition: all 600ms $easing;
             border: 1px solid transparent;
+            width: 100%;
     
             .h5 {
                 padding-bottom: 60px;
                 font-size: 320%;
                 font-weight: 600;
                 transition: all 600ms $easing;
+            }
+
+            .news-feed__date,
+            .news-feed__cats {
+                width: 49%;
+                display: inline-block;
+            }
+
+            .news-feed__cats {
+                text-align: right;
             }
     
             &:hover {

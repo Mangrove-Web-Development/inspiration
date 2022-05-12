@@ -4,7 +4,10 @@ title: >-
   Inspiration Launches as First Purpose-Built EV Solutions Company, Announces
   $200M Commitment and Fleet Partnership with Revel
 date: 2021-11-10 06:00:00
-featured_image: /uploads/Inspiration-Illustrations-resources.svg
+featured_image:
+    image: /uploads/Inspiration-Illustrations-resources.svg
+    logo: false
+    alt_text:
 categories:
   - Press Releases
 featured_post: false

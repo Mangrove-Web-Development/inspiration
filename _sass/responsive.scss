@@ -302,6 +302,12 @@
             }
         }
     }
+
+    .news-feed {    
+        article {
+            width: calc(50% - 10px);
+        }
+    }
     
 }
 
