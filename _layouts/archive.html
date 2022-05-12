@@ -3,11 +3,16 @@
 <main data-barba="container" data-barba-namespace="archive">
 	<div class="wo page-heading">
 		<h1 class="col-2-to-7 m-col-1-to-6 s-col-1-to-5 h1 editable">
-		    The latest Inspiration updates
+		    Latest News
 		</h1>
 		<ul class="col-9-to-12 m-col-6-to-9 s-col-1-to-5 category-container">
 			<li>
-				<a class="{% if page.url == "/news/" %}active{% endif %}" href="/news/">
+				<h2>
+					Filter by category:
+				</h2>
+			</li>
+			<li>
+				<a class="{% if page.url == '/news/' %}active{% endif %}" href="/news/">
 					All News
 				</a>
 			</li>
@@ -19,7 +24,7 @@
 					{{ category_name | replace: "-", " " }}
 				</a>
 			</li>
-		{% endfor %}
+			{% endfor %}
 		</ul>
 	</div>
 	{{ content }}

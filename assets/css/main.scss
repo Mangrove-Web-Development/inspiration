@@ -131,13 +131,6 @@ serif;
     background-size: cover;
 }
 
-// @include background-fill();
-@mixin background-fill() {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 
 // ————————————————————————————————————————— 
 // S T A T E S
@@ -1393,67 +1386,94 @@ ul.news-category-loop {
 }
 
 .news-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 
     article {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        margin-bottom: 100px;
+        width: calc(33% - 10px);
 
-        img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 6 / 4;
-            border-radius: 50px;
+        > img {
+            border-radius: 50px 50px 0 0;
+            height: 220px;
+            width: 100%; 
+            object-fit: cover;
+        }
+
+        > a {
+            background-color: $navyLight;
+            border-radius: 0 0 50px 50px;
+            padding: 40px;
+            overflow: hidden;
+            text-decoration: none;
+            margin-top: -20px;
+            transition: all 600ms $easing;
+            border: 1px solid transparent;
+    
+            .h5 {
+                padding-bottom: 60px;
+                font-size: 320%;
+                font-weight: 600;
+                transition: all 600ms $easing;
+            }
+    
+            &:hover {
+                border: 1px solid $navyGrey;
+    
+                .h5 {
+                    color: $bluePastel;
+                }
+            }
         }
     }
 
-    .news-feed--grid {
-        display: grid;
-        grid-template-areas:
-            "date category"
-            "title title"
-            "button button";
-        grid-template-columns: 1fr 1fr;
-        margin: 50px;
-        width: 90%;
+    // .news-feed--grid {
+    //     display: grid;
+    //     grid-template-areas:
+    //         "date category"
+    //         "title title"
+    //         "button button";
+    //     grid-template-columns: 1fr 1fr;
+    //     margin: 50px;
+    //     width: 90%;
 
-        .h2 {
-            grid-area: title;
-            margin-top: 20px;
-        }
+    //     .h2 {
+    //         grid-area: title;
+    //         margin-top: 20px;
+    //     }
 
-        p {
-            grid-area: date;
-        }
+    //     p {
+    //         grid-area: date;
+    //     }
 
-        p.eyebrow {
-            margin: 0;
-            padding: 0;
-        }
+    //     p.eyebrow {
+    //         margin: 0;
+    //         padding: 0;
+    //     }
 
-        ul {
-            grid-area: category;
+    //     ul {
+    //         grid-area: category;
 
-            a {
-                word-break: keep-all;
-            }
-        }
+    //         a {
+    //             word-break: keep-all;
+    //         }
+    //     }
 
-        .button.button--line {
-            grid-area: button;
-            width: 50%;
+    //     .button.button--line {
+    //         grid-area: button;
+    //         width: 50%;
 
-            a {
-                color: $green;
-                text-decoration: none;
-            }
-        }
+    //         a {
+    //             color: $green;
+    //             text-decoration: none;
+    //         }
+    //     }
 
-        .button.button--line::after {
-            left: -65%;
-            position: relative;
-        }
-    }
+    //     .button.button--line::after {
+    //         left: -65%;
+    //         position: relative;
+    //     }
+    // }
 }
 
 
