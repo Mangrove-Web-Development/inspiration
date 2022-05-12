@@ -1299,12 +1299,19 @@ ul.news-category-loop {
 
 .logo-section {
     background-color: $navyDarker;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h2{
+        margin-bottom: 10px;
+    }
 
     .logo-section__logos {
         margin-top: 50px;
 
         img {
             max-width: 200px;
+            width: 100%;
             margin: 20px;
         }
     }
