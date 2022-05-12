@@ -1,8 +1,13 @@
 <section class="team-section wo pv100">
-    <h2 class="h1 pv100 team-section__header col-1-to-12 m-col-1-to-9 s-col-1-to-5 pv-small">
+    <h2 class="h1 pv100 team-section__header col-1-to-9 m-col-1-to-7 s-col-1-to-5 pv-small">
         {{ include.block.heading }}
     </h2>
-    <div class="team-section__container col-1-to-13 m-col-1-to-11 s-col-1-to-5 flex-wo">
+    {% if include.block.link_to_team == true %}
+    <a class="button button--round col-9-to-13 m-col-7-to-9 s-col-1-to-5" href="/about/our-team/">
+        Full team
+    </a>
+    {% endif %}
+    <div class="team-section__container col-1-to-13 m-col-1-to-9 s-col-1-to-5 flex-wo">
     {% for teamMember in include.block.team_member %}
         <div class="team-section__container__team__member">
             <img aria-hidden="true" src="{{ teamMember.image }}" alt="">

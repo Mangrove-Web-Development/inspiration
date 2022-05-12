@@ -1,5 +1,8 @@
 - title: About
   url: /about/
+  submenu:
+    - title: Our Team
+      url: /about/our-team/
 - title: Solutions
   url: /solutions/
   submenu:

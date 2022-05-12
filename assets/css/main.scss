@@ -1236,6 +1236,20 @@ ul.news-category-loop {
 }
 
 .team-section {
+    > .button {
+        position: relative;
+        z-index: 12;
+
+        &:before {
+            content: '';
+            height: 1px;
+            width: 30vw;
+            display: block;
+            background-color: #057ADC;
+            position: absolute;
+            right: calc(-30vw - 50px);
+        }
+    }
     .team-section__container {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
