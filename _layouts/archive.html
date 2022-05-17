@@ -2,8 +2,19 @@
 
 <main data-barba="container" data-barba-namespace="archive">
 	<div class="wo page-heading">
-		<h1 class="col-2-to-12 m-col-1-to-9 s-col-1-to-5 h1 editable">
-		    Latest News
+		<h1 class="col-2-to-12 m-col-1-to-9 s-col-1-to-5 h1">
+			<span class="editable">
+				Latest News
+			</span>
+		    <span>
+				{% for category in site.categories %}
+				{% assign category_name = category[0] %}
+				{% capture category_permalink %}/archive/{{ category_name | slugify }}/{% endcapture %}
+				{% if page.url == category_permalink %}
+				- {{ category_name }}
+				{% endif %}
+				{% endfor %}
+			</span>
 		</h1>
 		<ul class="col-2-to-12 m-col-1-to-9 s-col-1-to-5 category-container">
 			<li>
@@ -22,7 +33,9 @@
 			{% endfor %}
 		</ul>
 	</div>
+
 	{{ content }}
+
 	{% if page.posts %}
 	<section class="news-feed wo pv100">
 	{% for post in page.posts %}
