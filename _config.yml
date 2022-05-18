@@ -83,6 +83,9 @@ collections:
   general-pages:
     output: true
     _hide_content: true
+  form-pages:
+    output: true
+    _hide_content: true
   top-level-pages:
     output: true
     _hide_content: true
