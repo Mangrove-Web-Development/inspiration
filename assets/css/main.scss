@@ -1410,10 +1410,17 @@ ul.news-category-loop {
 .news-feed {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: 20px;
 
     article {
         width: calc(33% - 10px);
+        background-color: $navyLight;
+        border-radius: 50px;
+        transition: all 600ms $easing;
+        border: 1px solid transparent;
+        position: relative;
+        overflow: hidden;
 
         .news-feed__logo,
         > img {
@@ -1439,20 +1446,19 @@ ul.news-category-loop {
         }
 
         > a {
-            background-color: $navyLight;
-            border-radius: 0 0 50px 50px;
             padding: 40px;
             overflow: hidden;
             text-decoration: none;
             margin-top: -20px;
-            transition: all 600ms $easing;
-            border: 1px solid transparent;
             width: 100%;
     
             .h5 {
                 padding-bottom: 60px;
                 font-size: 320%;
                 font-weight: 600;
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                text-decoration-thickness: 1px;
                 transition: all 600ms $easing;
             }
 
@@ -1465,64 +1471,23 @@ ul.news-category-loop {
             .news-feed__cats {
                 text-align: right;
             }
-    
-            &:hover {
-                border: 1px solid $navyGrey;
-    
-                .h5 {
-                    color: $bluePastel;
-                }
+
+            p.button {
+                position: absolute;
+                bottom: 40px;
+                width: 100%;
+            }
+
+            &:hover .h5 {
+                color: $bluePastel;
+                text-decoration-color: $bluePastel;
             }
         }
+
+        &:hover {
+            border: 1px solid $navyGrey;
+        }
     }
-
-    // .news-feed--grid {
-    //     display: grid;
-    //     grid-template-areas:
-    //         "date category"
-    //         "title title"
-    //         "button button";
-    //     grid-template-columns: 1fr 1fr;
-    //     margin: 50px;
-    //     width: 90%;
-
-    //     .h2 {
-    //         grid-area: title;
-    //         margin-top: 20px;
-    //     }
-
-    //     p {
-    //         grid-area: date;
-    //     }
-
-    //     p.eyebrow {
-    //         margin: 0;
-    //         padding: 0;
-    //     }
-
-    //     ul {
-    //         grid-area: category;
-
-    //         a {
-    //             word-break: keep-all;
-    //         }
-    //     }
-
-    //     .button.button--line {
-    //         grid-area: button;
-    //         width: 50%;
-
-    //         a {
-    //             color: $green;
-    //             text-decoration: none;
-    //         }
-    //     }
-
-    //     .button.button--line::after {
-    //         left: -65%;
-    //         position: relative;
-    //     }
-    // }
 }
 
 
