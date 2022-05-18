@@ -107,6 +107,11 @@ defaults:
       layout: "page"
   - scope:
       path: ""
+      type: "form-pages"
+    values:
+      layout: "page-notransition"
+  - scope:
+      path: ""
       type: "top-level-pages"
     values:
       layout: "top-level-page"
