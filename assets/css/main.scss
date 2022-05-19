@@ -1438,6 +1438,7 @@ ul.news-category-loop {
             img {
                 max-height: 100px;
                 max-width: 280px;
+                object-fit: contain !important;
             }
         }
 
