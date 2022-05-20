@@ -2,7 +2,7 @@
 layout: post
 title: 'Exclusive: Inspiration Mobility nets $215M for fleet EVs'
 date: 2022-05-18 12:00:00
-featured_image: /uploads/macquarie-logo.png
+featured_image: /uploads/1652829573313.webp
 categories:
   - In the News
 featured_post: false
