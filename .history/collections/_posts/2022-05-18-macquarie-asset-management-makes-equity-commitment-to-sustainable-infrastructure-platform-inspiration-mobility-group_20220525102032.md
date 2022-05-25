@@ -4,10 +4,7 @@ title: >-
   Macquarie Asset Management makes equity commitment to sustainable
   infrastructure platform Inspiration Mobility Group
 date: 2022-05-18 12:00:00
-featured_image:
-    image: /uploads/macquarie-logo.png
-    logo: false
-    alt_text:
+featured_image: /uploads/macquarie-logo.png
 categories:
   - In the News
 featured_post: false
