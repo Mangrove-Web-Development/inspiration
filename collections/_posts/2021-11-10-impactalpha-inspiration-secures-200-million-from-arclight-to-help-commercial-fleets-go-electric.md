@@ -4,7 +4,10 @@ title: >-
     ImpactAlpha: Inspiration secures $200 million from ArcLight to help
     commercial fleets go electric
 date: 2021-11-10 13:00:00
-featured_image: /uploads/impact-alpha-logo-300x200.png
+featured_image:
+    image: /uploads/impact-alpha-logo-300x200.png
+    logo: true
+    alt_text:
 categories:
     - In the News
 featured_post: false

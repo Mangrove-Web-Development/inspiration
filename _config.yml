@@ -36,7 +36,7 @@ collections_dir: collections
 
 # pagination
 # https://jekyllrb.com/docs/pagination/
-paginate: 5
+paginate: 27
 paginate_path: "/news/page-:num/"
 
 # archives
@@ -83,6 +83,9 @@ collections:
   general-pages:
     output: true
     _hide_content: true
+  form-pages:
+    output: true
+    _hide_content: true
   top-level-pages:
     output: true
     _hide_content: true
@@ -105,6 +108,11 @@ defaults:
       type: "general-pages"
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "form-pages"
+    values:
+      layout: "page-notransition"
   - scope:
       path: ""
       type: "top-level-pages"

@@ -303,6 +303,20 @@ if (window.inEditorMode) {
                         }
                     })();
                 }
+            }, {
+                namespace: 'notransition',
+                beforeEnter() {
+                    (function () {
+                        if (window.localStorage) {
+                            if (!localStorage.getItem('firstLoad')) {
+                                localStorage['firstLoad'] = true;
+                                window.location.reload();
+                            }
+                            else
+                                localStorage.removeItem('firstLoad');
+                        }
+                    })();
+                }
             }]
         });
 
@@ -317,10 +331,6 @@ if (window.inEditorMode) {
         barba.hooks.after((data) => {
             testimSlider();
             navScrolly();
-
-            // $('#navToggle').click(function () {
-            //     toggleNav();
-            // });
 
             AOS.init({
                 delay: 400,

@@ -2,7 +2,10 @@
 layout: post
 title: 'Inspiration: A One-Stop EV Solution '
 date: 2022-04-13 12:00:00
-featured_image: /uploads/solution-1536x1062.jpg
+featured_image:
+    image: /uploads/solution-1536x1062.jpg
+    logo: false
+    alt_text:
 categories:
   - In the News
 featured_post: false
