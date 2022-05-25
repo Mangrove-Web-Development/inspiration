@@ -4,10 +4,10 @@ title: Macquarie eyes 'next phase of energy transition' with EV investment
 date: 2022-05-20 12:00:00
 featured_image:
     image: /uploads/ii-logo-white.png
-    logo: false
-    alt_text:
+    logo: true
+    alt_text: Infrastructure ivestor
 categories:
-  - In the News
+    - In the News
 featured_post: false
 ---
 *Infrastructure Investor, May 20, 2022* — The $215m funding for Inspiration Mobility, made alongside Ferrovial, adds to a $200m commitment from Arclight to establish the company in November.
