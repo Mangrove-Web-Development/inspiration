@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Inspiration: A One-Stop EV Solution '
+title: 'Fleet Management Weekly: Inspiration: A One-Stop EV Solution '
 date: 2022-04-13 12:00:00
 featured_image:
     image: /uploads/solution-1536x1062.jpg
