@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Exclusive: Inspiration Mobility nets $215M for fleet EVs'
+title: 'AXIOS PRO Exclusive: Inspiration Mobility nets $215M for fleet EVs'
 date: 2022-05-18 12:00:00
 featured_image:
     image: /uploads/1652829573313.webp
