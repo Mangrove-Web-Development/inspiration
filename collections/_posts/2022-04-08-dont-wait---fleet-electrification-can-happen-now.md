@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Don't Wait - Fleet Electrification Can Happen Now
+title: 'ChargedFleet: Don''t Wait - Fleet Electrification Can Happen Now'
 date: 2022-04-08 12:00:00
 featured_image:
     image: /uploads/chargedfleet-interview.png
