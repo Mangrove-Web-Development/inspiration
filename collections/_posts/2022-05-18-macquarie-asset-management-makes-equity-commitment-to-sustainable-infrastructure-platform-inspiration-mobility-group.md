@@ -7,7 +7,7 @@ date: 2022-05-18 12:00:00
 featured_image:
     image: /uploads/macquarie-logo.png
     logo: true
-    alt_text: Macquarie
+    alt_text: Macquarie Logo
 categories:
     - In the News
 featured_post: false
