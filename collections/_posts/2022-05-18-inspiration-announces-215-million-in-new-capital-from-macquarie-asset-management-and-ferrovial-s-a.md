@@ -1,15 +1,17 @@
 ---
 layout: post
 title: >-
-  Inspiration Announces $215 Million in New Capital from    Macquarie Asset
-  Management and Ferrovial, S.A.   
+    Inspiration Announces $215 Million in New Capital from    Macquarie Asset
+    Management and Ferrovial, S.A.   
 date: 2022-05-18 11:30:00
 featured_image:
     image: /uploads/road-between-the-trees.jpg
     logo: false
-    alt_text:
+    alt_text: >-
+        Picture of paved two lane road between green trees with mountains in the
+        background
 categories:
-  - Press Releases
+    - Press Releases
 featured_post: true
 ---
 * *Now has $415 million of investable capital to drive transition to electric vehicles among fleets*&nbsp;
