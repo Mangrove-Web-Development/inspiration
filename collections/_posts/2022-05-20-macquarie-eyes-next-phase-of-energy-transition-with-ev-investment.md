@@ -5,7 +5,7 @@ date: 2022-05-20 12:00:00
 featured_image:
     image: /uploads/ii-logo-white.png
     logo: true
-    alt_text: Infrastructure ivestor
+    alt_text: Infrastructure Investor Logo
 categories:
     - In the News
 featured_post: false
