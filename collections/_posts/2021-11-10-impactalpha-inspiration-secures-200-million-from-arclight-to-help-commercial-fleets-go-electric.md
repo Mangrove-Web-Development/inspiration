@@ -7,7 +7,7 @@ date: 2021-11-10 13:00:00
 featured_image:
     image: /uploads/impact-alpha-logo-300x200.png
     logo: true
-    alt_text:
+    alt_text: ImpactALPHA Logo
 categories:
     - In the News
 featured_post: false
