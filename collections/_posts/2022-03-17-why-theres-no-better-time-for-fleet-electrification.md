@@ -5,9 +5,9 @@ date: 2022-03-17 16:30:00
 featured_image:
     image: /uploads/revel-hub-rendering1.jpeg
     logo: false
-    alt_text:
+    alt_text: Rendering of charging hub with blue Revel Teslas
 categories:
-  - In the News
+    - In the News
 featured_post: false
 ---
 *ChargedFleet, March 17, 2022* — A fleet operation will never find that perfect moment to move toward electric vehicles. Forget about waiting for more choices in vehicles, lower prices, or expanded battery capacity.
