@@ -5,9 +5,9 @@ date: 2022-04-08 12:00:00
 featured_image:
     image: /uploads/chargedfleet-interview.png
     logo: false
-    alt_text:
+    alt_text: Screenshot of Josh Green and Martin Romjue doing a Zoom interview
 categories:
-  - In the News
+    - In the News
 featured_post: false
 ---
 *ChargedFleet, April 8, 2022* — Fleet managers don’t have to wait and over-plan for the perfect moment to electrify fleets. Find out in this video why the right time is now. There are as many custom plans for electrification as there are fleets. Don’t let the hurdles lead to delays, because waiting can cost fleets more in the long run.
