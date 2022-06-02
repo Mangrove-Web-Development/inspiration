@@ -7,7 +7,7 @@ date: 2021-11-10 06:00:00
 featured_image:
     image: /uploads/mark-basarab-z8ct_Q3oCqM-unsplash-updated.jpg
     logo: false
-    alt_text:
+    alt_text: Photo of paved road between trees with snowy mountain int he background
 categories:
     - Press Releases
 featured_post: false
