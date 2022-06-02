@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Inspiration Mobility’s $215 Million New Capital Investment
+title: >-
+  Global Legal Chronicle: Inspiration Mobility’s $215 Million New Capital
+  Investment
 date: 2022-05-31 12:00:00
 featured_image:
   image: /uploads/cropped-logo-glc-global.png
