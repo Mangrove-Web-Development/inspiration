@@ -5,9 +5,9 @@ date: 2022-05-18 12:00:00
 featured_image:
     image: /uploads/1652829573313.webp
     logo: false
-    alt_text:
+    alt_text: Photo of electric car with a charger and dollar signs
 categories:
-  - In the News
+    - In the News
 featured_post: false
 ---
 *AXIOS PRO, May 18, 2022* — The EV fleet management and investment startup Inspiration Mobility announced a $215 million fundraise led Macquarie Asset Management and Ferrovial, a multinational infrastructure operator, *Axios has learned.*
