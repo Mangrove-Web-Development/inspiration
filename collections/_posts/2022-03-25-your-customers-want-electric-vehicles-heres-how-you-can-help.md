@@ -7,7 +7,7 @@ date: 2022-03-25 11:00:00
 featured_image:
     image: /uploads/nvla-leasewire-logo-2.jpg
     logo: true
-    alt_text: NVLA Lease Wire
+    alt_text: NVLA Lease Wire Logo
 categories:
     - Insights
 featured_post: true
