@@ -14,4 +14,4 @@ featured_post: false
 ---
 *ImpactAlpha, November 10* — Washington, D.C.-based Inspiration, launched this year, provides financing, leasing and charging infrastructure services for companies looking to electrify and decarbonize their commercial fleet vehicles.
 
-Read the full story at [ImpactAlpha](https://impactalpha.com/inspiration-secures-200-million-from-arclight-to-help-commercial-fleets-go-electric/){: target="_blank" rel="noopener"}
+Read the full story at [ImpactAlpha](https://impactalpha.com/inspiration-secures-200-million-from-arclight-to-help-commercial-fleets-go-electric/){: target="_blank" rel="noopener"}.
