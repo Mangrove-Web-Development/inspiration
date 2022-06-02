@@ -1,7 +1,7 @@
 ---
 layout: post
 title: >-
-    LeaseWire: Your Customers Want Electric Vehicles: Here's How You (and
+    Leasewire: Your Customers Want Electric Vehicles: Here's How You (and
     Inspiration!) Can Help
 date: 2022-03-25 11:00:00
 featured_image:
