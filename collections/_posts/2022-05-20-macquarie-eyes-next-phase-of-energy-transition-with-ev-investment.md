@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Macquarie eyes 'next phase of energy transition' with EV investment
+title: >-
+    Infrastructure Investor: Macquarie eyes 'next phase of energy transition'
+    with EV investment
 date: 2022-05-20 12:00:00
 featured_image:
     image: /uploads/ii-logo-white.png
