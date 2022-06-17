@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A D.C. electric vehicle startup hauls in a gargantuan $215M raise
-date: 2022-05-24 11:23:00
+date: 2022-05-23 11:23:00
 featured_image:
   image: /uploads/washington-biz-journal.jpg
   logo: true
