@@ -18,4 +18,4 @@ Josh Green, CEO of [Inspiration Mobility](https://inspirationmobility.com/){: ta
 
 “We’re a specialist infrastructure company, focused on developing, owning and operating the real assets that power the EV transition,” the longtime climate and clean energy investor and entrepreneur explained. ​“That includes the vehicles, charging systems, energy systems that optimize the chargers to lower cost and increase reliability, and in some cases the real estate” to house it all.&nbsp;
 
-Read the full story at [Canary Media](https://www.canarymedia.com/articles/electric-vehicles/this-startup-aims-to-make-it-easy-for-corporate-fleets-to-go-electric?utm_campaign=canary-social&amp;utm_source=twitter&amp;utm_medium=social&amp;utm_content=jsj){: target="_blank" rel="noopener"}.
+Read the full story at [Canary Media](https://www.canarymedia.com/articles/electric-vehicles/this-startup-aims-to-make-it-easy-for-corporate-fleets-to-go-electric){: target="_blank" rel="noopener"}.
