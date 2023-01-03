@@ -12,7 +12,7 @@ categories:
   - In the News
 featured_post: false
 ---
-*GreenBiz, January 3, 2022* —
+*GreenBiz, January 3, 2023* —
 
 [**Josh Green**](https://www.linkedin.com/in/josh-green-25349/){: target="_blank" rel="noopener"}, Founder and CEO, Inspiration Mobility&nbsp;
 
