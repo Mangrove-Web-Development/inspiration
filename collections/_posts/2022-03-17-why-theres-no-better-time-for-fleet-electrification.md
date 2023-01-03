@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why There’s No Better Time for Fleet Electrification
+title: 'ChargedFleet: Why There’s No Better Time for Fleet Electrification'
 date: 2022-03-17 16:30:00
 featured_image:
     image: /uploads/revel-hub-rendering1.jpeg
