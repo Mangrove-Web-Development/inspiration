@@ -1,6 +1,6 @@
 ---
 layout: post
-title: European EV rental startup UFODrive launches in San Francisco
+title: 'TechCrunch: European EV rental startup UFODrive launches in San Francisco'
 date: 2022-08-04 21:00:00
 featured_image:
   image: /uploads/ufodrive-cars.webp
