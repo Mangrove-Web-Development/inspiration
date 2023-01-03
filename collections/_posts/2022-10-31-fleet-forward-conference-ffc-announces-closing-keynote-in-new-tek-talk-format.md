@@ -12,8 +12,6 @@ featured_post: false
 ---
 *Fleet Forward, October 31, 2022* —
 
-&nbsp;
-
 **TEK Talk 4: Electrification is Inevitable. Here’s How You Win.**
 
 ***Presenter: Josh Green, Founder & CEO, Inspiration Mobility Group***
