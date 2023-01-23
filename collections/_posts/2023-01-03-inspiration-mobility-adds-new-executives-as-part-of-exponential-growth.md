@@ -3,7 +3,7 @@ layout: post
 title: 'Inspiration Mobility Adds New Executives as Part of Exponential Growth '
 date: 2023-01-03 12:00:00
 featured_image:
-  image: /uploads/sung-heather-ed.png
+  image: /uploads/sung-heather-ed-1800-×-400-px.png
   logo: true
   alt_text: >-
     Headshots of SungHwan Cho, Heather Schwager, and Ed Kaye in front of a
@@ -13,6 +13,8 @@ categories:
 featured_post:
 ---
 *Reflects surging demand for seamless, full-service fleet electrification solutions* &nbsp;
+
+![](/uploads/sung-heather-ed-1.png){: width="2000" height="1000"}
 
 **WASHINGTON, D.C., (January 23, 2023)** – Inspiration Mobility (“Inspiration”), the first end-to-end electric vehicle (EV) solutions company, today announced the addition of three widely recognized senior executives joining the company to spearhead finance, sales, and human capital. With decades of expertise in areas key to financing the transition of commercial fleets to EVs, in concert with exceptional customer service, SungHwan Cho is joining the company as Chief Financial Officer, Edward P. Kaye as Senior Vice President of Sales & Business Development, and Heather Schwager as Senior Vice President & Head of People.
 
