@@ -3,7 +3,7 @@ layout: post
 title: 'Inspiration Mobility Adds New Executives as Part of Exponential Growth '
 date: 2023-01-03 12:00:00
 featured_image:
-  image: /uploads/sung-heather-ed-1800-×-400-px.png
+  image: /uploads/sung-heather-ed-1800-×-400-px-1.png
   logo: true
   alt_text: >-
     Headshots of SungHwan Cho, Heather Schwager, and Ed Kaye in front of a
