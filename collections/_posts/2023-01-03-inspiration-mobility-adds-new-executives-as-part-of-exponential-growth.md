@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Inspiration Mobility Adds New Executives as Part of Exponential Growth '
-date: 2023-01-03 12:00:00
+date: 2023-01-23 12:00:00
 featured_image:
   image: /uploads/sung-heather-ed-1800-×-400-px-2.png
   logo: true
