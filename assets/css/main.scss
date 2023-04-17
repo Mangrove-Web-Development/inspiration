@@ -627,8 +627,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     padding: 30px;
     text-align: center;
     transform-origin: center center;
@@ -643,8 +643,8 @@ a {
         transform-origin: center center;
         content: '';
         @include background-image('/../assets/images/green-circle-button-bg.svg');
-        height: 180px;
-        width: 180px;
+        height: 200px;
+        width: 200px;
         padding: 30px;
         transition: all 600ms $easing;
         top: 0px;
