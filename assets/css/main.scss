@@ -380,10 +380,10 @@ form.wo.pv100{
 
         .main-header__nav__link--careers:before {
             @include background-image('/../assets/images/utilitynav-lightning.svg');
-            height: 17px;
-            width: 18px;
+            height: 27px;
+            width: 27px;
             left: -32px;
-            top: 1px;
+            top: -3px;
         }
 
         .main-header__nav__link--login:before {
