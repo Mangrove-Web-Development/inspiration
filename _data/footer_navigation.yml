@@ -1,14 +1,10 @@
 - title: About
   url: /about/
-  
-- title: Solutions
-  url: /solutions/
-  
-- title: Resources
-  url: /resources/
-  
-- title: News
-  url: /news/
-  
+- title: Fleet
+  url: /solutions/fleet/
+- title: Energy
+  url: /solutions/charging-and-energy/
 - title: Contact
   url: /contact/
+- title: Careers
+  url: /careers/

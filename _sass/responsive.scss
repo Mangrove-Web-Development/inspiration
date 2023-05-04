@@ -500,8 +500,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 130px;
-        width: 130px;
+        height: 160px;
+        width: 160px;
         padding: 30px;
         text-align: center;
         line-height: 1.5;
@@ -513,8 +513,8 @@
         &:after {
             content: '';
             @include background-image('/../assets/images/green-circle-button-bg.svg');
-            height: 130px;
-            width: 130px;
+            height: 160px;
+            width: 160px;
             padding: 30px;
             position: absolute;
             transition: all 600ms $easing;
