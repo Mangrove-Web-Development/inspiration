@@ -3,11 +3,11 @@ layout: post
 title: 'GreenBiz:  The heavy-duty fleet transition is underway'
 date: 2023-05-16 08:00:00
 featured_image:
-  image: /uploads/nacfe-messy-middle-graphic-nacfe.jpg
+  image: /uploads/truck-depot-ivan-bandura.jpg
   logo: true
   alt_text: >-
-    David Felix speaks as part of the panel "Corporate Financing Solutions for a
-    Carbon-Free Future" at RE+ 2022
+    Semi trucks lined up "Depot charging is a common challenge for company
+    fleets." Photo by Ivan Bandura
 categories:
   - In the News
 featured_post: false
