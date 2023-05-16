@@ -14,7 +14,7 @@ featured_post: false
 ---
 *GreenBiz, November 1, 2022* —
 
-**Badalian: What does VERGE mean to you?**
+**What does VERGE mean to you?**
 
 [**Josh Green**](https://www.linkedin.com/in/josh-green-25349/){: target="_blank" rel="noopener"}, founder and CEO, Inspiration Mobility: "It has been really inspiring to me to see how big the event is in the number of people here that had no interest in climate before. I've talked to so many people who are here for either the first time, or the second time. As an example, I had dinner last night with 10 different people, and I'd say three of us have been in this industry, everyone else at the table was like, 'Yeah, I was working in crypto, and it just occurred to me that this is an urgent problem and so I should really devote my career to that.' So it's been really inspiring to see that mix of realization and passion at this event."
 
