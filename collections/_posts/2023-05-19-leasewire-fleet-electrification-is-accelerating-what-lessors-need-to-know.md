@@ -10,7 +10,7 @@ categories:
     - Insights
 featured_post: false
 ---
-*As published in the [NVLA](https://www.nvla.org/){: target="_blank" rel="noopener"} May 19, 2023 issue of Leasewire*
+*As published in the [NVLA](https://www.nvla.org/){: target="_blank"} May 19, 2023 issue of Leasewire*
 
 # Fleet Electrification is Accelerating: What Lessors Need to Know
 
@@ -28,4 +28,6 @@ Though the electric transition has already started, fleets still feel uneasy abo
 
 The takeaway? Now is the time for lessors to start helping their fleet lessees plan for their electrification journey. Forward-thinking lessors and fleets will be rewarded by the enhanced financial profile of EVs (i.e. - lower fuel, maintenance, and lifecycle costs), take early advantage of grant programs, and secure supply of their desired vehicles.
 
-*Inspiration Mobility is the first EV only lessor, investing, developing, and managing the real assets enabling the electrification of transportation. NVLA member and past president Ed Kaye, Inspiration’s SVP of Sales and Business Development, can be reached [here](mailto:ekaye@inspirationmobility.com){: target="_blank" rel="noopener noreferrer"}.*
+*Inspiration Mobility is the first EV only lessor, investing, developing, and managing the real assets enabling the electrification of transportation. NVLA member and past president Ed Kaye, Inspiration’s SVP of Sales and Business Development, can be reached [here](mailto:ekaye@inspirationmobility.com){: target="_blank"}.*
+
+Full story at [NVLA](https://www.nvla.org/news/640981/Fleet-Electrification-is-Accelerating-What-Lessors-Need-to-Know.htm){: target="_blank" rel="noopener"}.
