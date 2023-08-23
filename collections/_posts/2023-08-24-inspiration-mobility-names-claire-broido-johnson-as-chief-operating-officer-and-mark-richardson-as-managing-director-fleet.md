@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inspiration Mobility Names Claire Broido Johnson as Chief Operating Officer and Mark Richardson as Managing Director, Fleet\_"
-date: 2023-08-24 00:00:00
+date: 2023-08-24 09:00:00
 featured_image:
     image: /uploads/cbj-x-mr-pr-lockup-final.png
     logo: false
@@ -12,7 +12,7 @@ categories:
     - Press Releases
 featured_post: false
 ---
-*DC-Based Electrification Accelerator*™ *Adds Key Executives to Meet Growing Demand for Vendor-Neutral EV Fleet Management and Charging Infrastructure Solutions*&nbsp;
+*DC-Based Electrification Accelerator*TM *Adds Key Executives to Meet Growing Demand for Vendor-Neutral EV Fleet Management and Charging Infrastructure Solutions*&nbsp;
 
 **Washington, DC – August 24, 2023** – Inspiration Mobility (“Inspiration”), the first Electrification AcceleratorTM, announced today that it has expanded its leadership team to include Claire Broido Johnson, a climate tech leader who co-founded SunEdison, as Chief Operating Officer, and Mark Richardson, a global automotive and fleet expert, as Managing Director, Fleet.&nbsp;&nbsp;
 
