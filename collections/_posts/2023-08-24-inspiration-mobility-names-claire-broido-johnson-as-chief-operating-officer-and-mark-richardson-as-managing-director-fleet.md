@@ -16,7 +16,7 @@ featured_post: false
 
 *![](/uploads/cbj-x-mr-pr-lockup-final.png)*
 
-**WASHINGTON–([BUSINESS WIRE](http://www.businesswire.com/))**– Inspiration Mobility (“Inspiration”), the first Electrification Accelerator™, announced today that it has expanded its leadership team to include Claire Broido Johnson, a climate tech leader who co-founded SunEdison, as Chief Operating Officer, and Mark Richardson, a global automotive and fleet expert, as Managing Director, Fleet.
+**WASHINGTON–([BUSINESS WIRE](http://www.businesswire.com/))**– Inspiration Mobility ("Inspiration"), the first Electrification Accelerator™, announced today that it has expanded its leadership team to include Claire Broido Johnson, a climate tech leader who co-founded SunEdison, as Chief Operating Officer, and Mark Richardson, a global automotive and fleet expert, as Managing Director, Fleet.
 
 Both Broido Johnson and Richardson will support Inspiration as it scales to meet increasing demand to decarbonize commercial transportation through electrification.
 
@@ -24,7 +24,7 @@ Both Broido Johnson and Richardson will support Inspiration as it scales to meet
 
 Green continued, "The future of transportation is electric. Mark is known in both the automotive and fleet industries as an expert who creates solutions that improve both an organization’s operational and financial performance. When Mark attests that EVs, when done right, will deliver bottom line results without any additional operating risk, companies pay attention."
 
-Inspiration’s approach to fleet electrification is unique, featuring the only EV Fleet Management Company ("eFMC™“) offering alongside a dedicated energy team that installs, finances and operates commercial-grade charging infrastructure. The company also offers full, vendor-neutral Charging-as-a-Service (“CaaS”) solutions, enabling customers to only pay for the “fuel” provided to their electric vehicles (EVs).
+Inspiration’s approach to fleet electrification is unique, featuring the only EV Fleet Management Company ("eFMC™") offering alongside a dedicated energy team that installs, finances and operates commercial-grade charging infrastructure. The company also offers full, vendor-neutral Charging-as-a-Service ("CaaS") solutions, enabling customers to only pay for the “fuel” provided to their electric vehicles (EVs).
 
 Broido Johnson will work closely with CEO Josh Green to scale operations, services and delivery of innovative solutions such as a turnkey EV fleet-as-a-service that delivers a lower-cost, more reliable fleet powered by 100% clean energy. Most recently, Broido Johnson served as Chief Operating Officer for Fermata Energy, a vehicle-to-grid (V2G) services provider. She is best known as a co-founder of SunEdison, which developed the groundbreaking solar power purchase agreement, and for her work at the Department of Energy, where she oversaw the deployment of $11 billion in Recovery Act funds to scale renewable energy and energy efficiency programs throughout the U.S.
 
