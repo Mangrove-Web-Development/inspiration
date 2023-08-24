@@ -14,7 +14,7 @@ featured_post: false
 ---
 *DC-Based Electrification Accelerator*™ *Adds Key Executives to Meet Growing Demand for Vendor-Neutral EV Fleet Management and Charging Infrastructure Solutions*
 
-WASHINGTON--([BUSINESS WIRE](http://www.businesswire.com/))-- Inspiration Mobility (“Inspiration”), the first Electrification Accelerator™, announced today that it has expanded its leadership team to include Claire Broido Johnson, a climate tech leader who co-founded SunEdison, as Chief Operating Officer, and Mark Richardson, a global automotive and fleet expert, as Managing Director, Fleet.
+WASHINGTON–([BUSINESS WIRE](http://www.businesswire.com/))– Inspiration Mobility (“Inspiration”), the first Electrification Accelerator™, announced today that it has expanded its leadership team to include Claire Broido Johnson, a climate tech leader who co-founded SunEdison, as Chief Operating Officer, and Mark Richardson, a global automotive and fleet expert, as Managing Director, Fleet.
 
 Both Broido Johnson and Richardson will support Inspiration as it scales to meet increasing demand to decarbonize commercial transportation through electrification.
 
