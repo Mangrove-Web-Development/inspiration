@@ -38,20 +38,35 @@
 }
 
 @font-face {
-    font-family: 'Neue World';
-    src: url('../fonts/NeueWorld-SemiExtendedUltralight.eot');
+    font-family: 'Helvetica Neue Bold';
+    src: url('../fonts/HelveticaNeue-Bold.otf');
     /* IE9 Compat Modes */
-    src: url('../fonts/NeueWorld-SemiExtendedUltralight.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/HelveticaNeue-Bold.otf?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
-        url('../fonts/NeueWorld-SemiExtendedUltralight.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Bold.otf') format('otf'),
         /* Super Modern Browsers */
-        url('../fonts/NeueWorld-SemiExtendedUltralight.woff') format('woff');
+        url('../fonts/HelveticaNeue-Bold.otf') format('otf');
     /* Pretty Modern Browsers */
+    font-weight: 600;
     font-style: normal;
     font-stretch: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'HelveticaNeue-Regular';
+    src: url('../fonts/HelveticaNeue-Regular.otf');
+    /* IE9 Compat Modes */
+    src: url('../fonts/HelveticaNeue-Regular.otf?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/HelveticaNeue-Regular.otf'') format('otf'),
+        /* Super Modern Browsers */
+        url('../fonts/HelveticaNeue-Regular.otf'') format('otf);
+    /* Pretty Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
 
 // ————————————————————————————————————————— 
 // VARIABLES: for partials
