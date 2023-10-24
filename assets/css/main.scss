@@ -774,20 +774,21 @@ a {
     position: static;
     overflow: visible;
     height: $fullbrowserheight;
-
+  
     .home-hero__content {
         margin: 0 80px;
         align-self: center;
-
+  
         h1 {
-            font-family: $neueWorld;
+            font-family: 'Helvetica Neue Bold', sans-serif;
             font-size: 800%;
-            line-height: 110%;
+            line-height: 1;
             margin-bottom: 50px;
             color: $blue;
             margin-top: -50px;
         }
     }
+}
 
     .home-hero__image {
         position: absolute;
