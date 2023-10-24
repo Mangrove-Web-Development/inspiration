@@ -1,0 +1,164 @@
+paths:
+  uploads: uploads
+  dam_uploads: ''
+  static: ''
+  dam_static: ''
+  collections: collections
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  data:
+    path: _data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: collections/_posts
+    output: true
+    icon: notes
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  drafts:
+    path: collections/_drafts
+    output: false
+    icon: notes
+    create:
+      publish_to: posts
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  general-pages:
+    path: collections/_general-pages
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  form-pages:
+    path: collections/_form-pages
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  top-level-pages:
+    path: collections/_top-level-pages
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  testimonials:
+    path: collections/_testimonials
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  case-studies:
+    path: collections/_case-studies
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  name:
+    type: text
+    comment: This can get converted to the file name
+    cascade: true
+  title:
+    type: text
+    comment: This will show up in the browser tab, and is used for SEO purposes.
+    cascade: true
+  their_testimonial_text:
+    type: text
+    comment: Quotations are automatically inserted.
+    cascade: true
+  custom_latest_posts:
+    type: text
+    comment: This will show the three newest posts marked as 'featured' in the News.
+    cascade: true
+  featured_post:
+    type: text
+    comment: >-
+      When custom latest posts is true on the Home page, this post will show
+      instead of the most recent News post.
+    cascade: true
+  image:
+    type: image
+    options:
+      uploads_dir: uploads
+      paths:
+        uploads: uploads
+    cascade: true
+  content:
+    type: text
+    options:
+      uploads_dir: uploads
+      format: p h1 h2 h3 h4 h5 h6
+      bold: true
+      italic: true
+      link: true
+      blockquote: true
+      numberedlist: true
+      bulletedlist: true
+      embed: true
+      image: true
+      paths:
+        uploads: uploads
+    cascade: true
+  layout:
+    type: text
+    options:
+      hidden: true
+    cascade: true
+_select_data:
+  sass:
+    sass_dir: _sass
+    style: compressed
+  jekyll-archives:
+    layout: archive
+    enabled:
+      - categories
+    permalinks:
+      year: /:year/
+      month: /:year/:month/
+      day: /:year/:month/:day/
+      tag: /tag/:name/
+      category: /archive/:name/
+  archives:
+    - ''
+    - ''
+    - ''
+_structures: {}
+_editables: {}
+data_config: {}
+timezone: Etc/UTC
