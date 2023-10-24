@@ -735,14 +735,16 @@ a {
         margin: 0 80px;
         align-self: center;
 
-        h1 {
-            font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
-            font-size: 700%;
-            line-height: 110%;
-            margin-bottom: 50px;
-            color: $blue;
-            margin-top: -50px;
-        }
+       .h1 {
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+    font-size: 700%;
+    line-height: 110%;
+    margin-bottom: 50px;
+    color: $blue;
+    margin-top: -50px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+
     }
 
     .home-hero__image {
