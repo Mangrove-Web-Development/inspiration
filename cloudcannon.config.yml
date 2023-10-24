@@ -59,10 +59,16 @@ collections_config:
   top-level-pages:
     path: collections/_top-level-pages
     output: true
+    description: ''
     icon: notes
+    _editables: {}
+    _inputs: {}
+    _select_data: {}
+    _structures: {}
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+    schemas: {}
   testimonials:
     path: collections/_testimonials
     output: false
