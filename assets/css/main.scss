@@ -767,12 +767,14 @@ a {
 .home-hero .editable strong{
  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
  font-weight:600 !important;
+  white-space:normal;
+  font-size:72px;
 }
-/* Button */
+/* EVOA Button */
 .home-hero a.editable{
- transform:translatex(0px) translatey(0px);
- text-transform:none !important;
- letter-spacing:-1px;
+ font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+ font-weight:700;
+   font-size:18px !important;
 }
 
 /* Link */
