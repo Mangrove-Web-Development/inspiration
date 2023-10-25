@@ -763,9 +763,17 @@ a {
 }
 
 
+/* Strong Tag */
+.home-hero .editable strong{
+ font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+ font-weight:600 !important;
+}
+
+
 // ————————————————————————————————————————— 
 // home page
 // —————————————————————————————————————————
+
 .home-hero {
     position: static;
     overflow: visible;
