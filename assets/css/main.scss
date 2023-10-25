@@ -635,7 +635,7 @@ a {
     display: block;
     background-color: transparent;
     border: none;
-    font-family: $Montserrat; sans-serif;
+    font-family: $Montserrat: sans-serif;
     font-size: 200%;
     line-height: 100%;
     text-decoration: none;
@@ -712,7 +712,7 @@ a {
 .home-hero__content__button {
     display: inline-block;
     margin-top: 100px;
-    font-family: $Montserrat; sans-serif;
+    font-family: $Montserrat: sans-serif;
     font-size: 400%;
     line-height: 100%;
     text-decoration: none;
@@ -1101,7 +1101,7 @@ ul.news-category-loop {
         margin-bottom: 0px;
 
         h3 {
-            font-family: $Montserrat; sans-serif;
+            font-family: $Montserrat: sans-serif;
             font-size: 1200%;
             line-height: 1;
             color: $blue;
@@ -1109,7 +1109,7 @@ ul.news-category-loop {
         }
 
         p {
-            font-family: $Montserrat; sans-serif;
+            font-family: $Montserrat: sans-serif;
             color: $offWhite;
             font-size: 500%;
             line-height: 1;
@@ -1544,7 +1544,7 @@ ul.news-category-loop {
 
     .main-footer__nav a,
     .main-footer__small {
-        font-family: $Montserrat; sans-serif;
+        font-family: $Montserrat: sans-serif;
         font-size: 170%;
         line-height: 1.2;
         margin-bottom: 15px;
