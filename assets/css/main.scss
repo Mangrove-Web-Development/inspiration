@@ -768,6 +768,12 @@ a {
  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
  font-weight:600 !important;
 }
+/* Button */
+.home-hero a.editable{
+ transform:translatex(0px) translatey(0px);
+ text-transform:none !important;
+ letter-spacing:-1px;
+}
 
 
 // ————————————————————————————————————————— 
