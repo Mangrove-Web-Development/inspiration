@@ -521,7 +521,7 @@ p.small {
 .general-content h3,
 .h4 {
     color: $offWhite;
-    font-family: $Montserrat; sans-serif;
+    font-family: $Montserrat, sans-serif;
     font-size: 270%;
     line-height: 150%;
     font-weight: 600;
@@ -534,7 +534,7 @@ p.small {
 .general-content blockquote p,
 .large,
 .h5 {
-    font-family: $Montserrat; sans-serif;
+    font-family: $Montserrat, sans-serif;
     color: $offWhite;
     font-size: 240%;
     line-height: 150%;
@@ -551,7 +551,7 @@ p.small {
 .general-content h6,
 .h6,
 .eyebrow {
-    font-family: $Montserrat; sans-serif;
+    font-family: $Montserrat, sans-serif;
     color: $offWhite;
     text-transform: uppercase;
     font-size: 200%;
