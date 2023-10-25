@@ -426,9 +426,6 @@ main {
     margin-bottom: 100px;
 }
 
-// ————————————————————————————————————————— 
-// typography
-// —————————————————————————————————————————
 .white {
 
     .h1,
@@ -452,7 +449,7 @@ textarea,
     margin: 0;
     padding: 0;
     color: $offWhite;
-    font-family: $Montserrat; sans-serif:
+    font-family: $Montserrat, sans-serif;
     font-weight: 400;
 }
 
@@ -475,7 +472,7 @@ strong {
     font-weight: 600;
 }
 
-.main-header__nav>ul>li ul li a:hover,
+.main-header__nav > ul > li ul li a:hover,
 a {
     text-decoration: underline;
     text-decoration-thickness: .05em;
