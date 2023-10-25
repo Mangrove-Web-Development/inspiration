@@ -1321,7 +1321,7 @@ ul.news-category-loop {
 }
 
 .team-section {
-   > .button {
+    > .button {
         position: relative;
         z-index: 12;
 
@@ -1340,13 +1340,10 @@ ul.news-category-loop {
         grid-template-columns: 25% 25% 25% 25%;
         grid-row-gap: 80px;
         justify-content: space-between;
-        text-align: center;
 
         .team-section__container__team__member {
-            margin: 0 auto;
-            text-align: center;
 
-            img {
+            > img {
                 height: 250px;
                 width: 200px;
                 border-radius: 290px;
@@ -1357,45 +1354,18 @@ ul.news-category-loop {
                 margin-top: 20px;
                 margin-bottom: 0px;
                 color: $blue;
-                max-width: 80%; 
-                text-align: center;
-                margin-top: 40px;
-                margin-bottom: 10px;
-
-                a {
-                    color: $blue;
-                    margin: 0;
-                    padding: 0;
-                    text-decoration: underline;
-                    text-align: center;
-                }
-                a::after{
-                    content: '';
-                    background-image: url(data:image/svg+xml;utf8;base64,IDxzdmcgaGVpZ2h0PSIxMDI0IiB3aWR0aD0iNzY4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02NDAgNzY4SDEyOFYyNTcuOTA1OTk5OTk5OTk5OTVMMjU2IDI1NlYxMjhIMHY3NjhoNzY4VjU3Nkg2NDBWNzY4ek0zODQgMTI4bDEyOCAxMjhMMzIwIDQ0OGwxMjggMTI4IDE5Mi0xOTIgMTI4IDEyOFYxMjhIMzg0eiIgZmlsbD0iIzc4ODE4NyIvPjwvc3ZnPg==);
-                    background-size: cover;
-                    display: inline-block;
-                    width: .6em;
-                    height: .75em;
-                    top: .05em;
-                    position: relative;
-                    left: .2em;
-                    margin-right: .2em;
-                    opacity: .4;
-                }
-                
+                max-width: 80%;      
             }
 
             h4.h5 {
                 margin-top: 0px;
                 margin-bottom: 20px;
                 max-width: 80%;
-                margin-top: 0px;
-                text-align: center;
             }
         }
     }
 }
-
+                
 .logo-section {
     background-color: $navyDarker;
 
