@@ -1325,25 +1325,28 @@ ul.news-category-loop {
         &:before {
             content: '';
             height: 1px;
-            width: 30vw;
             display: block;
             background-color: #057ADC;
             position: absolute;
-            right: calc(-30vw - 50px);
+            right: -50px;
+            width: 100vw; // Update width to full viewport width
+            max-width: 30vw; // Add max-width to limit line length for larger viewports
+            margin-right: calc(-50vw - 50px); // Adjust margin for wider viewports
         }
     }
+
     .team-section__container {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-row-gap: 80px;
-        justify-content: space-between;
+        grid-template-columns: 1fr; // Update to a single column layout for mobile
+        grid-row-gap: 40px; // Reduce gap for better mobile layout
+        justify-content: center; // Center the content on mobile
 
         .team-section__container__team__member {
 
             > img {
-                height: 250px;
-                width: 200px;
-                border-radius: 290px;
+                height: auto;
+                width: 100%; // Set width to full for mobile layout
+                border-radius: 50px; // Adjust border-radius for a circular shape on mobile
                 object-fit: cover;
             }
 
@@ -1351,17 +1354,20 @@ ul.news-category-loop {
                 margin-top: 20px;
                 margin-bottom: 0px;
                 color: $blue;
-                max-width: 80%;      
+                text-align: center; // Center the text on mobile
+                max-width: 100%; // Remove max-width on mobile      
             }
 
             h4.h5 {
                 margin-top: 0px;
                 margin-bottom: 20px;
-                max-width: 80%;
+                text-align: center; // Center the text on mobile
+                max-width: 100%; // Remove max-width on mobile
             }
         }
     }
 }
+
                 
 .logo-section {
     background-color: $navyDarker;
