@@ -1321,6 +1321,20 @@ ul.news-category-loop {
 }
 
 .team-section {
+   > .button {
+        position: relative;
+        z-index: 12;
+
+        &:before {
+            content: '';
+            height: 1px;
+            width: 30vw;
+            display: block;
+            background-color: #057ADC;
+            position: absolute;
+            right: calc(-30vw - 50px);
+        }
+    }
     .team-section__container {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -1333,13 +1347,17 @@ ul.news-category-loop {
             text-align: center;
 
             img {
-                height: 330px;
-                width: 235px;
+                height: 250px;
+                width: 200px;
                 border-radius: 290px;
                 object-fit: cover;
             }
 
             h3.h4 {
+                margin-top: 20px;
+                margin-bottom: 0px;
+                color: $blue;
+                max-width: 80%; 
                 text-align: center;
                 margin-top: 40px;
                 margin-bottom: 10px;
@@ -1368,6 +1386,9 @@ ul.news-category-loop {
             }
 
             h4.h5 {
+                margin-top: 0px;
+                margin-bottom: 20px;
+                max-width: 80%;
                 margin-top: 0px;
                 text-align: center;
             }
