@@ -1317,7 +1317,7 @@ ul.news-category-loop {
     }
 }
 
-.team-section {
+team-section {
     > .button {
         position: relative;
         z-index: 12;
@@ -1329,44 +1329,46 @@ ul.news-category-loop {
             background-color: #057ADC;
             position: absolute;
             right: -50px;
-            width: 100vw; // Update width to full viewport width
-            max-width: 30vw; // Add max-width to limit line length for larger viewports
-            margin-right: calc(-50vw - 50px); // Adjust margin for wider viewports
+            width: 100%;
+            max-width: 30vw;
+            margin-right: calc(-50vw - 50px);
         }
     }
 
     .team-section__container {
         display: grid;
-        grid-template-columns: 1fr; // Update to a single column layout for mobile
-        grid-row-gap: 40px; // Reduce gap for better mobile layout
-        justify-content: center; // Center the content on mobile
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 80px;
+        justify-content: space-between;
 
         .team-section__container__team__member {
 
             > img {
-                height: auto;
-                width: 100%; // Set width to full for mobile layout
-                border-radius: 50px; // Adjust border-radius for a circular shape on mobile
+                height: 250px;
+                width: 100%;
                 object-fit: cover;
+                border-radius: 290px;
             }
 
             h3.h4 {
                 margin-top: 20px;
                 margin-bottom: 0px;
                 color: $blue;
-                text-align: center; // Center the text on mobile
-                max-width: 100%; // Remove max-width on mobile      
+                max-width: 80%;
+                text-align: center;
             }
 
             h4.h5 {
                 margin-top: 0px;
                 margin-bottom: 20px;
-                text-align: center; // Center the text on mobile
-                max-width: 100%; // Remove max-width on mobile
+                max-width: 80%;
+                text-align: center;
             }
         }
     }
 }
+
 
                 
 .logo-section {
