@@ -766,13 +766,7 @@ a {
 }
 
 
-/* Strong Tag */
-.home-hero .editable strong{
- font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
- font-weight:600 !important;
-  white-space:normal;
-  font-size:72px;
-}
+
 /* EVOA Button */
 .home-hero a.editable{
  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -846,9 +840,11 @@ main .home-intro h2.editable{
         align-self: center;
   
         h1 {
-            font-family: 'Helvetica Neue Bold', sans-serif;
+            font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
             font-size: 800%;
+            font-weight:600 !important;
             line-height: 1;
+            white-space:normal;
             margin-bottom: 50px;
             color: $blue;
             margin-top: -50px;
