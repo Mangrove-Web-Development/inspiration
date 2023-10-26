@@ -135,7 +135,9 @@ $easing: cubic-bezier(0.83, 0, 0.17, 1);
 // fonts
 $fraktionSans: 'Fraktion Sans',
 sans-serif;
-
+$fraktionSans: 'Fraktion Sans',
+serif;
+$Montserrat: 'Montserrat', sans-serif;
 
 // ————————————————————————————————————————— 
 // M I X I N S
@@ -143,6 +145,13 @@ sans-serif;
 // @include background-image("image.jpg");
 @mixin background-image($url) {
     background: url($url) no-repeat center;
+    background-size: cover;
+}
+
+// @include background-fill();
+@mixin background-fill() {
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -758,64 +767,7 @@ a {
 
 
 
-/* EVOA Button */
-.home-hero a.editable{
- font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
- font-weight:700;
-   font-size:18px !important;
-    text-transform:none !important;
- white-space:break-spaces;
-}
 
-/* Link */
-#mainNav div > ul > li > .main-header__nav__link{
- font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
- text-transform:capitalize;
- font-weight:600;
-}
-
-/* CTA Electrify Today! */
-#mainNav .main-header__nav--utility-nav a{
- font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
- text-transform:uppercase;
- font-weight:600;
- color:#ffffff;
- text-decoration:underline;
-}
-
-/* Editable */
-.home-hero p.editable{
- font-weight:500;
-}
-
-/* Column 2/12 */
-main .home-intro h2.editable{
- font-weight:600;
-}
-
-/* Editable */
-.cta .pv200 h2.editable{
- font-weight:600;
-}
-
-@media (min-width:601px){
-
- /* Button */
- main .home-intro a{
-  font-size:28px;
- }
- 
- /* Button */
- .cta div a{
-  font-size:24px;
- }
- 
- /* Button */
- #mc-embedded-subscribe{
-  font-size:15px;
- }
- 
-}
 
 // ————————————————————————————————————————— 
 // home page
@@ -823,7 +775,7 @@ main .home-intro h2.editable{
 
 .home-hero {
     position: static;
-    overflow: hidden;
+    overflow: visible;
     height: $fullbrowserheight;
   
     .home-hero__content {
