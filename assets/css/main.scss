@@ -135,9 +135,7 @@ $easing: cubic-bezier(0.83, 0, 0.17, 1);
 // fonts
 $fraktionSans: 'Fraktion Sans',
 sans-serif;
-$fraktionSans: 'Fraktion Sans',
-serif;
-$Montserrat: 'Montserrat', sans-serif;
+
 
 // ————————————————————————————————————————— 
 // M I X I N S
@@ -145,13 +143,6 @@ $Montserrat: 'Montserrat', sans-serif;
 // @include background-image("image.jpg");
 @mixin background-image($url) {
     background: url($url) no-repeat center;
-    background-size: cover;
-}
-
-// @include background-fill();
-@mixin background-fill() {
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 }
 
