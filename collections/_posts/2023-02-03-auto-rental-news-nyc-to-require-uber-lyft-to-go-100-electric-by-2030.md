@@ -4,7 +4,7 @@ title: 'Auto Rental News: NYC to Require Uber, Lyft to Go 100% Electric by 2030'
 date: 2023-02-03 12:00:00
 featured_image:
   image: /uploads/nyc-to-require-uber-lyft-to-go-100-electric-by-2030-720x516-s.webp
-  logo: true
+  logo: false
   alt_text: >-
     White passenger vehicle with yellow lightning bolt image on door. Person
     with smart phone standing in front. 
