@@ -12,7 +12,6 @@ categories:
     - In the News
 featured_post: false
 ---
-# Episode 28: The Deep End of Electric Cars
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Tt3VbUPx73y91FJZ1fR1n?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
