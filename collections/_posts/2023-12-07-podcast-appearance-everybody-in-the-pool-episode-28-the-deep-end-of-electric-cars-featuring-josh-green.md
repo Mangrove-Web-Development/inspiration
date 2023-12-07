@@ -8,11 +8,15 @@ featured_image:
     image: /uploads/everybodyinthepoolart.jpeg
     logo: false
     alt_text: Everybody in the Pool - Hosted by Molly Wood
+categories:
+    - In the News
 featured_post: false
 ---
 # Episode 28: The Deep End of Electric Cars
 
-&lt;iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Tt3VbUPx73y91FJZ1fR1n?utm\_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"&gt;&lt;/iframe&gt;This week on Everybody in the Pool, we all know it’s a big deal to get lots of drivers to switch from ICE (internal combustion engine) cars to electric cars. But getting them to switch one at a time is for the birds—let’s talk about fleets of cars all at once! Taxi cabs, company cars, delivery vehicles, government cars … what does it take to get hundreds or thousands of cars to go electric? Well, a lot, as it turns out.
+&lt;iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Tt3VbUPx73y91FJZ1fR1n?utm\_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"&gt;&lt;/iframe&gt;
+
+This week on Everybody in the Pool, we all know it’s a big deal to get lots of drivers to switch from ICE (internal combustion engine) cars to electric cars. But getting them to switch one at a time is for the birds—let’s talk about fleets of cars all at once! Taxi cabs, company cars, delivery vehicles, government cars … what does it take to get hundreds or thousands of cars to go electric? Well, a lot, as it turns out.
 
 Today’s guest is Josh Green, CEO of Inspiration Mobility, which buys and leases electric cars but also provides all the fleet management services a company needs to transition to EVs—which, not for nothing, are cheaper and more reliable to operate once they do. Plus, the surprising reason existing fleet management companies don’t prioritize EVs.
 
