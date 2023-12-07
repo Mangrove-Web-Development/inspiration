@@ -1,8 +1,8 @@
 ---
 layout: post
 title: >-
-    Podcast Appearance | Everybody in the Pool | Episode 28: The Deep End of
-    Electric Cars featuring Josh Green
+    Everybody in the Pool Podcast - Episode 28: The Deep End of Electric Cars
+    featuring Josh Green
 date: 2023-12-07 00:00:00
 featured_image:
     image: /uploads/everybodyinthepoolart.jpeg
