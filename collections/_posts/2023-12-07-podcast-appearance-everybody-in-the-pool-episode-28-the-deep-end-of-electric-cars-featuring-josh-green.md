@@ -14,7 +14,7 @@ featured_post: false
 ---
 # Episode 28: The Deep End of Electric Cars
 
-&lt;iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Tt3VbUPx73y91FJZ1fR1n?utm\_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"&gt;&lt;/iframe&gt;
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Tt3VbUPx73y91FJZ1fR1n?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 This week on Everybody in the Pool, we all know it’s a big deal to get lots of drivers to switch from ICE (internal combustion engine) cars to electric cars. But getting them to switch one at a time is for the birds—let’s talk about fleets of cars all at once! Taxi cabs, company cars, delivery vehicles, government cars … what does it take to get hundreds or thousands of cars to go electric? Well, a lot, as it turns out.
 
