@@ -4,7 +4,7 @@ title: 'GreenBiz:  The heavy-duty fleet transition is underway'
 date: 2023-05-16 08:00:00
 featured_image:
   image: /uploads/truck-depot-ivan-bandura.jpg
-  logo: true
+  logo: false
   alt_text: >-
     Semi trucks lined up "Depot charging is a common challenge for company
     fleets." Photo by Ivan Bandura
@@ -16,11 +16,11 @@ featured_post: false
 
 #### **The heavy-duty fleet transition is underway**
 
-######
+\######
 
 ##### **Do too many solutions exist?**
 
-######
+\######
 
 ACT showcased the vehicle electrification industry in full force with a seemingly endless room of various charging solutions, electric and hydrogen vehicles, software solutions and more. As [**Josh Green**](https://www.linkedin.com/in/josh-green-25349/){: target="_blank" rel="noopener"}, founder and CEO of Inspiration Mobility, pointed out to me, that itself may be a challenge for fleet managers to navigate.
 
