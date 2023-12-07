@@ -4,15 +4,13 @@ title: 'Leasewire: Fleet Electrification is Accelerating: What Lessors Need to K
 date: 2023-05-19 13:17:00
 featured_image:
     image: /uploads/ev-stock.png
-    logo: true
+    logo: false
     alt_text: Photo of a Level 2 charger going into an electric vehicle charging port
 categories:
     - Insights
 featured_post: false
 ---
 *As published in the [NVLA](https://www.nvla.org/){: target="_blank"} May 19, 2023 issue of Leasewire*
-
-# Fleet Electrification is Accelerating: What Lessors Need to Know
 
 By Inspiration Mobility, NVLA Member
 
