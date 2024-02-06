@@ -16,11 +16,7 @@ featured_post: false
 
 #### **The heavy-duty fleet transition is underway**
 
-\######
-
 ##### **Do too many solutions exist?**
-
-\######
 
 ACT showcased the vehicle electrification industry in full force with a seemingly endless room of various charging solutions, electric and hydrogen vehicles, software solutions and more. As [**Josh Green**](https://www.linkedin.com/in/josh-green-25349/){: target="_blank" rel="noopener"}, founder and CEO of Inspiration Mobility, pointed out to me, that itself may be a challenge for fleet managers to navigate.
 
