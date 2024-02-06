@@ -1,6 +1,8 @@
 ---
 layout: post
-title: 'Fleet Management Weekly: Inspiration: A One-Stop EV Solution '
+title: >-
+    Fleet Management Weekly: Inspiration Mobility Names Maria Neve as VP, eFMC
+    Services 
 date: 2024-01-15 12:00:00
 featured_image:
     image: /uploads/maria-neve-headshot.jpg
